@@ -32,7 +32,7 @@ any additional questions or ideas you have. We’d love to hear from you! Feel f
     The software we are using to collect CAMs data. Check out the <code>config</code> file.
 </div>
 <div style="display: inline-block; width:48%;">
-    <span class="material-icons">help</span>
+    <span class="material-icons">analytics</span>
     <b style="font-size: 22px;">CAM-App</b>
     <br>
     The software we are using to analyze CAM data. Summarize, aggregate and many things more possible.
@@ -46,3 +46,8 @@ any additional questions or ideas you have. We’d love to hear from you! Feel f
 </div>
 <div style="display: inline-block; width:48%;">
 </div>
+
+
+<a href="http://example.com/" target="_blank">Hello, world!</a>
+
+[link](https://camtools-documentation.readthedocs.io/en/latest/api/)

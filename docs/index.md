@@ -4,7 +4,6 @@
 <style>
 .material-icons{
   font-size: 52px;  /* Preferred icon size */
-
 }
 </style>
 

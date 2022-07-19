@@ -5,6 +5,40 @@ Welcome to the Cognitive-Affective Maps tools documentation!
 [![Documentation Status](https://readthedocs.org/projects/example-mkdocs-basic/badge/?version=latest)](https://example-mkdocs-basic.readthedocs.io/en/latest/?badge=latest)
  -->
 
+**CAM tools make building in-browser Cognitive-Affective Maps (CAMs) easy**. It’s a simple, graphical interace to help setting up CAM studies using our Cognitive-Affective Map *extended logic* software. The resulting data can be analyzed using our developed *CAM-App*. 
+
+Thank you for checking out our tools! We’ve collected a few links below to get you started, but we’re happy to help with any additional questions or ideas you have. We’d love to hear from you! Feel free to contact us anytime. 
+
+<table>
+<tr>
+<th> Good </th>
+<th> Bad </th>
+</tr>
+<tr>
+<td>
+
+```c++
+int foo() {
+    int result = 4;
+    return result;
+}
+```
+
+</td>
+<td>
+
+```c++
+int foo() { 
+    int x = 4;
+    return x;
+}
+```
+
+</td>
+</tr>
+</table>
+
+[MkDocs configuration](https://www.mkdocs.org/user-guide/configuration/) 
 
 This example shows a basic MkDocs project with Read the Docs. You're encouraged to view it to get inspiration and copy & paste from the files in the source code. If you are using Read the Docs for the first time, have a look at the official [Read the Docs Tutorial](https://docs.readthedocs.io/en/stable/tutorial/index.html).
 

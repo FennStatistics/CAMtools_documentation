@@ -1,4 +1,11 @@
 site_name: CAM tools
+nav:
+    - Introduction: 'index.md'
+    - Cognitive-Affective Maps: 'Cognitive-Affective Maps.md'
+    - Set up study: 'Set up study.md'
+    - Cognitive-Affective Map extended logic: 'Cognitive-Affective Map extended logic.md'
+    - CAM-App: 'CAM-App.md'
+    - Support: 'Support.md'
 theme:
   name: readthedocs
   highlightjs: true
@@ -14,3 +21,4 @@ markdown_extensions:
   - markdown_include.include:
       base_path: .
   - admonition
+

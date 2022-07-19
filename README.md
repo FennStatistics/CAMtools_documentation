@@ -14,46 +14,39 @@ any additional questions or ideas you have. We’d love to hear from you! Feel f
 
 <div style="display: inline-block; margin-right: 3%; width:48%;">
     <span class="material-icons">hub</span>
-    <b style="font-size: 22px;">Cognitive-Affective Maps</b>
+    <a href="https://camtools-documentation.readthedocs.io/en/master/Cognitive-Affective%20Maps/"
+        style="font-size: 22px;">Cognitive-Affective Maps</a>
+
     <br>
     For a first overview of CAMS and what are the reasons to use this innovative method this is the place to start.
 </div>
 <div style="display: inline-block; width:48%;">
     <span class="material-icons">edit_note</span>
-    <b style="font-size: 22px;">Set up your study</b>
+    <a href="https://camtools-documentation.readthedocs.io/en/master/Set%20up%20study/" style="font-size: 22px;">Set up
+        your study</a>
     <br>
     Set up your study, run it and collect data. Here's how to do that.
 </div>
 <br>
 <div style="display: inline-block; margin-right: 3%; width:48%;">
     <span class="material-icons">save</span>
-  <b style="font-size: 22px;">Cognitive-Affective Map <i>extended logic</i></b>
-    <br>
+    <a href="https://camtools-documentation.readthedocs.io/en/master/Cognitive-Affective%20Map%20extended%20logic/"
+        style="font-size: 22px;">Cognitive-Affective Map <i>extended logic</i>
+    </a> <br>
     The software we are using to collect CAMs data. Check out the <code>config</code> file.
 </div>
 <div style="display: inline-block; width:48%;">
     <span class="material-icons">analytics</span>
-    <b style="font-size: 22px;">CAM-App</b>
+    <a href="https://camtools-documentation.readthedocs.io/en/master/CAM-App/" style="font-size: 22px;">CAM-App</a>
     <br>
     The software we are using to analyze CAM data. Summarize, aggregate and many things more possible.
 </div>
 <br>
 <div style="display: inline-block; margin-right: 3%; width:48%;">
     <span class="material-icons">help</span>
-  <b style="font-size: 22px;">Support</b>
+    <a href="https://camtools-documentation.readthedocs.io/en/master/Support/" style="font-size: 22px;">Support</a>
     <br>
     Here's where you'll find help. Do join our slack community, say hello and seek help.
 </div>
 <div style="display: inline-block; width:48%;">
 </div>
-
-
-<a href="http://example.com/" style="font-size: 22px;">Cognitive-Affective Maps</a>
-
-<a href="http://example.com/" style="font-size: 22px;">Set up your study</a>
-
-<a href="http://example.com/" style="font-size: 22px;">Cognitive-Affective Map <i>extended logic</i><</a>
-
-<a href="http://example.com/" style="font-size: 22px;">CAM-App</a>
-
-<a href="http://example.com/" style="font-size: 22px;">Support</a>

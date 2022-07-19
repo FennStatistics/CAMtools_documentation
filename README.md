@@ -48,6 +48,12 @@ any additional questions or ideas you have. We’d love to hear from you! Feel f
 </div>
 
 
-<a href="http://example.com/" target="_blank">Hello, world!</a>
+<a href="http://example.com/" style="font-size: 22px;">Cognitive-Affective Maps</a>
 
-[link](https://camtools-documentation.readthedocs.io/en/latest/api/)
+<a href="http://example.com/" style="font-size: 22px;">Set up your study</a>
+
+<a href="http://example.com/" style="font-size: 22px;">Cognitive-Affective Map <i>extended logic</i><</a>
+
+<a href="http://example.com/" style="font-size: 22px;">CAM-App</a>
+
+<a href="http://example.com/" style="font-size: 22px;">Support</a>

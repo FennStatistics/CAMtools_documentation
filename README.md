@@ -13,13 +13,3 @@ Thank you for checking out our tools! We’ve collected a few links below to get
 any additional questions or ideas you have. We’d love to hear from you! Feel free to contact us anytime.
 
 
-
-<a href="http://example.com/" style="font-size: 22px;">Cognitive-Affective Maps</a>
-
-<a href="http://example.com/" style="font-size: 22px;">Set up your study</a>
-
-<a href="http://example.com/" style="font-size: 22px;">Cognitive-Affective Map <i>extended logic</i><</a>
-
-<a href="http://example.com/" style="font-size: 22px;">CAM-App</a>
-
-<a href="http://example.com/" style="font-size: 22px;">Support</a>

@@ -36,51 +36,22 @@ The relevance of CAMs as a research method in its own right could be reflected i
 
 **Research questions already investigated** (*remark: incomplete list*):
 
-* In two emperical studies it was explored how people (in different countries) are perceiving the COVID-19 pandemic[@mansell_novel_2021, @reuter_leisure_2021]
-* The proposed HOTCO model has been applied in the context of agent-based modelling[@wolf_changing_2015, @schroder_modeling_2017]
-* CAMs have been applied to study political belief systems[@homer-dixon_complex_2013, @homer-dixon_conceptual_2014] !Milkoreit2013 
-* The potentiality of CAMs for conflict mediation was investigated !Gros2021
-* If CAMs add value to survey studies has been qualitatively investigated !Dör2021
-* CAMs have been applied to  knowledge about the cost of cars impact the perception of environmentally friendly mobility? (Michael Stumpf)
-
-
-
-
+* In two emperical studies it was explored how people (in different countries) are perceiving the COVID-19 pandemic[@mansell_novel_2021]<sup>,</sup>[@reuter_leisure_2021].
+* The proposed HOTCO model has been applied in the context of agent-based modelling[@wolf_changing_2015]<sup>,</sup>[@schroder_modeling_2017].
+* CAMs have been applied to study political belief systems[@homer-dixon_complex_2013]<sup>,</sup>[@homer-dixon_conceptual_2014]<sup>,</sup>[@milkoreit_manjana_mindmade_2013].
+* The potentiality of CAMs for conflict mediation was investigated <span style="color: red;">!Gros2021</span>
+* If CAMs add value to survey studies has been qualitatively investigated <span style="color: red;">!Dör2021</span>
+* CAMs have been applied the check if an cost intervention has an impact on the perception of environmentally friendly mobility vs. car[@sendtner_kostbare_2021].
 
 
 **Research questions currently under investigation:**
 
-* What are key-psychological factors influencing the acceptance of yet fictitious technologies? (Julius Fenn, Jessica Helm)
-
-* How researchers from different disciplines do understand the concept “life”? (Sabrina Livanec , Philipp Höfele)
-
-
-* As CAMs are an exploratory tool, this may allow us to go beyond predefined standardized surveys to identify possible interrelationships within belief systems that would otherwise not have been identified (Livanec et al., 2020; Mansell et al., 2021). 
-
-
-Can CAMs be used to identify ethical principles underlying the evaluation of bioinspired technologies? (Lisa Reuter, Philipp Höfele)
-
-How can CAM help in value-sensitive design and human-centered engineering approaches (especially in human-machine collaboration)? (Sabrina Livanec)
-
-; possible to identify and visually represent
-any kind of declarative knowledge:
-
-
-
-blabladsaadssa[@reuter_direct_2022]
-
-
-<br>
-
-The `kind` parameter should be either `"meat"`, `"fish"`, or `"veggies"`.
-
-For example:
-
-```python
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
-```
+* Have CAMs dded-value to surveys? 
+    * As CAMs are an exploratory tool, this may allow us to go beyond predefined standardized surveys to identify possible interrelationships within belief systems that would otherwise not have been identified [@livanec_whos_2022]<sup>,</sup>[@mansell_measuring_2021]. This will be investigated in a study to identify key-psychological factors influencing the acceptance of yet fictitious technologies.
+* Can CAMs be applied to understand how terms, like „life“, „sustainability“, are understood?
+    * CAMs are applied to understand how researchers from different disciplines or laypersons understand certain terms. This will be investigated in a study regarding the concept of „life“ and „sustainability“. <span style="color: red;">!Link to Michaels livmats page</span>
+* How reliabile are CAMs?
+    * Using longitudinal designs in a PhD Project the reliability of CAMs will be investigated. <span style="color: red;">!Link to Wilhelm livmats page</span>
 
 References
 ----------------

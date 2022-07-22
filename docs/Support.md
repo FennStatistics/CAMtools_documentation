@@ -16,14 +16,14 @@ You're very welcome to join, please register by clicking on the link on the righ
     </a>
 </div>
 <br>
-<div style="display: inline-block; width:40%;">
-<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/CAM_legend.JPG" alt="CAM Legend missing" style="height:150px;" class="centerImg">
+<div style="display: inline-block; width:40%; text-align: right;">
+<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/CAMtools_logo.PNG" alt="CAM Legend missing" style="height:150px; width:200px;" class="centerImg">
 </div>
-<div style="display: inline-block; width:10%; text-align: left;">
+<div style="display: inline-block; width:10%; text-align: center;">
 <span style="font-size:66px;">+</span>
 </div>
 <div style="display: inline-block; width:40%;">
-<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/CAM_legend.JPG" alt="CAM Legend missing" style="height:150px; vertical-align: middle" class="centerImg">
+<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/slack_logo.jpg" alt="CAM Legend missing" style="height:150px; width:300px; vertical-align: middle" class="centerImg">
 </div>
 
 

@@ -6,7 +6,7 @@ nav:
     - Cognitive-Affective Map extended logic: 'Cognitive-Affective Map extended logic.md'
     - CAM-App: 'CAM-App.md'
     - Support: 'Support.md'
-    - Literature: 'Literature.md'
+    - Additional Resources: 'Additional Resources.md'
 theme:
   name: readthedocs
   highlightjs: true

@@ -48,4 +48,8 @@ any additional questions or ideas you have. We’d love to hear from you! Feel f
     Here's where you'll find help. Do join our slack community, say hello and seek help.
 </div>
 <div style="display: inline-block; width:48%;">
+    <span class="material-icons">menu_book</span>
+    <a href="https://camtools-documentation.readthedocs.io/en/master/Additional%20Resources/" style="font-size: 22px;">Additional Resources</a>
+    <br>
+   If you are hooked here's where you'll find additional resources.
 </div>

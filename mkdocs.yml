@@ -6,11 +6,15 @@ nav:
     - Cognitive-Affective Map extended logic: 'Cognitive-Affective Map extended logic.md'
     - CAM-App: 'CAM-App.md'
     - Support: 'Support.md'
+    - Literature: 'Literature.md'
 theme:
   name: readthedocs
   highlightjs: true
 plugins:
   - search
+  - bibtex:
+      bib_file: 'docs\bib\MyLibrary.bib'
+      bib_by_default: true
   - mkdocstrings:
       handlers:
         # See: https://mkdocstrings.github.io/python/usage/
@@ -21,4 +25,5 @@ markdown_extensions:
   - markdown_include.include:
       base_path: .
   - admonition
+  - footnotes
 

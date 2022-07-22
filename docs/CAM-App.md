@@ -9,7 +9,6 @@ Implemented features
 
 blabla
 
-
 ***
 Future features
 ----------------

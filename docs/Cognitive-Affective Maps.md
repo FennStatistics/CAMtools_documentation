@@ -23,6 +23,16 @@ In the following example CAM, participants compared cars and public transport[@s
 </a>
 
 
+bllllllllllllllllllla
+
+<img src="_static/img/CAM_legend.jpg" alt="CAM Legend missing" style="height:300px;" class="centerImg">
+
+<a href="_static/img/CAM_example_sendtner2021.jpg" target="_blank">
+  <img alt="CAM Example missing"  style="height:300px;" class="centerImg" src="_static/img/CAM_example_sendtner2021.jpg" />
+</a>
+
+bllllllllllllllllllla
+
 
 ***
 What are the reasons to use Cognitive-Affective Maps?

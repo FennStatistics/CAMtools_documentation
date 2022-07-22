@@ -17,7 +17,7 @@ any additional questions or ideas you have. We’d love to hear from you! Feel f
     <a href="https://camtools-documentation.readthedocs.io/en/master/Cognitive-Affective%20Maps/"
         style="font-size: 22px;">Cognitive-Affective Maps</a>
     <br>
-    For a first overview of CAMS and what are the reasons to use this innovative method this is the place to start.
+    For a first overview of CAMS and what are the reasons to use this innovative method. This is the place to start.
 </div>
 <div style="display: inline-block; width:48%;">
     <span class="material-icons">edit_note</span>

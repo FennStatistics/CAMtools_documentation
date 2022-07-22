@@ -16,7 +16,7 @@ Cognitive-Affective Maps (CAMs) are a quantitative and qualitative research meth
 
 <img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/CAM_legend.JPG" alt="CAM Legend missing" style="height:300px;" class="centerImg">
 
-In the following example CAM, participants compared cars and public transport[@sendtner_kostbare_2021] (click on CAM to enlarge it in new tab): 
+In the following example CAM, participants compared cars and public transport[@sendtner_kostbare_2021] (click on CAM to enlarge it in new tab - can take few seconds): 
 
 <a href="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/CAM_example_sendtner2021.jpg" target="_blank">
   <img alt="CAM Example missing"  style="height:300px;" class="centerImg" src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/CAM_example_sendtner2021.jpg" />

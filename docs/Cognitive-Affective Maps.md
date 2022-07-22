@@ -14,24 +14,15 @@ What are Cognitive-Affective Maps?
 
 Cognitive-Affective Maps (CAMs) are a quantitative and qualitative research method and first became popular through Thagard in 2010[@thagard_empathica_2010]. Using CAMs it is possible to identify, visually represent and analyze existing belief structures or any kind of declarative knowledge. Using our developed software [Cognitive-Affective Map *extended logic*](Cognitive-Affective Map extended logic.md) participants can draw within online studies their own CAM and the resulting data can be preprocessed and analyzed by the developed [CAM-App](CAM-App.md). CAM incorporates so-called affective valences by representing whether a person associates positive, negative, neutral or ambivalent emotions with a drawn concept. Furthermore, it is possible to specify the connections in different strengths and dashed lines stand for inhibitory connections and solid lines stand for strengthening connections. Additionally CAMs contain directional arrows, which represent a directional effect. Thus, CAMs represent a weighted directional network with a simple graph structure and can be analyzed by means of network analysis in addition to more common quantitative as well as qualitative analyses. The different elements of a CAM are concepts (also called nodes), which are linked by connectors (also called edges):
 
-<img src="/media/CAM_legend.JPG" alt="CAM Legend missing" style="height:300px;" class="centerImg">
+<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/CAM_legend.JPG" alt="CAM Legend missing" style="height:300px;" class="centerImg">
 
 In the following example CAM, participants compared cars and public transport[@sendtner_kostbare_2021] (click on CAM to enlarge it in new tab): 
 
-<a href="/media/CAM_example_sendtner2021.JPG" target="_blank">
-  <img alt="CAM Example missing"  style="height:300px;" class="centerImg" src="/media/CAM_example_sendtner2021.JPG" />
+<a href="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/CAM_example_sendtner2021.jpg" target="_blank">
+  <img alt="CAM Example missing"  style="height:300px;" class="centerImg" src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/CAM_example_sendtner2021.jpg" />
 </a>
 
 
-bllllllllllllllllllla
-
-<img src="media/CAM_example_sendtner2021.jpg" alt="CAM Legend missing" style="height:300px;" class="centerImg">
-
-<a href="_static/img/CAM_example_sendtner2021.jpg" target="_blank">
-  <img alt="CAM Example missing"  style="height:300px;" class="centerImg" src="_static/img/CAM_example_sendtner2021.jpg" />
-</a>
-
-bllllllllllllllllllla
 
 
 ***

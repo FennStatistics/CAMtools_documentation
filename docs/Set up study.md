@@ -1,7 +1,7 @@
 Set up study
 =====
 
-Example study
+Example studies
 ------------
 
 blabla

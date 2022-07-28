@@ -12,9 +12,12 @@ Cognitive-Affective Maps
 What are Cognitive-Affective Maps?
 ------------
 
-Cognitive-Affective Maps (CAMs) are a quantitative and qualitative research method and first became popular through Thagard in 2010[@thagard_empathica_2010]. Using CAMs it is possible to identify, visually represent and analyze existing belief structures or any kind of declarative knowledge. Using our developed software [Cognitive-Affective Map *extended logic*](Cognitive-Affective Map extended logic.md) participants can draw within online studies their own CAM and the resulting data can be preprocessed and analyzed by the developed [CAM-App](CAM-App.md). CAM incorporates so-called affective valences by representing whether a person associates positive, negative, neutral or ambivalent emotions with a drawn concept. Furthermore, it is possible to specify the connections in different strengths and dashed lines stand for inhibitory connections and solid lines stand for strengthening connections. Additionally CAMs contain directional arrows, which represent a directional effect. Thus, CAMs represent a weighted directional network with a simple graph structure and can be analyzed by means of network analysis in addition to more common quantitative as well as qualitative analyses. The different elements of a CAM are concepts (also called nodes), which are linked by connectors (also called edges):
+ Cognitive-Affective Maps (CAMs) incorporate so-called affective valences by representing whether a person associates positive, negative, neutral or ambivalent emotions with a drawn concept. Furthermore, it is possible to specify the connections in different strengths and dashed lines stand for inhibitory connections and solid lines stand for strengthening connections. Additionally CAMs contain directional arrows, which represent a directional effect. Thus, CAMs represent a weighted directional network with a simple graph structure and can be analyzed by means of network analysis in addition to more common quantitative as well as qualitative analyses. The different elements of a CAM are concepts (also called nodes), which are linked by connectors (also called edges):
 
 <img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/CAM_legend.JPG" alt="CAM Legend missing" style="height:300px;" class="centerImg">
+
+Cognitive-Affective Maps (CAMs) are a quantitative and qualitative research method and first became popular through Thagard in 2010[@thagard_empathica_2010]. Using CAMs it is possible to identify, visually represent and analyze existing belief structures or any kind of declarative knowledge. Using our developed software [Cognitive-Affective Map *extended logic*](Cognitive-Affective Map extended logic.md) participants can draw within online studies their own CAM and the resulting data can be preprocessed and analyzed by the developed [CAM-App](CAM-App.md).
+
 
 In the following example CAM, participants compared cars and public transport[@sendtner_kostbare_2021] (click on CAM to enlarge it in new tab - can take few seconds): 
 
@@ -26,7 +29,7 @@ In the following example CAM, participants compared cars and public transport[@s
 
 
 ***
-What are the reasons to use Cognitive-Affective Maps?
+What are the advantages of using Cognitive-Affective Maps?
 ----------------
 
 CAMs have a strong theoretical foundation and have been discussed within philosophy (mainly in the context of explanatory coherence) since the end of the 1990s[@thagard_ethical_1998, @thagard_coherence_2000]. It is assumed that concepts within CAMs are are only changed or added if these concepts correspond to the „most coherent account of what we want to understand“. This drawing process of CAMs is understood as a **constraint satisfaction problem** and multiple mathematical models, like the *hot cognition* (HOTCO) model[@thagard_hot_2006], were proposed. Since 2020[@rhea_valence_2020] in the University of Freiburg within the Departement of Experimental Psychology, CAM tools for large online-studies are under development.

@@ -12,4 +12,4 @@ Links
 ------------
 
 * <a href="https://paulthagard.com/links/cognitive-affective-maps/" target="_blank"> Cognitive-Affective Maps Publication List by Paul Thagard </a>
-
+* <a href="https://www.psychologie.uni-freiburg.de/abteilungen/Allgemeine.Psychologie/research/cam-research" target="_blank"> CAM research at the University of Freiburg </a>

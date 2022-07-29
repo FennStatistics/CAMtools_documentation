@@ -15,7 +15,7 @@ plugins:
   - bibtex:
       bib_file: 'MyLibrary.bib'
       bib_by_default: true
-      csl_file: './apa-6th-edition.csl'
+      csl_file: './docs/apa-6th-edition.csl'
   - mkdocstrings:
       handlers:
         # See: https://mkdocstrings.github.io/python/usage/

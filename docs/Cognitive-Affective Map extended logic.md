@@ -26,7 +26,7 @@ Within the administrative panel after you have logged in you can click on "Desig
 
 <sup>1</sup>Maxmimum number is restricted, because the drawing space is limited. In the future 3D environments will be implemented.
 
-<sup>2</sup>It is **highly recommened to set this value to 1-3** if you are aiming to summarize / aggregate the CAM data. Instruct participants to avoid writing sentences and motivate them to draw instead multiple ceoncepts. 
+<sup>2</sup>It is **highly recommened to set this value to 1-3** if you are aiming to summarize / aggregate the CAM data. Instruct participants to avoid writing sentences and to draw instead multiple concepts. 
 
 *Remark: It is no recommended to write directly into the config file. Certain configurations are set to default values and should not be changed.*
 

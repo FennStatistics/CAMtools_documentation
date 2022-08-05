@@ -22,6 +22,7 @@ Within the administrative panel after you have logged in you can click on "Desig
 | #hideAmbivalent | If ON possible to draw ambivalent concepts. | ON / OFF |
 | #cameraFeature | If ON  an splotlight feature is included to move the drawing <br> screen. If participants move their mouse to the edges the <br> drawing screen is moved to the respective side. | ON / OFF |
 | #fullScreen | If ON study is set to fullscreen mode and paradata is <br> collected (defocus, focus events). | ON / OFF |
+| #setLanguage | Set the language of the C.A.M.E.L. interface: | English, <br> German, <br> Spanish |
 
 
 <sup>1</sup>Maxmimum number is restricted, because the drawing space is limited. In the future 3D environments will be implemented.

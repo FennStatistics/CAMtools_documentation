@@ -44,7 +44,10 @@ Copy the generated configuration file to the administrative panel within the cen
 Example studies
 ------------
 
-blabla
+- complete study (here included instructions CAM, scenario text, preview CAM, CAMEL, technical feedbackquestions after drawing): <a href="https://studien.psychologie.uni-freiburg.de/publix/qDU7aBJyuQz?PROLIFIC_PID=testerID" target="_blank"> complete study </a>
+- adaptive study design: <a href="https://studien.psychologie.uni-freiburg.de/publix/gv3Q8UvdRLu" target="_blank"> adaptive study design </a>
+    -  simply draw 2 concepts with pos. / neg. valence and connect them and click on disk symbol to save. By adaptive designs any query you can imagine (like query for the most central concept, certain neighbourhoods of given nodes, the re-presentation of the drawn CAM etc.) are possible. We also have no data limitation here as it can use functions of JATOS internally (so-called "multi-component study"), which is a server hosted in the Psychology departement within the University of Freiburg.
+
 
 ***
 Possible Cognitive-Affective Map study designs

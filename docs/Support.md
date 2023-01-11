@@ -32,4 +32,6 @@ You're very welcome to join, please register by clicking on the link on the righ
 Contact
 ------------
 
-blabla
+Feel free to send us an email at any time: <cam.contact@drawyourminds.de>
+
+Julius Fenn & Florian Gouret

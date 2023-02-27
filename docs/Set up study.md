@@ -63,7 +63,12 @@ Example studies
 Instructions
 ------------
 
-blabla
+All the text instructions can be downloaded from GitHub (currently in German and English): <a href="https://github.com/FennStatistics/CAMtools_documentation/tree/master/docs/media/CAM%20instructions" target="_blank">https://github.com/FennStatistics/CAMtools_documentation/tree/master/docs/media/CAM%20instructions</a>
+
+
+
+
+
 
 ***
 Register

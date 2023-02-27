@@ -36,6 +36,15 @@ Analyzing network parameters of CAMs is a promising way of gaining quantitative 
 * <b>Tree Topology</b>: an initial hierarchical arrangement of nodes supposably nudges participants towards “adding leaves to a predefined tree” in a hierarchical manner, differentiating and diversifying the initial network hierarchically. In contrast to star networks, tree networks typically have low overall and local density. 
 * <b>No predefined concepts</b>: letting participants start off with clean slate typically results in a partially connected <i>mesh topologies</i>.
 
+<b>Single node in the middle</b>:
+<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/networkTopology_star.jpg" alt="star missing" style="height:300px;" class="centerImg">
+
+<b>Two contradictory concepts</b>:
+<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/networkTopology_ClusteredBus.jpg" alt="clustered bus missing" style="height:300px;" class="centerImg">
+
+<b>Tree Topology</b>:
+<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/networkTopology_tree.jpg" alt="tree missing" style="height:300px;" class="centerImg">
+
 
 
 Example studies

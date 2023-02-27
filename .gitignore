@@ -1,3 +1,6 @@
+# write to terminal:  python -m mkdocs serve
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

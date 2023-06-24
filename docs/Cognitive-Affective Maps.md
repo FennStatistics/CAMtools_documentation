@@ -45,14 +45,14 @@ Data obtained in CAM studies can be analysed quantitatively, in terms of network
 * The HOTCO model has been applied in the context of agent-based modelling[@wolf_changing_2015]<sup>,</sup>[@schroder_modeling_2017].
 * CAMs have been applied to study political belief systems[@homer-dixon_complex_2013]<sup>,</sup>[@homer-dixon_conceptual_2014]<sup>,</sup>[@milkoreit_manjana_mindmade_2013].
 * The potentiality of CAMs for conflict mediation was investigated[@gros_camediaid_2021]
-* If CAMs add value to survey studies has been investigated[@fenn_identifying_2022].
+* If CAMs add value to survey studies has been investigated[@fennIdentifyingKeypsychologicalFactors2023].
 * CAMs have been applied the check if an cost intervention has an impact on the perception of environmentally friendly mobility vs. car[@sendtner_kostbare_2021].
 
 
 **Research questions currently under investigation:**
 
 * Have CAMs dded-value to surveys? 
-    * As CAMs are an exploratory tool, this may allow us to go beyond predefined standardized surveys to identify possible interrelationships within belief systems that would otherwise not have been identified[@livanec_whos_2022]<sup>,</sup>[@mansell_measuring_2021]. This has been investigated in a study to identify key-psychological factors influencing the acceptance of yet fictitious technologies[@fenn_identifying_2022].
+    * As CAMs are an exploratory tool, this may allow us to go beyond predefined standardized surveys to identify possible interrelationships within belief systems that would otherwise not have been identified[@livanec_whos_2022]<sup>,</sup>[@mansell_measuring_2021]. This has been investigated in a study to identify key-psychological factors influencing the acceptance of yet fictitious technologies[@fennIdentifyingKeypsychologicalFactors2023].
 * Can CAMs be applied to understand how terms, like „life“, „sustainability“, are understood?
     * CAMs are applied to understand how researchers from different disciplines or laypersons understand certain terms. This will be investigated in multiple studies regarding the concept of „sustainability“; see <a href="https://www.livmats.uni-freiburg.de/en/people/phd-and-postdoc-students/michael-gorki" target="_blank">Michael Gorki (livMatS)</a>
 * How reliabile are CAMs?

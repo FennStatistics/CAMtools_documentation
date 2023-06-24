@@ -1,7 +1,10 @@
 Cognitive-Affective Map extended logic
 =====
 
-blabla
+The application Cognitive-Affective Map extended logic, C.A.M.E.L. is a software package that supports CAM drawing. It can be applied if you aim to draw your single CAM on any topic. Yet, it is constructed to support large-scale online-studies to gather CAM data of many participants (several hundred participants would be no problem for C.A.M.E.L.) . 
+
+Asking participants to draw CAMs from scratch may be an ambitious task and participants may not even draw a CAM regarding your intended issue (like your intended topic). Here it might help to predefine concepts to help your participants to draw the intended CAM. Moreover, it may be that researchers would like to control what is being displayed or even possible to do while drawing CAMs. To this end, a "researcher view" of the CAM board was implemented. There, it is possible to create, position and fix (i.e., impossibility to move a concept) elements (the section define your config file list parameters that you can change for your CAM study). Once the structure is ready, click on “export” to create a CAM.json including all the different elements as well as the configuration of the project (see in detail [Set up study](Set up study.md)).
+
 
 ***
 Define your config file

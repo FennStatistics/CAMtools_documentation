@@ -13,7 +13,7 @@ Set up study
 Register
 --------
 
-You first apply (if you do not already have) for an account, log in with your credential and create an experiment using our dashboard. 
+You first apply (if you do not already have) for an account, log in with your credential and create an experiment using our dashboard. It is highly recommended to read the complete "General procedure" part before starting collecting data.
 
 
 General procedure

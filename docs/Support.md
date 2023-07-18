@@ -34,4 +34,4 @@ Contact
 
 Feel free to send us an email at any time: <cam.contact@drawyourminds.de>
 
-Julius Fenn, Florian Gouret, Lisa Reuter, Wilhelm Gros, Michael Gorki and Andrea Kiesel (University of Freiburg)
+Julius Fenn, Florian Gouret, Michael Gorki, Paul Hüttner, Lisa Reuter, Wilhelm Gros, and Andrea Kiesel (University of Freiburg)

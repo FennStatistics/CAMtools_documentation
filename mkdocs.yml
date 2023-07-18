@@ -1,6 +1,6 @@
 site_name: CAM tools
 nav:
-    - Introduction: 'index.md'
+    - Main Page: 'index.md'
     - Cognitive-Affective Maps: 'Cognitive-Affective Maps.md'
     - Set up study: 'Set up study.md'
     - Cognitive-Affective Map extended logic: 'Cognitive-Affective Map extended logic.md'

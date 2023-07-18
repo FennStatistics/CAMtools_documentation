@@ -14,7 +14,7 @@ You first apply (if you do not already have) for an account, log in with your cr
 General procedure
 -----------------
 
-<p style="color:red;">!!! finally change links</p>
+<p style="color:red;">!!! finally change links and update pictures</p>
 
 If you want to set up a C.A.M.E.L. study using the interface you need to do the following steps:
 
@@ -60,6 +60,8 @@ Copy the generated configuration file to the administrative panel within the cen
 Instructions
 ------------
 
+<p style="color:red;">!!! write GitHub readme</p>
+
 If you want to explain your participants how to draw a CAM you could use our text instructions, which can be downloaded from GitHub (currently in German and English): <a href="https://github.com/FennStatistics/CAMtools_documentation/tree/master/docs/media/CAM%20instructions" target="_blank">https://github.com/FennStatistics/CAMtools_documentation/tree/master/docs/media/CAM%20instructions</a>
 
 > Please read the readme file of the GitHub page for detailed explenations of the instructions.
@@ -68,6 +70,8 @@ If you want to explain your participants how to draw a CAM you could use our tex
 
 Possible CAM study designs
 ----------------------------------------------
+
+<p style="color:red;">!!! adjust pictures</p>
 
 CAMs can be used in a multitude of study designs, ranging from a one time elicitation to multiple times of measurement, from letting participants freely associate with no pre-defined concepts to having participants build a network with-, and ascribe affective value to predetermining concepts only[@livanec_whos_2022]. How the initial nodes are placed also has an influence on the resulting arrangement of nodes and graphs in subjects CAMs, which can be used to evoke different network topologies (Julius Metaanalyse?). From the vast amount of possible CAM study designs, the following are just an example to showcase the many different possibilities CAMs offer in research.
 
@@ -103,6 +107,8 @@ Analyzing network parameters of CAMs is a promising way of gaining quantitative 
 Example studies
 ---------------
 
+<p style="color:red;">!!! adjust adaptive study</p>
+
 - complete study (here included instructions CAM, scenario text, preview CAM, CAMEL, technical feedbackquestions after drawing): <a href="https://studien.psychologie.uni-freiburg.de/publix/qDU7aBJyuQz?PROLIFIC_PID=testerID" target="_blank"> complete study </a>
 - adaptive study design: <a href="https://studien.psychologie.uni-freiburg.de/publix/gv3Q8UvdRLu" target="_blank"> adaptive study design </a>
     - simply draw 2 concepts with pos. / neg. valence and connect them and click on disk symbol to save. By adaptive designs any query you can imagine (like query for the most central concept, certain neighbourhoods of given nodes, the re-presentation of the drawn CAM etc.) are possible. We also have no data limitation here as it can use functions of JATOS internally (so-called "multi-component study"), which is a server hosted in the Psychology departement within the University of Freiburg.
@@ -111,7 +117,88 @@ Example studies
 Program "on scratch"
 ---------------
 
+Before reading this section, please read the documentation of the [Cognitive-Affective Map *extended logic*](Cognitive-Affective Map extended logic.md) data collection tool.
 
+**Pre-defined elements:**
+
+The visible content of the CAM resides within an SVG container, which is initially constructed by the Java Script function "defaultCAM()". This function can be dynamically modified to display any desired set of predefined concepts:
+
+* to **add concepts** within the function defaultCAM, you can write 
+ 
+```js
+    CAM.addElement(new NodeCAM(0, "central concept", {
+        x: 600,
+        y: 400
+    }, false, false, false));
+```
+
+, which would create a concept, which is not moveable (first false statement), deletable and the text is not changeable. By setting the "false" statements to "true" you could allow participants to move the concept and so on.
+
+* to **add connectors** within the function defaultCAM, you can write 
+
+```js
+    var connector = new ConnectorCAM();
+    connector.establishConnection(CAM.nodes[0], CAM.nodes[1], IncreaseSliderIntensity, true);
+    CAM.addElement(connector);
+    CAM.connectors[0].isDeletable = false;
+```
+, which creates a connection between the frist and second drawn concept. The "true" statement represents a strengthening / agreeing connection ("false" a inhibitory / disagreeing connection). The attribute "isDeletable" can be set to "false" if you do not want participants to delete the pre-defined connectors.
+
+
+
+**Configuration:**
+
+The configuration of the CAM study is specified in the "configfile," a simple Java Script object that can be freely modified (also in real-time or by URL parameters):
+
+```js
+var config = {
+    CAMproject: "MyDefaultProjectName", // "proj_" + uuid.v4(), // necessary for server (see ERM)
+    ConNumNodes: 10, // number of nodes necessary to draw
+    hideArrows: false, // if false = possible to draw arrows
+
+    BidirectionalDefault: false, // if true the default connection is bidirectional
+
+    hideAmbivalent: false, // if false = possible to draw ambivalent node
+    showOnlyPosSlid: false, // show only slider for agreement (+1 - +3)
+    MaxLengthWords: 3, // maximum number of words for each concept
+    MaxLengthChars: 40, // maximum number of characters for each concept
+    LengthSentence: 20, // include breaklines if >= X characters
+    LengthWords: 8, // include breaklines after each word with cumsum >= X characters
+    ShowResearcherButtons: true, // if true = show researcher functionalities
+    cameraFeature: false, // include camera / splotlight feature to move screen
+
+    setLanguage: "English", // set language of your CAM study, e.g. French
+
+    fullScreen: false, // if true = study in fullscreen mode + paradata
+    showNotPopupStart: true, // only working if fullScreen is set to true
+
+    AdaptiveStudy: true, // run as adaptive study 
+    ADAPTIVESTUDYurl: "http://example.org/", // URL the CAM data should be append to
+
+    setReminder: false, // if true = after X ms 2 reminder pop up
+
+    surpressSaveCAMpopup: false  // if set to true no popup is shown when downloading a vector graphic of the CAM (for automation via the CAM2Image tool)
+}
+
+// global variable
+var usingMangoDB = true;
+var usingJATOS = false;
+```
+
+In the following only parameters are explained, which are not described in the <a href="https://camtools-documentation.readthedocs.io/en/master/Cognitive-Affective%20Map%20extended%20logic/#define-your-config-file" target="_blank"> Define your config file</a> section of the documentation:
+
+
+* "CAMproject:" simply choose a name, which is stored in your CAM data
+* "setReminder:" if set to true = after X ms two reminder pop up, please adjust the content and time for your reminder in the .js file "setReminder"
+
+If you using a <a href="https://www.jatos.org/" target="_blank">JATOS</a> server (or others), you are able to set up "adaptive" studies, which pre-process the CAM data in real-time, whereby you should adjust the following parameters (see simple example in the "Example studies" section):
+
+* "AdaptiveStudy:" set to "true" (default)
+* "ADAPTIVESTUDYurl:" provide the link to redirect your participants
+* set the global variable usingJATOS to true and "usingMangoDB" to false.
+
+
+Feel free to  <a href="https://github.com/Camel-app/DataCollection" target="_blank">download the C.A.M.E.L. software</a> and adjust it according to your needs (MIT licence).
 
 
 References

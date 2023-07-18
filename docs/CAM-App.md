@@ -3,8 +3,22 @@ CAM-App
 
 blabla 
 
+
+
 ***
-Implemented features
+Implemented features overview
+----------------
+
+blabla
+
+***
+Pre-processing part
+----------------
+
+blabla
+
+***
+Analysis part
 ----------------
 
 blabla

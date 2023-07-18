@@ -34,6 +34,12 @@ Within the administrative panel after you have logged in you can click on "Desig
 
 *Remark: It is no recommended to write directly into the config file. Certain configurations are set to default values and should not be changed.*
 
+***
+Data-structure of CAMs
+----------------
+
+blabla
+
 
 ***
 Implemented features

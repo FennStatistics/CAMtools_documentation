@@ -60,7 +60,7 @@ Copy the generated configuration file to the administrative panel within the cen
 Instructions
 ------------
 
-All the text instructions can be downloaded from GitHub (currently in German and English): <a href="https://github.com/FennStatistics/CAMtools_documentation/tree/master/docs/media/CAM%20instructions" target="_blank">https://github.com/FennStatistics/CAMtools_documentation/tree/master/docs/media/CAM%20instructions</a>
+If you want to explain your participants how to draw a CAM you could use our text instructions, which can be downloaded from GitHub (currently in German and English): <a href="https://github.com/FennStatistics/CAMtools_documentation/tree/master/docs/media/CAM%20instructions" target="_blank">https://github.com/FennStatistics/CAMtools_documentation/tree/master/docs/media/CAM%20instructions</a>
 
 ---
 

@@ -8,36 +8,35 @@
 Set up study
 ============
 
-
-
-Register
---------
-
-You first apply (if you do not already have) for an account, log in with your credential and create an experiment using our dashboard. It is highly recommended to read the complete "General procedure" part before starting collecting data.
+You first apply (if you do not already have) for an account, log in with your credential and create an experiment using our dashboard. It is highly recommended to read the complete "General procedure" and "Possible CAM study designs" parts before starting collecting data. It is also possible set up your study "on scratch" and use your own server, see final section.
 
 
 General procedure
 -----------------
 
-
-<p style="color:red;">!!! change links</p>
+<p style="color:red;">!!! finally change links</p>
 
 If you want to set up a C.A.M.E.L. study using the interface you need to do the following steps:
 
-1. If you do not have an account please <a href="https://camel-host.herokuapp.com/apply-account" target="_blank"> apply here </a>
-2. After we have provided you with an account, please <a href="https://camel-host.herokuapp.com/register" target="_blank"> log in </a>
+1. If you do not have an account please <a href="https://drawyourminds.de/apply" target="_blank"> apply an account </a>
+2. After we have provided you with an account, please <a href="https://drawyourminds.de/register" target="_blank"> log in </a>
 3. After logged in you will see the dashboard, here it is possible to: 
     - Add experiment: create a CAM experiment by defining the desired parameters of your CAM study
-    - Copy link: send the link of your experiment directly to participants or use the link within an online-experiment (add a unique participant ID to your CAMs)
+    - Copy link: send the link of your experiment directly to participants or use the link within an online-experiment (it is important to add a unique participant ID to your CAMs, see last step)
     - Status: set the status of your experiment (it is only possible to participate in active experiments)
-4. ............................ <p style="color:red;">!!! change general procedure after adjustements</p>
-3. Click on the button "Design a CAM" at the top right to get redirect to our C.A.M.E.L. software (Remark: if you do not see this button, please refresh your browser page):
+4. Click on the button "Add experiment" at the lower center of the page, in the pop-up you can change the following:
+    - Name: name of your CAM study
+    - Paste your configured CAM here: the configuration file of your CAM study, including the predefined concepts / connectors and the configuration (see step 5.)
+    - Redirect link (not mandatory): link to redirect participants after they drawing their CAM
+5. to configure your CAM, please close the pop-up and click on the button "C.A.M.E.L." top right (check out the [Cognitive-Affective Map *extended logic*](Cognitive-Affective Map extended logic.md) page for details); two steps are needed: 
+    * first step: draw your default CAM: start with changing the central predefined concept. It is **highly recommended to set the predefined concepts to not deletable, changeable and movable**, using the black researcher buttons at the botton of the concept dialog (pops up if you double click on a drawn concept)<sup>1</sup>
+    * second step step: after you have drawn your default CAM click on the "gear symbol" (top left) to define the configuration of your CAM study (see details in <a href="https://camtools-documentation.readthedocs.io/en/master/Cognitive-Affective%20Map%20extended%20logic/#define-your-config-file" target="_blank"> Define your config file</a>)
 
-   * first step: draw your default CAM: Start with changing the central predefined concept. It is **highly recommended to set the predefined concepts to not deletable, changeable and movable**, using the black researcher buttons at the botton of the concept dialog (pops up if you double click on a drawn concept)<sup>1</sup>
-   * second step step: after you have drawn your default CAM click on the "gear symbol" (top left) to define the configuration of your CAM study (see details in   <a href="https://camtools-documentation.readthedocs.io/en/master/Cognitive-Affective%20Map%20extended%20logic/#define-your-config-file" target="_blank"> config file</a>)
-4. when you are happy with your default CAM and the configuration please copy the generated configuration file<sup>2</sup> to the administrative panel in the middle text box where is written "Paste your cam model here"<sup>3</sup>
-5. Finally, give your CAM study a name and provide a link (if necessary) to which participants should be redirected<sup>3</sup>
-6. To check if everything went well, you should try out once your defined C.A.M.E.L. study, just click on "Copy link" and add a random participant ID after the URL parameter like "11111": &participantID=11111. For your participants you need to add an participantID within your first study using for example simple java script functions (see study examples and code snippets in next section) and if you redirect your particpants to a subsequent study you also need to save again the participantID to match all your data.
+    => when you are happy with your default CAM and the configuration please copy the generated configuration file<sup>2</sup> to the administrative panel in the middle text box where is written "Paste your configured CAM here"<sup>3</sup>
+
+6. Finally, give your CAM study a name and provide a link (if necessary) to which participants should be redirected<sup>3</sup>
+7. To check if everything went well, you should try out once your defined C.A.M.E.L. study: (a) if your participants are redirected from a previous study part (e.g. where you describe your participants how to draw a CAM) you need to pass the unique ID of the participant to the **URL parameter "participantID"**, (b) if you presenting the participants a study part after they have drawn a CAM (e.g. socio-demographic questions) make sure to save the URL parameter participantID in your study
+    * you could check the (b) step by just clicking "Copy link" and add a random participant ID after the URL parameter like "&participantID=11111", make sure to save the ID "11111" in your data set
 
 <sup>1</sup>**researcher functionalities:**
 Use the black researcher buttons at the botton of the concept or connector dialog page to set defined concepts or connectors to not deletable, movable (concept cannot be moved) or changeable (content of concept cannot be changed):
@@ -65,7 +64,7 @@ All the text instructions can be downloaded from GitHub (currently in German and
 
 ---
 
-Possible Cognitive-Affective Map study designs
+Possible CAM study designs
 ----------------------------------------------
 
 CAMs can be used in a multitude of study designs, ranging from a one time elicitation to multiple times of measurement, from letting participants freely associate with no pre-defined concepts to having participants build a network with-, and ascribe affective value to predetermining concepts only[@livanec_whos_2022]. How the initial nodes are placed also has an influence on the resulting arrangement of nodes and graphs in subjects CAMs, which can be used to evoke different network topologies (Julius Metaanalyse?). From the vast amount of possible CAM study designs, the following are just an example to showcase the many different possibilities CAMs offer in research.
@@ -104,7 +103,13 @@ Example studies
 
 - complete study (here included instructions CAM, scenario text, preview CAM, CAMEL, technical feedbackquestions after drawing): <a href="https://studien.psychologie.uni-freiburg.de/publix/qDU7aBJyuQz?PROLIFIC_PID=testerID" target="_blank"> complete study </a>
 - adaptive study design: <a href="https://studien.psychologie.uni-freiburg.de/publix/gv3Q8UvdRLu" target="_blank"> adaptive study design </a>
-  - simply draw 2 concepts with pos. / neg. valence and connect them and click on disk symbol to save. By adaptive designs any query you can imagine (like query for the most central concept, certain neighbourhoods of given nodes, the re-presentation of the drawn CAM etc.) are possible. We also have no data limitation here as it can use functions of JATOS internally (so-called "multi-component study"), which is a server hosted in the Psychology departement within the University of Freiburg.
+    - simply draw 2 concepts with pos. / neg. valence and connect them and click on disk symbol to save. By adaptive designs any query you can imagine (like query for the most central concept, certain neighbourhoods of given nodes, the re-presentation of the drawn CAM etc.) are possible. We also have no data limitation here as it can use functions of JATOS internally (so-called "multi-component study"), which is a server hosted in the Psychology departement within the University of Freiburg.
+
+
+Program "on scratch"
+---------------
+
+
 
 
 References

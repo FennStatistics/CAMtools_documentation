@@ -12,15 +12,16 @@ Cognitive-Affective Maps
 What are Cognitive-Affective Maps?
 ------------
 
-Cognitive-Affective Maps (CAMs) can be considered as a specific form of mind maps. The different elements of a CAM are concepts (also called nodes), which are linked by connections (also called edges). Concepts incorporate so-called affective valences by representing whether a person associates positive, negative, neutral or ambivalent emotions with a drawn concept. Furthermore, it is possible to specify the connections in different strengths in two different forms: Solid lines stand for supporting connections and dashed lines stand for inhibitory connections. Additionally CAMs contain directional arrows, which represent a directional effect. Thus, CAMs represent a weighted directional network with a simple graph structure and can be analyzed by means of network analysis in addition to more common quantitative as well as qualitative analyses. The different elements of a CAM are concepts (also called nodes), which are linked by connectors (also called edges):
+Cognitive-Affective Maps (CAMs) are a quantitative and qualitative research method and first became popular through Thagard in 2010[@thagard_empathica_2010]. CAMs can be considered as a specific form of mind maps. The different elements of a CAM are concepts (also called nodes), which are linked by connections (also called edges). Concepts incorporate so-called affective valences by representing whether a person associates positive, negative, neutral or ambivalent emotions with a drawn concept. Furthermore, it is possible to specify the connections in different strengths in two different forms: Solid lines stand for supporting connections  and dashed lines stand for inhibitory connections. For more information see the homepage of Paul Thaggard who introduced CAMs, <a href="https://paulthagard.com/links/cognitive-affective-maps/" target="_blank">https://paulthagard.com/links/cognitive-affective-maps/</a>
+
+Additionally CAMs might contain directional arrows, which represent a directional effect. Thus, CAMs represent a weighted directional network with a simple graph structure and can be analyzed by means of network analysis in addition to more common quantitative as well as qualitative analyses. Possible elements of a CAM:
 
 <img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/CAM_legend.JPG" alt="CAM Legend missing" style="height:300px;" class="centerImg">
 
-Cognitive-Affective Maps (CAMs) are a quantitative and qualitative research method and first became popular through Thagard in 2010[@thagard_empathica_2010]. For more information see the homepage of Paul Thaggard who introduced CAMs, <a href="https://paulthagard.com/links/cognitive-affective-maps/" target="_blank">https://paulthagard.com/links/cognitive-affective-maps/</a>.
+ For more information see the homepage of Paul Thaggard who introduced CAMs.
 
 
 Using CAMs it is possible to identify, visually represent and analyze existing belief structures or any kind of declarative knowledge. Using our developed software [Cognitive-Affective Map *extended logic*](Cognitive-Affective Map extended logic.md) participants can draw within online (or offline) studies their own CAM and the resulting data can be preprocessed and analyzed by the developed [CAM-App](CAM-App.md).
-
 
 In the following example CAM, participants compared cars and public transport[@sendtner_kostbare_2021] (click on CAM to enlarge it in new tab - can take few seconds): 
 
@@ -35,7 +36,7 @@ In the following example CAM, participants compared cars and public transport[@s
 What are the advantages of using Cognitive-Affective Maps?
 ----------------
 
-CAMs have a strong theoretical foundation and have been discussed within philosophy (mainly in the context of explanatory coherence) since the end of the 1990s [@thagard_ethical_1998]<sup>,</sup>[@thagard_coherence_2000]. The process of drawing a CAMs was understood as a **constraint satisfaction problem** and multiple mathematical models, like the *hot cognition* (HOTCO) model[@thagard_hot_2006], were proposed. Since 2020[@rhea_valence_2020], CAM tools for large online-studies are under development in the Cognition, Action and Sustainability Unit (Allgemeine Psychologie) at the University of Freiburg, Department of Psychology. For more information regarding the most recent research see the homepage of the departement in Freiburg, <a href="https://www.psychologie.uni-freiburg.de/abteilungen/Allgemeine.Psychologie/research/cam-research" target="_blank">https://www.psychologie.uni-freiburg.de/abteilungen/Allgemeine.Psychologie/research/cam-research</a>.
+CAMs have a strong theoretical foundation and have been discussed within philosophy (mainly in the context of explanatory coherence) since the end of the 1990s [@thagard_ethical_1998]<sup>,</sup>[@thagard_coherence_2000]. The process of drawing a CAM is understood as a **constraint satisfaction problem** and multiple mathematical models, like the hot cognition (HOTCO) model[@thagard_hot_2006], were proposed. Since 2020[@rhea_valence_2020], CAM tools for large online-studies are under development in the Cognition, Action and Sustainability Unit (Allgemeine Psychologie) at the University of Freiburg,  Department of Psychology. For more information regarding the most recent research see the homepage of the departement in Freiburg, <a href="https://www.psychologie.uni-freiburg.de/abteilungen/Allgemeine.Psychologie/research/cam-research" target="_blank">https://www.psychologie.uni-freiburg.de/abteilungen/Allgemeine.Psychologie/research/cam-research</a>.
 
 Data obtained in CAM studies can be analysed quantitatively, in terms of network parameters and affective connotation, as well as qualitatively. CAMs as a research method foster research in multiple fields of application, which are linked to multiple interesting research question: 
 
@@ -47,6 +48,7 @@ Data obtained in CAM studies can be analysed quantitatively, in terms of network
 * The potentiality of CAMs for conflict mediation was investigated[@gros_camediaid_2021]
 * If CAMs add value to survey studies has been investigated[@fennIdentifyingKeypsychologicalFactors2023].
 * CAMs have been applied the check if an cost intervention has an impact on the perception of environmentally friendly mobility vs. car[@sendtner_kostbare_2021].
+* ...
 
 
 **Research questions currently under investigation:**
@@ -57,6 +59,7 @@ Data obtained in CAM studies can be analysed quantitatively, in terms of network
     * CAMs are applied to understand how researchers from different disciplines or laypersons understand certain terms. This will be investigated in multiple studies regarding the concept of „sustainability“; see <a href="https://www.livmats.uni-freiburg.de/en/people/phd-and-postdoc-students/michael-gorki" target="_blank">Michael Gorki (livMatS)</a>
 * How reliabile are CAMs?
     * Using longitudinal designs in a PhD Project the reliability of CAMs will be investigated; see <a href="https://www.livmats.uni-freiburg.de/en/people/phd-and-postdoc-students/wilhelm-gros" target="_blank">Wilhelm Gros (livMatS)</a>
+* ...
     
     
 

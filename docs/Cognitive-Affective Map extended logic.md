@@ -71,7 +71,24 @@ Java Script classes...
         });
     }
 ```
-* "id:" ...
+
+| Parameter   |      Meaning      |  Application |
+|----------|:--------|:---------|
+| id    | Random character string that is assigned by <br> the C.A.M.E.L. software for each drawn <br>concept. | Unique identifier. |
+| value    | Valence given by the participant ranging <br>from [-3,3]. | To compute the average valence <br> of a CAM. |
+| comment  | Comment given by the participant. | Support interpretation of drawn <br> concept. |
+| position |  <code>{x:,y:}</code> coordinate of the concept. | To compute the distance between <br> concepts. |
+| isActive |  <code>TRUE</code> statement if concept was not deleted. | All deleted concepts are not <br> visible and marked by a <code>FALSE</code> <br>statement. |
+| date  | Date of creation. | Trace the sequence of the <br>drawing process. |
+| kind    | Type of element. | <i>internal</i> |
+| isSelected    | If current concept is selected. | <i>internal</i> |
+| isConnectorSelected | If connector adjacent to concept is selected. | <i>internal</i> |
+| isDraggable | If concept is moveable. | Defined by researcher in <br>advance. |
+| isDeletable | If concept is deletable. | Defined by researcher in <br>advance. |
+| hasElementMoved | Controls if the element has been moved or<br> just selected. | <i>internal</i> |
+| eventLog | Every interaction with the concept is <br>recorded. | Create animated videos of <br>drawing process. |
+| isTextChangeable | If text of concept is changeable. | Defined by researcher in <br>advance. |
+
 
 <br>
 
@@ -96,21 +113,54 @@ Java Script classes...
     }
 ```
 
-* "id:" ...
+| Parameter   |      Meaning      |  Application |
+|----------|:--------|:---------|
+| id    | Random character string that is assigned by <br> the C.A.M.E.L. software for each drawn <br>connector. | Unique identifier. |
+| value    | Strength of connector given by the participant <br>ranging from [-3,3]. | Compute network indicators <br>of weigthed network and <br>check type of connection. |
+| source | Outgoing connection of a concept to a target. | <i>internal</i> <br> (indicate a directional relationship) |
+| target | Incoming connection of a concept from a source. | <i>internal</i> |
+| agreement | Shape of connecting line (solid = strengthening <br>connections, dashed = inhibitory connections). | Solid line have positive values [1,3], <br>dashed lines negative values [-3,-1] |
+| isActive |  <code>TRUE</code> statement if connector was not deleted. | All deleted connectors are not <br> visible and marked by a <code>FALSE</code> <br>statement. |
+| date  | Date of creation. | Trace the sequence of the <br>drawing process. |
+| kind    | Type of element. | <i>internal</i> |
+| isSelected    | If current connector is selected. | <i>internal</i> |
+| intensity    | Thickness of line. | <i>internal</i> <br> defined by global variable <br>"IncreaseSliderIntensity" |
+| isDeletable | If concept is deletable. | Defined by researcher in <br>advance. |
+| isOver | If mouse if hovering over connection. | <i>internal</i> to highlight connection |
+| isBidirectional | <code>TRUE</code> if connection is bidirection. | To differentiate between uni- and <br>bidirectional connections. |
+| eventLog | Every interaction with the connector is <br>recorded. | Create animated videos of <br>drawing process. |
+
+
 
 
 ***
 Implemented features
 ----------------
 
-blabla
+The following features are implemented to increase data quality: 
+
+* a participant cannot save the CAM if any of the configurations regarding <code>#ConNumNodes</code>, <code>#MaxLengthWords</code> and <code>#MaxLengthChars</code> is violated
+* by applying the breadth-first search algorithm it is prevented that participants can save CAMs with disconnected components (cluster of concepts)
+* the predefined concepts cannot be moved if <code>isDraggable</code> is set to FALSE, cannot be deleted if <code>isDeletable</code> is set to FALSE and text cannot be changed if <code>isTextChangeable</code> is set to FALSE
+* the predefined connectors cannot be deleted if <code>isDeletable</code> is set to FALSE
+
+
+> If a participant violates any of the configuration a pop-up informs the participants what she / he has done wrong.
+
+
+Using the Java Script library Cytoscape all kinds of real-time pre- or post-processing analysis are possible in real-time and it is possible to implement adaptive study designs (see <a href="https://camtools-documentation.readthedocs.io/en/master/Set%20up%20study/#example-studies" target="_blank">example study section</a>).
+
+
+
 
 
 ***
 Future features
 ----------------
 
+* currently we are implementing sequential, simultaneous collaboration in C.A.M.E.L., as such that more than one person can work on the identical CAM at the same time (or a CAM which is consecutively changed)
+
 
 
 <br>
-If you are missing a feature for your study and do not know how to implement it, we are happy to hear from you: <cam.contact@drawyourminds.de>
+If you are missing a specific feature for your study and do not know how to implement it, we are happy to hear from you: <cam.contact@drawyourminds.de>

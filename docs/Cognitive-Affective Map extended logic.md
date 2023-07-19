@@ -145,7 +145,7 @@ The following features are implemented to increase data quality:
 * the predefined connectors cannot be deleted if <code>isDeletable</code> is set to FALSE
 
 
-> If a participant violates any of the configuration a pop-up informs the participants what she / he has done wrong.
+> => If a participant violates any of the configuration a pop-up informs the participants what she / he has done wrong.
 
 
 Using the Java Script library Cytoscape all kinds of real-time pre- or post-processing analysis are possible in real-time and it is possible to implement adaptive study designs (see <a href="https://camtools-documentation.readthedocs.io/en/master/Set%20up%20study/#example-studies" target="_blank">example study section</a>).

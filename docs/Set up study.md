@@ -29,7 +29,7 @@ If you want to set up a C.A.M.E.L. study using the interface you need to do the 
     - Paste your configured CAM here: the configuration file of your CAM study, including the predefined concepts / connectors and the configuration (see step 5.)
     - Redirect link (not mandatory): link to redirect participants after they drawing their CAM
 5. to configure your CAM, please close the pop-up and click on the button "C.A.M.E.L." top right (check out the [Cognitive-Affective Map *extended logic*](Cognitive-Affective Map extended logic.md) page for details); two steps are needed: 
-    * first step: draw your default CAM: start with changing the central predefined concept. It is **highly recommended to set the predefined concepts to not deletable, changeable and movable**, using the black researcher buttons at the botton of the concept dialog (pops up if you double click on a drawn concept)<sup>1</sup>
+    * first step: draw your default CAM: start with changing the central predefined concept. It is **highly recommended to set the predefined concepts to not deletable, changeable and movable**, using the black researcher buttons at the bottom of the concept dialog (pops up if you double click on a drawn concept)<sup>1</sup>
     * second step step: after you have drawn your default CAM click on the "gear symbol" (top left) to define the configuration of your CAM study (see details in <a href="https://camtools-documentation.readthedocs.io/en/master/Cognitive-Affective%20Map%20extended%20logic/#define-your-config-file" target="_blank"> Define your config file</a>)
 
     => when you are happy with your default CAM and the configuration please copy the generated configuration file<sup>2</sup> to the administrative panel in the middle text box where is written "Paste your configured CAM here"<sup>3</sup>
@@ -39,7 +39,7 @@ If you want to set up a C.A.M.E.L. study using the interface you need to do the 
     * you could check the (b) step by just clicking "Copy link" and add a random participant ID after the URL parameter like "&participantID=11111", make sure to save the ID "11111" in your data set
 
 <sup>1</sup>**researcher functionalities:**
-Use the black researcher buttons at the botton of the concept or connector dialog page to set defined concepts or connectors to not deletable, movable (concept cannot be moved) or changeable (content of concept cannot be changed):
+Use the black researcher buttons at the bottom of the concept or connector dialog page to set defined concepts or connectors to not deletable, movable (concept cannot be moved) or changeable (content of concept cannot be changed):
 
 <img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/researcher_functionalities_concepts.jpg" alt="researcher functionalities picture missing" style="height:300px;" class="centerImg">
 

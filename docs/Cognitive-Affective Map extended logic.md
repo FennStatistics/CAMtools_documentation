@@ -10,7 +10,7 @@ Asking participants to draw CAMs from scratch may be an ambitious task and parti
 Define your config file
 ------------
 
-Within the administrative panel after you have logged in you can click on "C.A.M.E.L. (researcher view)" (botton at the top). After you have drawn your default CAM, which should be presented to the participants (see details in [Set up study](Set up study.md)) you can click on the "gear symbol" (top left) to define the configuration of your CAM study. 
+Within the administrative panel after you have logged in you can click on "C.A.M.E.L. (researcher view)" (button at the top). After you have drawn your default CAM, which should be presented to the participants (see details in [Set up study](Set up study.md)) you can click on the "gear symbol" (top left) to define the configuration of your CAM study. 
 
 
 **Parameter you can change using the user interface:** 
@@ -39,10 +39,54 @@ Within the administrative panel after you have logged in you can click on "C.A.M
 Data-structure of CAMs
 ----------------
 
-The CAM itself is a Java Script object, 
-client side programming
-Java Script classes...
 
+
+The CAM itself is a Java Script object, which is temporarily stored on the client-side. Every CAM, concept or connector is a Java Script class, whereby the *constructer* is initializing a single instance of that respective class. Within the arrays <code>nodes</code> and <code>connectors</code> all the drawn (or deleted) concepts (nodes) respective connectors (edges) are stored.
+
+
+In the following all the parameters of the *constructer* of the CAM, concept and connector is explained: 
+
+
+**Cognitive-Affective Map** has the following data structure when initialized, whereby the single parameters are explained below:
+
+
+```js
+    constructor() {
+        this.idCAM = uuid.v4();
+        this.creator = uuid.v4();
+        this.projectCAM = config.CAMproject;
+        this.defocusCAM = null;
+        this.date = (new Date).getTime();
+        this.nodes = [];
+        this.connectors = [];
+        this.currentID = null;
+        this.currentNode = null;
+        this.hasSelectedNode = false;
+        this.currentConnector = null;
+        this.hasSelectedConnector = false;
+        this.readyToMove = false;
+        this.isIncoming = false;
+    }
+```
+
+| Parameter   |      Meaning      |  Application |
+|----------|:--------|:---------|
+| idCAM    | Random character string that is assigned by <br> the C.A.M.E.L. software to the CAM. | Unique identifier. |
+| creator   | Character string that is stored by the <br> researcher. | **Unique ID** to identify <br> participants between study <br> parts. |
+| projectCAM  | Name of current project. | <i>internal</i> <br> (information not needed) |
+| defocusCAM | Array which stores defocus events, <br> when <code>#fullScreen</code> is set to <code>TRUE</code> | Check if a participant left <br> fullscreen during the CAM <br> study part. |
+| date  | Date of CAM initialization. | Starting point of drawing the CAM. |
+| nodes | Array which stores all concepts. | Array includes visible and deleted <br> concepts. |
+| connectors | Array which stores all connectors. | Array includes visible and deleted <br> connectors. |
+| currentID | Get currrent ID of  (open dialog) element. | <i>internal</i> |
+| currentNode | Get focused concepts. | <i>internal</i> <br> <code>NULL</code> if no concept is clicked on. |
+| hasSelectedNode | <code>TRUE</code> if participant focused a concept. | <i>internal</i> |
+| currentConnector | Get focused connectors. | <i>internal</i> <br> <code>NULL</code> if no connector is clicked on. |
+| hasSelectedConnector | <code>TRUE</code> if participant focused a connector. | <i>internal</i> |
+| readyToMove | <code>TRUE</code> if concept (single click) is ready to move. | <i>internal</i> <br> to validate the process <br> of moving concepts |
+| isIncoming | <i>internal</i> (tried out WebSocket) | <i>internal</i> <br> to enable simultaneous <br> collaboration  |
+
+<br>
 
 **Concepts** (nodes) drawn in CAM have the following data structure, whereby the single parameters are explained below:
 
@@ -88,7 +132,6 @@ Java Script classes...
 | hasElementMoved | Controls if the element has been moved or<br> just selected. | <i>internal</i> |
 | eventLog | Every interaction with the concept is <br>recorded. | Create animated videos of <br>drawing process. |
 | isTextChangeable | If text of concept is changeable. | Defined by researcher in <br>advance. |
-
 
 <br>
 

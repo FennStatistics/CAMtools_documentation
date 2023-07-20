@@ -44,12 +44,12 @@ Use the black researcher buttons at the botton of the concept or connector dialo
 <img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/researcher_functionalities_concepts.jpg" alt="researcher functionalities picture missing" style="height:300px;" class="centerImg">
 
 <sup>2</sup>**generated configuration file:**
-After you have drawn your default CAM and configured your C.A.M.E.L. study, you can copy the text by using the button "Copy text" (red circle), or if this is not working copy the text manually from the textbox (blue arrow):
+After you have drawn your default CAM and configured your C.A.M.E.L. study, you can copy the text by using the button "Copy text" (red rectangle), or if this is not working copy the text manually from the textbox (blue arrow):
 
 <img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/generated_configfile.jpg" alt="generated config file picture missing" style="height:300px;" class="centerImg">
 
 <sup>3</sup>**Add CAM study (within administrative panel):**
-Copy the generated configuration file to the administrative panel within the cental textbox (red arrow). It is important to not change this file. The title of your study can be added under Name (first blue arrow) and if you want to redirect your particpants to a further study you can provide the redirect link (second blue arrow):
+Copy the generated configuration file to the administrative panel within the cental textbox (yellow arrow). It is important to not change this file. The title of your study can be added under Name (red arrow) and if you want to redirect your particpants to a further study you can provide the redirect link (green arrow):
 
 <img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/adminPanel_addExperiment.jpg" alt="admin panel add experiment picture missing" style="height:300px;" class="centerImg">
 

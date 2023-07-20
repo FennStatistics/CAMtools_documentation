@@ -158,7 +158,7 @@ Using the Java Script library Cytoscape all kinds of real-time pre- or post-proc
 Future features
 ----------------
 
-* currently we are implementing sequential, simultaneous collaboration in C.A.M.E.L., as such that more than one person can work on the identical CAM at the same time (or a CAM which is consecutively changed)
+* currently we are implementing simultaneous collaboration in C.A.M.E.L., as such that more than one person can work on the identical CAM at the same time; sequential collaboration, whereby a CAM which is consecutively changed is already possible 
 * we are implementing a graph database (e.g. Neo4j, which is implemented in Java)
 
 

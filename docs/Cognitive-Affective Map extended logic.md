@@ -159,7 +159,7 @@ Future features
 ----------------
 
 * currently we are implementing sequential, simultaneous collaboration in C.A.M.E.L., as such that more than one person can work on the identical CAM at the same time (or a CAM which is consecutively changed)
-
+* we are implementing a graph database (e.g. Neo4j, which is implemented in Java)
 
 
 <br>

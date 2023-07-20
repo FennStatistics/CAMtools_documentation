@@ -108,11 +108,6 @@ In the following all the parameters of the *constructer* of the CAM, concept and
         this.hasElementMoved = false;
         this.eventLog = [];
         this.isTextChangeable = isTextChangeable;
-
-        this.enterLog({
-            type: "create node",
-            value: value
-        });
     }
 ```
 

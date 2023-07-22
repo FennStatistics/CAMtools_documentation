@@ -5,12 +5,16 @@ Welcome to the Cognitive-Affective Maps tools documentation!
 [![Documentation Status](https://readthedocs.org/projects/example-mkdocs-basic/badge/?version=latest)](https://example-mkdocs-basic.readthedocs.io/en/latest/?badge=latest)
  -->
 
+ > This is the documentation for our central website <https://drawyourminds.de/>, which makes it easy to set up CAM studies.
+
+
 **CAM tools make building in-browser Cognitive-Affective Maps (CAMs) easy**. It’s a simple, graphical interace to help
 setting up CAM studies using our Cognitive-Affective Map *extended logic* software. The resulting data can be analyzed
 using our developed *CAM-App*.
 
 Thank you for checking out our tools! We’ve collected a few links below to get you started, but we’re happy to help with
 any additional questions or ideas you have. We’d love to hear from you! Feel free to contact us anytime.
+
 
 <div style="display: inline-block; margin-right: 3%; width:48%;">
     <span class="material-icons">hub</span>

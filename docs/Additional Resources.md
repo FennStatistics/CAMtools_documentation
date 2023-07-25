@@ -26,9 +26,9 @@ Please check out the <a href="https://www.psychologie.uni-freiburg.de/abteilunge
 
 **CAMs to depict belief systems / political ideologies**
 
-* CAMs as a part of a complex systems approach to study ideologies as conceptual networks of cognitive-affective representations embedded in social networks of people (among other methods like connectionist simulations and agent-based modeling)[@homer-dixon_complex_2013]
+* CAMs as a part of a complex system approach to study ideologies as conceptual networks of cognitive-affective representations embedded in social networks of people (among other methods like connectionist simulations and agent-based modeling)[@homer-dixon_complex_2013]
 * CAMs on the basis of in-depth interviews with diplomats/nonstate actors to compare belief structures about climate change[@milkoreitMindmadePoliticsCognitive2017]
-* CAMs created by researchers on the basis of Reddit posts for understanding political ideologies (masculinity; shame; injustice)[@clappMappingComparingPolitical2021]
+* CAMs created by researchers on the basis of Reddit posts for understanding political ideologies (masculinity, shame, injustice)[@clappMappingComparingPolitical2021]
 * CAMs for showing the structure of ideologies, e.g., mapping Nazi, anarchist, and right-wing ideologies; also, multi-modal CAMs with nonverbal representations are suggested[@thagardCognitiveAffectiveStructure2015]
 * CAMs to model the appeal of ideologies to their supporters, exemplified by attitudes towards transgender rights (coherent with left-wing ideologies, incoherent with right-wing ideologies)[@thagardSocialEqualityCognitive2018]
 
@@ -36,7 +36,7 @@ Please check out the <a href="https://www.psychologie.uni-freiburg.de/abteilunge
 
 **CAMs for applied ethics**
 
-* CAMs as a tool for applied ethics; Difference between CAMs at the beginning and end of the semester were analyzed (topic: nature imitation in technology development)[@hofeleConnectingMethodsPsychology2022]
+* CAMs as a tool for applied ethics; difference between CAMs at the beginning and end of the semester were analyzed (topic: nature imitation in technology development)[@hofeleConnectingMethodsPsychology2022]
 * CAMs as a method for applied ethics to map students’ values on controversial topics[@thagard_value_2014]
 * Applying the multi-coherence theory, which serves as a comprehensive constraint satisfaction framework that unifies various ethical principles, allowing for the simultaneous assessment of multiple principles and the management of ethical conflicts in a context-sensitive manner[@yilmazComputationalModelsEthical2017]
 * Theory of ethical coherence[@thagard_ethical_1998]
@@ -44,8 +44,8 @@ Please check out the <a href="https://www.psychologie.uni-freiburg.de/abteilunge
 
 **CAMs for qualitative analysis (no network parameters)**
 
-* CAMs to reveal individuals’ (change of) emotions, values, beliefs and norms within a water community/ network and to find potential for addressing embedded innovation barriers[@wolfe_water_2012]
-* CAMs drawn in combination with and on the basis of SAKD (sociology of knowledge approach to discourse) to reconstruct typical patterns of knowledge, practices and forms of subjectivation (topic: stimulation interactions in day care-centers)[@luthardt_and_2020]
+* CAMs to reveal individuals’ (change of) emotions, values, beliefs and norms within a water community / network and to find potential for addressing embedded innovation barriers[@wolfe_water_2012]
+* CAMs drawn in combination with and on the basis of SAKD (sociology of knowledge approach to discourse) to reconstruct typical patterns of knowledge, practices, and forms of subjectivation (topic: stimulation interactions in day care-centers)[@luthardt_and_2020]
 
 
 **CAMs for quantitative analysis / mixed research**
@@ -53,7 +53,7 @@ Please check out the <a href="https://www.psychologie.uni-freiburg.de/abteilunge
 * Changes between pre- and post CAMs by 66 participants (topic: corona pandemic; intervention: leisure walking) were analyzed quantitatively and qualitatively[@reuter_leisure_2021]
 * CAMs of 111 participants (topic: carbon tax in Canada) were analyzed quantitatively (can the graphs’ emotional and structural properties predict participants’ tax support)[@mansell_measuring_2021]
 * CAMs of 193 participants (topic: corona pandemic) were analyzed quantitatively (can the graphs’ emotional and structural properties predict the perceived coronavirus threat)[@mansell_novel_2021]
-* CAMs of 58 participants and of 600 participants (only survey data) regarding the acceptability and ethical concerns of Stratospheric Aerosol Injection were analyzed quantitatively and qualitatively[@fennIdentifyingKeypsychologicalFactors2023]
+* CAMs of 58 participants and of 600 participants (only survey data) regarding the acceptability and ethical concerns of Stratospheric Aerosol Injection (SAI) were analyzed quantitatively and qualitatively[@fennIdentifyingKeypsychologicalFactors2023]
 
 
 

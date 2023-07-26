@@ -22,7 +22,51 @@ If you want **to change or extend single functions**, please check out the readm
 Data-structure of uploaded CAMs
 ----------------
 
-blabla
+After uploading your raw CAM data (see next section) you can click on the module specific option "> Descriptive" to get an overview over your uploaded data in the form of dynamic tables. Here you can see, that a CAM data set consists of a nodes (also called "concepts") and connectors data set (for details of the data structure within the C.A.M.E.L. software see <a href="https://camtools-documentation.readthedocs.io/en/master/Cognitive-Affective%20Map%20extended%20logic/#data-structure-of-cams" target="_blank">"Data-structure of CAMs"</a>
+): 
+
+
+
+**Nodes data set** contains all concepts drawn in the CAM and the following variables are considered in the CAM-App:
+
+| Parameter   |      Meaning   | 
+|----------|:----------------|
+| CAM    | blub. |
+| participantCAM   |  blub. |
+| id    | blub. |
+| text   |  blub. |
+| value    | blub. |
+| comment   |  blub. |
+| date   |  blub. |
+| x_pos   |  blub. |
+| y_pos   |  blub. |
+| predefinedConcept   |  blub. |
+| isDraggable   |  blub. |
+| isDeletable   |  blub. |
+| isTextChangeable   |  blub. |
+| isActive   |  blub. |
+
+Remark: By default all concepts deleted by the participants are removed from the nodes data set (isActive is a constant only containing <code>TRUE</code>).
+
+<br>
+
+**Connectors data set** contains all connectors drawn in the CAM and the following variables are considered in the CAM-App:
+
+| Parameter   |      Meaning   | 
+|----------|:----------------|
+| CAM    | blub. |
+| participantCAM   |  blub. |
+| id    | blub. |
+| date   |  blub. |
+| daughterID    | blub. |
+| motherID   |  blub. |
+| intensity   |  blub. |
+| agreement   |  blub. |
+| isBidirectional   |  blub. |
+| isDeletable   |  blub. |
+| isActive   |  blub. |
+
+Remark: By default all concepts deleted by the participants are removed from the connectors data set (isActive is a constant only containing <code>TRUE</code>).
 
 ***
 Implemented features overview

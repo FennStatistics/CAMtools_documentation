@@ -422,11 +422,54 @@ blabla
 
 | Network Indicator   |      Meaning   | 
 |----------|:----------------|
-| CAM_ID    | Character string (ID) that is assigned once by the C.A.M.E.L. software to <br> each CAM. |
-| participantCAM   |  Character string that is either created by the CAMEL software or <br> transferred from another software (e.g., from questionnaire <br> applications). Therefore, this column is anonymized for publications <br> (e.g. replaced by a sequence number). |
-| mean_valence_macro     | The mean valence of all concepts. |
-| mean_valence_normed_macro   |  The normed mean valence of all concepts, whereby all concepts with <br> positive valences get +1, and all concepts with negative valence -1. |
-| density_macro    | The density of a CAM refers to the ratio between the actual number of <br> edges and the maximum possible number of edges in the CAM. |
+| <span style="font-size: 12px;">CAM_ID</span>      | Character string (ID) that is assigned once by the C.A.M.E.L. <br> software to each CAM. |
+| <span style="font-size: 12px;">participantCAM</span>     |  Character string that is either created by the CAMEL software or <br> transferred from another software (e.g., from questionnaire <br> applications). Therefore, this column is anonymized for publications <br> (e.g. replaced by a sequence number). |
+| <span style="font-size: 12px;">mean_valence_macro</span>       | The mean valence of all concepts. |
+| <span style="font-size: 12px;">mean_valence_normed_macro</span>     |  The normed mean valence of all concepts, whereby all concepts with <br> positive valences get +1, and all concepts with negative valence -1. |
+|  <span style="font-size: 12px;">density_macro</span>      | The density of a CAM refers to the ratio between the actual number <br> of edges and the maximum possible number of edges in the CAM. |
+|  <span style="font-size: 12px;">transitivity_macro</span>      | Transitivity measures the likelihood that the neighboring vertices of <br> a vertex are connected. This is also known as the clustering <br> coefficient. |
+|  <span style="font-size: 12px;">centr_degree_macro<sup>1</sup></span>  | Centralization measure according to the degrees of the vertices, <br> whereby *degree* is defined as the number of connectors incidient <br> upon drawn concept. |
+|  <span style="font-size: 12px;">centr_clo_macro<sup>1</sup></span>   | Centralization measure according to the closeness of the vertices, <br> whereby *closeness* is defined as the shortest path between the <br> concept and all other concepts in the CAM. |
+|  <span style="font-size: 12px;">centr_betw_macro<sup>1</sup></span>   | Centralization measure according to the betweenness  of the vertices, <br> whereby *betweenness* quantifies the number of times a concept acts <br> as a bridge along the shortest path between two other concepts. |
+|  <span style="font-size: 12px;">centr_eigen_macro<sup>1</sup></span>   | Centralization measure according to the eigenvector centrality of the <br> vertices, whereby *eigenvector centrality* puts more weights on <br> concepts if these are already connected to more central concepts <br> (higher degree). |
+|  <span style="font-size: 12px;">meanDistance_directed_macro</span>      | Computes the average path length in a CAM by finding the shortest <br> paths between all pairs of concepts, whereby directed paths in a <br> directed CAM (contains arrow) are considered. |
+| <span style="font-size: 12px;">meanDistance_undirected_macro</span>      | Computes the average path length in a CAM by finding the shortest <br> paths between all pairs of concepts, whereby directed paths are <u>not</u> <br> considered. |
+|  <span style="font-size: 12px;">diameter_weighted_undirected_macro</span>      | The diameter of a CAM represents the length of the longest <br> (geodesic) path, whereby the given weights to the connectors <br> by the participants are considered and <u>not</u> the direction. |
+| <span style="font-size: 12px;">diameter_unweighted_undirected_macro</span>      | The diameter of a CAM represents the length of the longest <br> (geodesic) path, whereby the given weights to the connectors <br> by the participants are <u>not</u> considered and <u>not</u> the direction. |
+| <span style="font-size: 12px;">diameter_unweighted_directed_macro</span>    | The diameter of a CAM represents the length of the longest <br> (geodesic) path, whereby the given weights to the connectors <br> by the participants are <u>not</u> considered and the direction. |
+| <span style="font-size: 12px;">num_nodes_macro</span>    | Number of concepts. |
+| <span style="font-size: 12px;">num_nodes_pos_macro</span>    | Number of concepts with positive valence. |
+| <span style="font-size: 12px;">num_nodes_neg_macro</span>    | Number of concepts with negative valence. |
+| <span style="font-size: 12px;">num_nodes_neut_macro</span>    | Number of concepts with neutral valence. |
+| <span style="font-size: 12px;">num_nodes_ambi_macro</span>    | Number of concepts with ambivalent valence. |
+| <span style="font-size: 12px;">num_edges_macro</span>    | Number of connectors. |
+| <span style="font-size: 12px;">num_edges_solid_macro</span>    | Number of connectors with strengthening connections (solid lines). |
+| <span style="font-size: 12px;">num_edges_dashed_macro</span>    | Number of connectors with inhibitory connections (dashed lines). |
+| <span style="font-size: 12px;">num_edges_invaliddashed_macro</span>    | Number of connectors drawn violating the classical <br> conceptualization of Thagard<sup>2</sup>. |
+
+<sup>1</sup>Centralization is a technique used to create a centralization measure for a CAM normally at the concept level based on the centrality scores of the concepts. However, in this case ("_macro") these measures are extended to the whole CAM (*graph centralization*).
+<sup>2</sup> Blub
+
+
+
+<br>
+**Internal the following R function is applied**:
+
+```r
+compute_indicatorsCAM(drawn_CAM = NULL,
+    micro_degree = NULL,
+    micro_valence = NULL,
+    micro_centr_clo = NULL,
+    largestClique = FALSE)
+```
+
+* compute_indicatorsCAM(): 
+
+
+
+
+
+
 
 
 ***
@@ -434,6 +477,20 @@ blabla
 ---
 
 blabla
+
+<br>
+**Internal the following R function is applied**:
+
+```r
+compute_neighborhoodIndicatorsCAM(drawn_CAM = NULL,
+    weightSecondOrder = .5,
+    consideredConcepts = NULL,
+    sliceCAMbool = FALSE,
+    removeConnectionCAM = NULL,
+    removeNodeCAM = NULL)
+```
+
+* compute_neighborhoodIndicatorsCAM(): 
 
 
 

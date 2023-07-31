@@ -372,7 +372,7 @@ blabla
 Reliability module
 ----------------
 
-blabla
+Due to time constraints, it may be practical if the CAM data is summarized by several persons (e.g., student assistants). For such a case, we implemented a reliability module:
 
 
 
@@ -398,7 +398,8 @@ Computes the inter-rater reliability for summarizing concepts. Establishes if ra
 Analysis part
 ----------------
 
-The summarized data can be subsequently analyzed and visualized using multiple implemented functions. Using the "Get Report" function (see below) it is possible to get an report in APA 7 format with multiple descriptive statistics. All the generated graphics / network and the report could be used for articles or reports.
+The summarized data can be subsequently analyzed and visualized using multiple implemented functions. All the generated graphics / networks and even a report in APA7 format (see below) could be used for articles or reports:
+
 
 
 ***

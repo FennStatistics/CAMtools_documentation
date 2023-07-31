@@ -95,20 +95,31 @@ When starting the CAM-App in the first module "upload data" the researcher can i
 ### Import CAM data
 ---
 
-blabla
+**Core-functions module**:
+After starting the CAM-App by clicking on "2) Upload a raw CAM data set" the researcher can upload a raw CAM data set. Internally the data set is checked multiple times if it is a valid CAM data set. If a **protocol already exists** it is mandatory to upload the protocol before uploading the raw CAM data.
+
+**Module options**: 
+
+* "> Descriptive:" after a valid CAM dataset has been uploaded, several descriptive statistics can be looked at. Within the dynamic tables it is possible to sort the data according to single variables of search within the nodes and connectors data set.
+* "> Protocol stats:" after a valid protocol has been uploaded, several statistics for the protocol can be looked at, e.g., how often certain summary functions had been used
+* "> Clean Valence:" by clicking on the button "clean Valence data" the R function "fix_ValenceData()" tries to automatically remove known problems within data sets of the previous CAM software <a href="https://osf.io/9tza2/" target="_blank">Valence</a>. Only needed if you have uploaded Valence data
+
+
 
 <br>
-
 **Internal the following R functions are applied**:
 
 ```r
 create_CAMfiles(datCAM = raw_CAM, reDeleted = TRUE, verbose = FALSE)
 
 create_ValenceFiles(datBlocks = blocks, datLinks = links)
+
+fix_ValenceData(dat_nodes, dat_connectors, dat_merged, verbose = FALSE)
 ```
 
 * create_CAMfiles(): takes raw CAM data as input, removes all the deleted concepts / connectors (<code>reDeleted</code>), not printing this process to the console (<code>verbose</code>)
 * create_ValenceFiles(): takes raw CAM data from Valence software as input; Valences files are seperate <code>.csv</code> files for blocks (concepts) and links (connectors)
+* fix_ValenceData(): takes raw CAM data from Valence software as input and tries to automatically remove known problems within data sets of the Valence software, for example in Valence it is technically possible to draw multiple connections between concepts.
 
 
 ***
@@ -129,7 +140,7 @@ blabla
 Pre-processing part
 ----------------
 
-blabla
+using multiple modules it is possible to summarize the CAM data semi-automatically
 
 
 ***
@@ -197,7 +208,7 @@ blabla
 Analysis part
 ----------------
 
-blabla
+the summarized data can be subsequently analyzed and visualized using multiple implemented functions
 
 
 ***

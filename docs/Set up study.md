@@ -62,7 +62,7 @@ Instructions
 
 <p style="color:red;">!!! write GitHub readme</p>
 
-If you want to explain your participants how to draw a CAM you could use our text instructions, which can be downloaded from GitHub (currently in German and English): <a href="https://github.com/FennStatistics/CAMtools_documentation/tree/master/docs/media/CAM%20instructions" target="_blank">https://github.com/FennStatistics/CAMtools_documentation/tree/master/docs/media/CAM%20instructions</a>
+If you want to explain your participants how to draw a CAM you could use our text instructions, which can be downloaded from GitHub (currently in German and English): <a href="https://github.com/Camel-app/DataCollection/tree/main/CAM%20instructions" target="_blank">https://github.com/Camel-app/DataCollection/tree/main/CAM%20instructions</a>
 
 > Please read the readme file of the GitHub page for detailed explenations of the instructions.
 

@@ -88,6 +88,18 @@ blabla
 
 blabla
 
+<br>
+
+**Internal the following R functions are applied**:
+
+```r
+create_CAMfiles(datCAM = raw_CAM, reDeleted = TRUE, verbose = FALSE)
+
+create_ValenceFiles(datBlocks = blocks, datLinks = links)
+```
+
+* create_CAMfiles(): takes raw CAM data as input, removes all the deleted concepts / connectors (<code>reDeleted</code>), not printing this process to the console (<code>verbose</code>)
+* create_ValenceFiles(): takes raw CAM data from Valence software as input; Valences files are seperate <code>.csv</code> files for blocks (concepts) and links (connectors)
 
 
 ***

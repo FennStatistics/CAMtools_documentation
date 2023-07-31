@@ -68,6 +68,22 @@ Remark: By default all concepts deleted by the participants are removed from the
 
 Remark: By default all connectors deleted by the participants are removed from the connectors data set (isActive is a constant only containing <code>TRUE</code>).
 
+
+***
+### Suffix notation
+---
+Internally the CAM-App attaches a suffix to summarized words (see below), whereby a suffix is placed after the end of a word. For example after summarizing the word "Cost", which was drawn by multiple participants, some participants rated the word as negative, neutral, ambivalent or even positive and the word would be internally represented as follows:  
+
+```r
+Cost_negative
+Cost_neutral
+Cost_ambivalent
+Cost_positive
+```
+
+It is a source of confusion, but it is of most importance to distinguish between the semantics and the valence of a word. It is highly probable that a participant who rated the drawn concept "Cost" positive has something different in mind than a participant who rated in negatively.
+
+
 ***
 Implemented features overview
 ----------------

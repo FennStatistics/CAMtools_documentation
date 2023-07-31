@@ -31,20 +31,20 @@ After uploading your raw CAM data (see next section) you can click on the module
 
 | Parameter   |      Meaning   | 
 |----------|:----------------|
-| CAM    | blub. |
-| participantCAM   |  blub. |
-| id    | blub. |
-| text   |  blub. |
-| value    | blub. |
-| comment   |  blub. |
-| date   |  blub. |
-| x_pos   |  blub. |
-| y_pos   |  blub. |
-| predefinedConcept   |  blub. |
-| isDraggable   |  blub. |
-| isDeletable   |  blub. |
-| isTextChangeable   |  blub. |
-| isActive   |  blub. |
+| CAM    | Character string (ID) that is assigned by the C.A.M.E.L. software to <br> the CAM. |
+| participantCAM   |  ID that is assigned by the researchers to the CAM <br> (usually ID is generated in previous study part). |
+| id    | Random character string (ID) that is assigned by the C.A.M.E.L. software to <br> the single node. |
+| text   |  Text written by the participant. |
+| value    | Valence given by the participant ranging from [-3,3]. |
+| comment   |  Comment given by the participant. |
+| date   |  Date of creation. |
+| x_pos   |  x-coordinate of the drawn concept. |
+| y_pos   |  y-coordinate of the drawn concept. |
+| predefinedConcept   |  If any of the following 3 variables are <code>TRUE</code>, the concept is predefined by <br> the researcher. |
+| isDraggable   | If concept is moveable (set by researcher). |
+| isDeletable   | If concept is deletable (set by researcher). |
+| isTextChangeable   |  If text of concept is changeable (set by researcher). |
+| isActive   |  <code>TRUE</code> if concept was not deleted by participant. |
 
 Remark: By default all concepts deleted by the participants are removed from the nodes data set (isActive is a constant only containing <code>TRUE</code>).
 
@@ -54,19 +54,24 @@ Remark: By default all concepts deleted by the participants are removed from the
 
 | Parameter   |      Meaning   | 
 |----------|:----------------|
-| CAM    | blub. |
-| participantCAM   |  blub. |
-| id    | blub. |
-| date   |  blub. |
-| daughterID    | blub. |
-| motherID   |  blub. |
-| intensity   |  blub. |
-| agreement   |  blub. |
-| isBidirectional   |  blub. |
-| isDeletable   |  blub. |
-| isActive   |  blub. |
+| CAM    | Character string (ID) that is assigned by the C.A.M.E.L. software to <br> the CAM. |
+| participantCAM   |  ID that is assigned by the researchers to the CAM <br> (usually ID is generated in previous study part). |
+| id     | Random character string (ID) that is assigned by the C.A.M.E.L. software to <br> the single connector. |
+| date   |  Date of creation. |
+| daughterID    | ID of the node to which the connection is pointing. |
+| motherID   |  ID of the node from which the connection originates. |
+| intensity   |  Thickness of line. |
+| agreement   |  <code>TRUE</code> if it a strengthening connection (solid line), <code>FALSE</code> if it is a <br> inhibitory connection (dashed line). |
+| isBidirectional   |  <code>TRUE</code> if connection is bidirectional. |
+| isDeletable   | If concept is deletable (set by researcher). |
+| isActive   |  <code>TRUE</code> if connector was not deleted by participant. |
 
-Remark: By default all concepts deleted by the participants are removed from the connectors data set (isActive is a constant only containing <code>TRUE</code>).
+
+
+
+
+
+Remark: By default all connectors deleted by the participants are removed from the connectors data set (isActive is a constant only containing <code>TRUE</code>).
 
 ***
 Implemented features overview

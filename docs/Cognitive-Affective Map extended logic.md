@@ -71,7 +71,7 @@ In the following all the parameters of the *constructer* of the CAM, concept and
 
 | Parameter   |      Meaning      |  Application |
 |----------|:--------|:---------|
-| idCAM    | Random character string that is assigned by <br> the C.A.M.E.L. software to the CAM. | Unique identifier. |
+| idCAM    | Random character string (ID) that is assigned by <br> the C.A.M.E.L. software to the CAM. | Unique identifier. |
 | creator   | Character string that is stored by the <br> researcher. | **Unique ID** to identify <br> participants between study <br> parts. |
 | projectCAM  | Name of current project. | <i>internal</i> <br> (information not needed) |
 | defocusCAM | Array which stores defocus events, <br> when <code>#fullScreen</code> is set to <code>TRUE</code> | Check if a participant left <br> fullscreen during the CAM <br> study part. |
@@ -115,8 +115,9 @@ In the following all the parameters of the *constructer* of the CAM, concept and
 |----------|:--------|:---------|
 | id    | Random character string that is assigned by <br> the C.A.M.E.L. software for each drawn <br>concept. | Unique identifier. |
 | value    | Valence given by the participant ranging <br>from [-3,3]. | To compute the average valence <br> of a CAM. |
+| text    | Text written by the participant. | Get meaning of drawn <br> concept. |
 | comment  | Comment given by the participant. | Support interpretation of drawn <br> concept. |
-| position |  <code>{x:,y:}</code> coordinate of the concept. | To compute the distance between <br> concepts. |
+| position |  <code>{x:,y:}</code> coordinate of the concept. | To compute the distance <br> between concepts. |
 | isActive |  <code>TRUE</code> statement if concept was not deleted. | All deleted concepts are not <br> visible and marked by a <code>FALSE</code> <br>statement. |
 | date  | Date of creation. | Trace the sequence of the <br>drawing process. |
 | kind    | Type of element. | <i>internal</i> |
@@ -165,7 +166,7 @@ In the following all the parameters of the *constructer* of the CAM, concept and
 | intensity    | Thickness of line. | <i>internal</i> <br> defined by global variable <br>"IncreaseSliderIntensity" |
 | isDeletable | If concept is deletable. | Defined by researcher in <br>advance. |
 | isOver | If mouse if hovering over connection. | <i>internal</i> to highlight connection |
-| isBidirectional | <code>TRUE</code> if connection is bidirection. | To differentiate between uni- and <br>bidirectional connections. |
+| isBidirectional | <code>TRUE</code> if connection is bidirectional. | To differentiate between uni- and <br>bidirectional connections. |
 | eventLog | Every interaction with the connector is <br>recorded. | Create animated videos of <br>drawing process. |
 
 

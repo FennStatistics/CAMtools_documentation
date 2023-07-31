@@ -66,18 +66,18 @@ Remark: By default all concepts deleted by the participants are removed from the
 | isDeletable   | If concept is deletable (set by researcher). |
 | isActive   |  <code>TRUE</code> if connector was not deleted by participant. |
 
-
-
-
-
-
 Remark: By default all connectors deleted by the participants are removed from the connectors data set (isActive is a constant only containing <code>TRUE</code>).
 
 ***
 Implemented features overview
 ----------------
 
-blabla
+
+In our experience it is necessary to guide the researcher (or assistent) through the analysis process, because the analysis of CAM data is relatively difficult and the individual modules build on each other logically. The following figure visualizing all the implemented features seperated for the (a) pre-processing and (b) analysis part: 
+
+<p style="color:red;">!!! add picture</p>
+
+As visible in the picture the researcher needs always to upload the raw CAM data (and the protocol) and to draw all the CAMs. 
 
 
 ***

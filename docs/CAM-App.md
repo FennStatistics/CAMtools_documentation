@@ -398,7 +398,7 @@ Computes the inter-rater reliability for summarizing concepts. Establishes if ra
 Analysis part
 ----------------
 
-The summarized data can be subsequently analyzed and visualized using multiple implemented functions. All the generated graphics / networks and even a report in APA7 format (see below) could be used for articles or reports:
+The summarized data can be subsequently analyzed and visualized using multiple implemented modules. All the generated graphics / networks and even a report in APA7 format (see below) could be used for articles or reports:
 
 
 
@@ -406,7 +406,11 @@ The summarized data can be subsequently analyzed and visualized using multiple i
 ### Network Indicators
 ---
 
-blabla
+The level of the network indicators is indicated by the respective suffix: 
+
+* "X_micro:" network indicator extracts features at the individual node and edge level
+* "X_mezzo:" extracts features from communities (meaningful subnetworks)
+* "X_macro:" extracts features from the global network level
 
 
 ***
@@ -414,6 +418,15 @@ blabla
 ---
 
 blabla
+
+
+| Network Indicator   |      Meaning   | 
+|----------|:----------------|
+| CAM_ID    | Character string (ID) that is assigned once by the C.A.M.E.L. software to <br> each CAM. |
+| participantCAM   |  Character string that is either created by the CAMEL software or <br> transferred from another software (e.g., from questionnaire <br> applications). Therefore, this column is anonymized for publications <br> (e.g. replaced by a sequence number). |
+| mean_valence_macro     | The mean valence of all concepts. |
+| mean_valence_normed_macro   |  The normed mean valence of all concepts, whereby all concepts with <br> positive valences get +1, and all concepts with negative valence -1. |
+| density_macro    | The density of a CAM refers to the ratio between the actual number of <br> edges and the maximum possible number of edges in the CAM. |
 
 
 ***

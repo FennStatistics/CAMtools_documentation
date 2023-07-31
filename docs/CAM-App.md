@@ -249,8 +249,10 @@ After drawing the CAMs if the researcher clicks on the button "Continue" (buttom
 ---
 
 
-**Core-function**:
-blub
+**Central aim**:
+Generating suggestions for summarizing concepts under a superordinate concept. By using approximate string matching string distances between all unique concepts in the dataset can be computed (using optimal string alignment) to find words which have been written slightly differently. This may be useful to summarize some or all of these concepts.
+
+
 
 <a href="https://cran.r-project.org/web/packages/igraph/index.html" target="_blank">igraph</a> package
 
@@ -264,14 +266,10 @@ blub
 **Internal the following R function is applied**:
 
 ```r
-draw_CAM(dat_merged = CAMfiles[[3]],
-    dat_nodes = CAMfiles[[1]],
-    ids_CAMs = "all", plot_CAM = FALSE, useCoordinates = TRUE,
-    relvertexsize = 5,
-    reledgesize = 1)
+
 ```
 
-* draw_CAM(): takes raw CAM data as input, and draws all or only specific CAMs (<code>ids_CAMs</code>). If "useCoordinates" is <code>TRUE</code> the concepts are drawn on the same positions as those of the participants. If the function is used within RStudio by setting "plot_CAM" to <code>TRUE</code> all the CAMs are plotted within the Plots window
+* XXX(): 
 
 
 
@@ -280,21 +278,85 @@ draw_CAM(dat_merged = CAMfiles[[3]],
 ### Searching terms
 ---
 
-blabla
+**Central aim**:
+Generating suggestions for summarizing concepts under a superordinate concept. Search concepts, using regular expressions in CAMs for specific terms that were mentioned, summarize some or all of these concepts.
+
+
+
+<a href="https://cran.r-project.org/web/packages/igraph/index.html" target="_blank">igraph</a> package
+
+
+**How to use it**: 
+
+* blub
+
+
+<br>
+**Internal the following R function is applied**:
+
+```r
+
+```
+
+* XXX(): 
 
 
 ***
 ### Search for synonyms
 ---
 
-blabla
+**Central aim**:
+Generating suggestions for summarizing concepts under a superordinate concept by automatically searching for synonyms in a dictionary.
+
+
+
+
+
+<a href="https://cran.r-project.org/web/packages/igraph/index.html" target="_blank">igraph</a> package
+
+
+**How to use it**: 
+
+* blub
+
+
+<br>
+**Internal the following R function is applied**:
+
+```r
+
+```
+
+* XXX(): 
 
 
 ***
 ### Apply word2vec model
 ---
 
-blabla
+**Central aim**:
+Generating suggestions for clustering and summarizing concepts according to the cosine similarity between (single-word) concepts. Cosine similarity is computed using pre trained large language models from the Python library spaCy.
+
+
+
+
+
+<a href="https://cran.r-project.org/web/packages/igraph/index.html" target="_blank">igraph</a> package
+
+
+**How to use it**: 
+
+* blub
+
+
+<br>
+**Internal the following R function is applied**:
+
+```r
+
+```
+
+* XXX(): 
 
 
 ***
@@ -318,7 +380,7 @@ blabla
 ### Train raters for summarizing of concepts
 ---
 
-blabla
+Helps to instruct raters and to draw subsets of concepts mentioned in data on which to train raters.
 
 
 
@@ -326,7 +388,9 @@ blabla
 ### Compute inter-rater reliability
 ---
 
-blabla
+Computes the inter-rater reliability for summarizing concepts. Establishes if raters tend to summarize the same concepts together under one superordinate concept, regardless of the exact name they give to the superordinate term.
+
+
 
 
 ***
@@ -334,7 +398,7 @@ blabla
 Analysis part
 ----------------
 
-the summarized data can be subsequently analyzed and visualized using multiple implemented functions
+The summarized data can be subsequently analyzed and visualized using multiple implemented functions. Using the "Get Report" function (see below) it is possible to get an report in APA 7 format with multiple descriptive statistics. All the generated graphics / network and the report could be used for articles or reports.
 
 
 ***

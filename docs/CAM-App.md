@@ -240,14 +240,40 @@ draw_CAM(dat_merged = CAMfiles[[3]],
 Pre-processing part
 ----------------
 
-using multiple modules it is possible to summarize the CAM data semi-automatically
+Using multiple modules it is possible to summarize the CAM data semi-automatically. This step is necessary if you aim to summarize the overall belief system depicted in the single collected CAMs regarding a certain topic.
 
+After drawing the CAMs if the researcher clicks on the button "Continue" (buttom left within "draw CAM" module), she / he is forwarded to the "Summarize term module" with the following "Module options" (sidebar panel on the left):
 
 ***
 ### Approximate matching
 ---
 
-blabla
+
+**Core-function**:
+blub
+
+<a href="https://cran.r-project.org/web/packages/igraph/index.html" target="_blank">igraph</a> package
+
+
+**How to use it**: 
+
+* blub
+
+
+<br>
+**Internal the following R function is applied**:
+
+```r
+draw_CAM(dat_merged = CAMfiles[[3]],
+    dat_nodes = CAMfiles[[1]],
+    ids_CAMs = "all", plot_CAM = FALSE, useCoordinates = TRUE,
+    relvertexsize = 5,
+    reledgesize = 1)
+```
+
+* draw_CAM(): takes raw CAM data as input, and draws all or only specific CAMs (<code>ids_CAMs</code>). If "useCoordinates" is <code>TRUE</code> the concepts are drawn on the same positions as those of the participants. If the function is used within RStudio by setting "plot_CAM" to <code>TRUE</code> all the CAMs are plotted within the Plots window
+
+
 
 
 ***

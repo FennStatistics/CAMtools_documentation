@@ -84,8 +84,12 @@ As visible in the picture the researcher needs always to upload the raw CAM data
 Import, draw CAMs part
 ----------------
 
-blabla
+When starting the CAM-App in the first module "upload data" the researcher can import the raw CAM data (and the protocol). After uploading the files the researcher can click on one of the following buttons:
 
+* **Preprocessing Part:** using multiple modules it is possible to summarize the CAM data semi-automatically
+* **Analysis Part:** the summarized data can be subsequently analyzed and visualized using multiple implemented functions
+
+*See for details the single sections.*
 
 ***
 ### Import CAM data

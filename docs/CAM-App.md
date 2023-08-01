@@ -461,7 +461,7 @@ blabla
 
 <sup>1</sup>Centralization is a technique used to create a centralization measure for a CAM normally at the concept level based on the centrality scores of the concepts. However, in this case ("_macro") these measures are extended to the whole CAM (*graph centralization*).
 
-<sup>2</sup>Blub
+<sup>2</sup>According to Thagard it makes no sense to (a) connect two concepts, one with positive, the other with negative valence by a strengthening connection (solid line), and (b) to connect concepts of the same valence (positive or negative) ny a inhibitory connection (dashed line).
 
 <sup>3</sup>Mezzo indicators (features from communities) are only computed if you define "largestClique=TRUE" in the "compute_indicatorsCAM()" function (see below).
 

@@ -446,11 +446,26 @@ blabla
 | <span style="font-size: 12px;">num_edges_solid_macro</span>    | Number of connectors with strengthening connections (solid lines). |
 | <span style="font-size: 12px;">num_edges_dashed_macro</span>    | Number of connectors with inhibitory connections (dashed lines). |
 | <span style="font-size: 12px;">num_edges_invaliddashed_macro</span>    | Number of connectors drawn violating the classical <br> conceptualization of Thagard<sup>2</sup>. |
+| <span style="font-size: 12px;">meanWeightEdges_macro</span>    | The average weight of the connectors in a CAM is computed. |
+| <span style="font-size: 12px;">reciprocity_macro</span>    | Determines the likelihood of concepts in a directed CAM (arrows) to <br> be mutually (reciprocal) linked. |
+| <span style="font-size: 12px;">assortativity_valence_macro</span>    | The coefficient ranges from [-1, 1], whereby positive values indicates <br> that concepts with the <u>same valence</u> a tendency to connect with <br> each other (level of *homophily*). The value -1 indicates a completely <br> disassortative CAM. |
+| <span style="font-size: 12px;">assortativityDegree_macro</span>    | The coefficient ranges from [-1, 1], whereby positive values indicates <br>  that concepts with the <u>same degree</u> exhibit a tendency to connect <br> with each other (level of *homophily*). The value -1 indicates a <br>  completely disassortative CAM. |
+| <span style="font-size: 12px;">largest_clique_length_mezzo<sup>3</sup></span>    | Length of the (all) the maximal cliques not considering arrows, <br> whereby a *clique* is a subgraph that is complete (all concepts are <br> connected to one another). |
+| <span style="font-size: 12px;">largest_clique_nums_mezzo<sup>3</sup></span>    | Number of all the maximal cliques, which have been drawn in the <br> CAM. |
+| <span style="font-size: 12px;">largest_clique_names_mezzo<sup>3</sup></span>    | Name(s) of the concepts of (all) the maximal cliques, which have <br> been drawn in the CAM. |
+| <span style="font-size: 12px;">degreetot_micro_X<sup>4</sup></span>    | The total degree of the choosen concept is determined. |
+| <span style="font-size: 12px;">valence_micro_X<sup>4</sup></span>    | The valence of the choosen concept is returned. |
+| <span style="font-size: 12px;">centr_clo_micro_X<sup>4</sup></span>    | The centralization value of the choosen concept is computed (see <br> "centr_clo_macro" above). |
+| <span style="font-size: 12px;">transitivity_micro_X<sup>4</sup></span>    | The local clustering coefficient of the choosen concept is <br> determined (see "transitivity_macro" above). |
+
 
 <sup>1</sup>Centralization is a technique used to create a centralization measure for a CAM normally at the concept level based on the centrality scores of the concepts. However, in this case ("_macro") these measures are extended to the whole CAM (*graph centralization*).
-<sup>2</sup> Blub
 
+<sup>2</sup>Blub
 
+<sup>3</sup>Mezzo indicators (features from communities) are only computed if you define "largestClique=TRUE" in the "compute_indicatorsCAM()" function (see below).
+
+<sup>4</sup>The suffix "X" is replaced by the choosen concept for which you want to get micro indicators (see within CAM-App).
 
 <br>
 **Internal the following R function is applied**:

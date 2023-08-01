@@ -413,11 +413,18 @@ The level of the network indicators is indicated by the respective suffix:
 * "X_macro:" extracts features from the global network level
 
 
+
+As descriptives...
+Get a summary of network statistics you have calculated, get an APA-formatted table of statistics, get a correlation plot between different network indicators and search for significant correlations.
+
+
 ***
 #### Compute network indicators
 ---
 
-blabla
+Compute several network indicators (e.g., mean valence, density etc.) on an overall CAM level (macro). Additionally, select one or several concepts and calculate network indicators on an individual concept level (micro).
+
+
 
 
 | Network Indicator   |      Meaning   | 
@@ -491,7 +498,12 @@ compute_indicatorsCAM(drawn_CAM = NULL,
 #### Compute neighborhood network indicators
 ---
 
-blabla
+Compute several variants (in total 6 variants) of average valences over group of concepts:
+
+- compute the mean valence over the neighborhood of order 1 / 2 with no adjustments
+- compute the mean valence over the neighborhood of order 1 / 2 with adjustment for dashed lines if connected to positive concepts (see picture, explanation below)
+- compute the mean valence over the neighborhood of order 1 / 2 with weighting of neighborhood of second order (currently .5), because we assume that's concepts further away have less relevance for the concept under consideration
+
 
 <br>
 **Internal the following R function is applied**:
@@ -516,18 +528,23 @@ compute_neighborhoodIndicatorsCAM(drawn_CAM = NULL,
 blabla
 
 
+
 ***
 #### Create wordlist
 ---
 
-blabla
+Create a wordlist with summary statistics for every concept (mean / SD valence, mean / SD degree).
+
+
 
 
 ***
-#### Create wordcloud
+#### Create word cloud
 ---
 
-blabla
+Create a word cloud of all your concepts in the dataset with colors according to the words mean valence.
+
+
 
 
 
@@ -542,13 +559,15 @@ blabla
 #### Get graphics and summary statistics for concept by concept
 ---
 
-blabla
+Create a pie chart, barplot and table (APA 7 format) for every summarized superordinate concept in your data set separately.
+
 
 ***
 #### Get summary statistics for all concepts
 ---
 
-blabla
+Get a table containing all unique summarized concepts and their respective frequencies (separated by N=total, Npositive=positive, and so on) separated by CAMs.
+
 
 
 
@@ -557,7 +576,9 @@ blabla
 ### Aggregate CAMs
 ---
 
-blabla
+By creating a so called “canonical adjacency matrix” CAMs according to different criteria (all CAMs, CAMs of a certain group) are aggregated, whereby the size of the concept and the thickness of the connection is proportional to the frequency of the drawn concepts and the pairwise connections respectively.
+
+
 
 
 
@@ -569,18 +590,21 @@ blabla
 blabla
 
 
+
+
 ***
 #### Concept co-occurrences
 ---
 
-blabla
+Computing the concept-cooccurrences between all CAMs by setting up multiple contingency tables, followed by computing the phi coefficient, groups of concepts with similar concept-cooccurrences in CAMs are identified
 
 
 ***
 #### Valence co-occurrences
 ---
 
-blabla
+
+Computing hierarchical clustering over the given valence over all overlapping words between CAMs to identify similar CAMs
 
 
 
@@ -588,8 +612,10 @@ blabla
 ### Slice CAMs
 ---
 
-blabla
+If you have a CAM structure, which can be separated (e.g. pre-defined opposing concepts) the CAMs can be automatically sliced according to two possible criteria: (a) delete a connection between two concepts, or (b) delete a concept. Automatically the CAM changed this way is checked according to multiple criteria (e.g. number of expected network components) to validate the slicing process.
 
+<br>
+Get summary statistics (e.g. within t-test) for the so sliced CAMs.
 
 
 
@@ -597,7 +623,9 @@ blabla
 ### Get Report
 ---
 
-blabla
+Get an report in APA 7 format with multiple descriptive statistics, which could be copied in an article or send to other interested stakeholders.
+
+
 
 
 ***

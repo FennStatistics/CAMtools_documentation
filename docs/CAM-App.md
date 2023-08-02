@@ -468,7 +468,7 @@ Compute several network indicators (e.g., mean valence, density etc.) on an over
 
 <sup>1</sup>Centralization is a technique used to create a centralization measure for a CAM normally at the concept level based on the centrality scores of the concepts. However, in this case ("_macro") these measures are extended to the whole CAM (*graph centralization*).
 
-<sup>2</sup>According to Thagard it makes no sense to (a) connect two concepts, one with positive, the other with negative valence by a strengthening connection (solid line), and (b) to connect concepts of the same valence (positive or negative) ny a inhibitory connection (dashed line).
+<sup>2</sup>According to Thagard it makes no sense to (a) connect two concepts, one with positive, the other with negative valence by a strengthening connection (solid line), and (b) to connect concepts of the same valence (positive or negative) by a inhibitory connection (dashed line).
 
 <sup>3</sup>Mezzo indicators (features from communities) are only computed if you define "largestClique=TRUE" in the "compute_indicatorsCAM()" function (see below).
 
@@ -505,6 +505,10 @@ Compute several variants (in total 6 variants) of average valences over group of
 - compute the mean valence over the neighborhood of order 1 / 2 with weighting of neighborhood of second order (currently .5), because we assume that's concepts further away have less relevance for the concept under consideration
 
 
+
+<p style="color:red;">!!! picture to describe n. indicators</p>
+
+
 <br>
 **Internal the following R function is applied**:
 
@@ -536,7 +540,20 @@ blabla
 Create a wordlist with summary statistics for every concept (mean / SD valence, mean / SD degree).
 
 
+<br>
+**Internal the following R function is applied**:
 
+```r
+create_wordlist(dat_nodes = CAMfiles[[1]],
+    dat_merged = CAMfiles[[3]],
+    useSummarized = TRUE,
+    order = NULL,
+    splitByValence = TRUE,
+    comments = TRUE,
+    raterSubsetWords = NULL,
+    rater=FALSE)
+```
+* create_wordlist(): 
 
 ***
 #### Create word cloud
@@ -579,8 +596,20 @@ Get a table containing all unique summarized concepts and their respective frequ
 By creating a so called “canonical adjacency matrix” CAMs according to different criteria (all CAMs, CAMs of a certain group) are aggregated, whereby the size of the concept and the thickness of the connection is proportional to the frequency of the drawn concepts and the pairwise connections respectively.
 
 
+<br>
+**Internal the following R functions are applied**:
 
+```r
+aggregate_CAMs(dat_merged = CAMfiles[[3]],
+    dat_nodes = CAMfiles[[1]],
+    ids_CAMs = NULL)
 
+rename_identicalTerms(dat_nodes = CAMfiles[[1]],
+    drawn_CAM = CAMdrawn)
+```
+
+* aggregate_CAMs(): 
+* rename_identicalTerms(): 
 
 
 ***

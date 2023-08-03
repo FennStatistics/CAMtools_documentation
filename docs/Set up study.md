@@ -18,7 +18,7 @@ General procedure
 
 If you want to set up a C.A.M.E.L. study using the interface you need to do the following steps:
 
-1. If you do not have an account please <a href="https://drawyourminds.de/apply" target="_blank"> apply an account </a>
+1. If you do not have an account please check out the <a href="https://drawyourminds.de/apply" target="_blank"> template </a> to send us an E-Mail (<cam.contact@drawyourminds.de>) to request an account.
 2. After we have provided you with an account, please <a href="https://drawyourminds.de/register" target="_blank"> log in </a>
 3. After logged in you will see the dashboard, here it is possible to: 
     - Add experiment: create a CAM experiment by defining the desired parameters of your CAM study

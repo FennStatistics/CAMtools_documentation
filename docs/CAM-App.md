@@ -628,6 +628,48 @@ blabla
 Computing the concept-cooccurrences between all CAMs by setting up multiple contingency tables, followed by computing the phi coefficient, groups of concepts with similar concept-cooccurrences in CAMs are identified
 
 
+<br>
+**Internal the following R functions are applied**:
+
+```r
+listConcepts(datCAM = CAMfiles[[1]], 
+    useSummarized = TRUE, 
+    removeSuffix = TRUE)
+
+countDuplicates(concepts = conceptsDF, 
+    orderFrequency = FALSE)
+
+binaryEncoding(conDF = conceptsDF, 
+    	duplDF = duplicateDF)
+
+metricEncoding(conDF = conceptsDF, 
+    duplDF = duplicateDF)
+
+phiCoefficient(var1, 
+    var2)
+
+pearsonCoefficient(var1, 
+    var2)
+
+cohensKappa(var1, 
+    var2) 
+
+correlationTable(conList = duplicateDF,
+    inputTable = binaryDf,
+    CorrFUNC,
+    considerValence = TRUE,
+    datNodes = NULL)
+```
+
+* listConcepts(): creates (and return) data frame of concepts per CAM (column) from CAM-data
+* countDuplicates(): returns a data frame with all concepts mentioned in more than one CAM (columns "concept") and the number of CAMS where it occurs (column "numCAMoccurences")
+* binaryEncoding(): creates a Table with binary encoding for duplicate concepts. e.g., each concept mentioned more than once is a column, each CAM is a row; if the concept is mentioned in the respective CAM, cell is 1, if not cell is 0
+* metricEncoding(): creates a Table with metric encoding for duplicate concepts. e.g., each concept mentioned more than once is a column, each CAM is a row; if the concept is mentioned in the respective CAM, cell is X, whereby X is the number of occurrence of concepts in the respective CAM if not cell is 0
+* phiCoefficient(): calculates Phi coefficient and p-value (chi-square) and returns both in a vector
+* pearsonCoefficient(): calculates pearson coefficient and p-value and returns both in a vector
+* cohensKappa(): calculates Cohens Kappa
+* correlationTable(): builds a list that contains two dataframes: one that contains the correlation coefficients for the pairwise co-occurence of all concepts and one the respective p-values
+
 ***
 #### Valence co-occurrences
 ---

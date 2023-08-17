@@ -215,7 +215,7 @@ After a researcher clicked on the button "Preprocessing Part" or "Analysis Part"
 
 * "> Draw R:" using the <a href="https://cran.r-project.org/web/packages/igraph/index.html" target="_blank">igraph</a> package the CAMs are visualized. It is possible to draw the conceptson the same positions as those of the participants ("Yes" that positions should be considered), else a so called force-directed graph drawing algorithm is applied. Furthermore, aesthetics like the relative size of the concepts (vertices) and of the edges (connectors) can be adjusted. 
     * If the researcher wants to **delete single CAMs** this is possile by marking all the CAMs, which should be deleted, with the button "un/delete CAM". It is recommended to save these CAMs as PDFs to upload them for example on OSF.
-    * The **drawn CAMs could be ordered** according to the mean valence, number of nodes / connectors, density or assortativity (see <a href="https://camtools-documentation.readthedocs.io/en/master/CAM-App/#network-indicators" target="_blank">Network Indicators</a>). These statistics are shown next to the individual plotted CAM.
+    * The **drawn CAMs could be ordered** according to the mean valence, number of concepts / connectors, density or assortativity (see <a href="https://camtools-documentation.readthedocs.io/en/master/CAM-App/#network-indicators" target="_blank">Network Indicators</a>). These statistics are shown next to the individual plotted CAM.
 * "> Draw JS:" *to be implemented*
 
 
@@ -245,12 +245,12 @@ Using multiple modules it is possible to summarize the CAM data semi-automatical
 After drawing the CAMs if the researcher clicks on the button "Continue" (buttom left within "draw CAM" module), she / he is forwarded to the "Summarize term module" with the following "Module options" (sidebar panel on the left):
 
 ***
-### Approximate matching
+### Approximate Matching
 ---
 
 
 **Central aim**:
-Generating suggestions for summarizing concepts under a superordinate concept. By using approximate string matching string distances between all unique concepts in the dataset can be computed (using optimal string alignment) to find words which have been written slightly differently. This may be useful to summarize some or all of these concepts.
+Generating suggestions for summarizing concepts under a superordinate concept. By using approximate string matching, string distances between all unique concepts in the dataset can be computed (using optimal string alignment) to find words which have been written slightly differently. This may be useful to summarize some or all of these concepts.
 
 
 
@@ -275,7 +275,7 @@ Generating suggestions for summarizing concepts under a superordinate concept. B
 
 
 ***
-### Searching terms
+### Searching Terms
 ---
 
 **Central aim**:
@@ -302,7 +302,7 @@ Generating suggestions for summarizing concepts under a superordinate concept. S
 
 
 ***
-### Search for synonyms
+### Search for Synonyms
 ---
 
 **Central aim**:
@@ -331,11 +331,11 @@ Generating suggestions for summarizing concepts under a superordinate concept by
 
 
 ***
-### Apply word2vec model
+### Apply word2vec Model
 ---
 
 **Central aim**:
-Generating suggestions for clustering and summarizing concepts according to the cosine similarity between (single-word) concepts. Cosine similarity is computed using pre trained large language models from the Python library spaCy.
+Generating suggestions for clustering and summarizing concepts according to the cosine similarity between (single-word) concepts. Cosine similarity is computed using pre-trained large language models from the Python library spaCy.
 
 
 
@@ -704,8 +704,7 @@ Get an report in APA 7 format with multiple descriptive statistics, which could 
 Future features
 ----------------
 
-blabla
-
+The next step for the CAM-App is the **implementation of network similarity algorithms**, which would make it possible, for example, to identify subgroups of people within the CAM data, who belief / disbelief in climate change, which is a highly polarized issue. Such analysis could help to understand the respective mental models of polarized groups and to combat climate change disinformation. 
 
 <br>
 If you are missing a specific feature for your study and do not know how to implement it, we are happy to hear from you: <cam.contact@drawyourminds.de>

@@ -1,9 +1,11 @@
 Cognitive-Affective Map extended logic
 =====
 
-The application Cognitive-Affective Map extended logic, C.A.M.E.L. is a software package that supports CAM drawing. It can be applied if you aim to draw your single CAM on any topic. Yet, it is constructed to support large-scale online-studies to gather CAM data of many participants (several hundred participants would be no problem for C.A.M.E.L.) . 
+The application Cognitive-Affective Map extended logic, C.A.M.E.L. is a software package that supports CAM drawing. It can be applied if you aim to draw your single CAM on any topic. Yet, it is constructed to support large-scale online-studies to gather CAM data of many participants (several hundred participants would be no problem for C.A.M.E.L.). 
 
-Asking participants to draw CAMs from scratch may be an ambitious task and participants may not even draw a CAM regarding your intended issue (like your intended topic). Here it might help to predefine concepts to help your participants to draw the intended CAM. Moreover, it may be that researchers would like to control what is being displayed or even possible to do (i.e., draw ambivalent concepts) while drawing CAMs. To this end, a "researcher view" of the CAM board was implemented. There, it is possible to create, position and fix (i.e., impossibility to move a concept) elements. Once the structure is ready, click on “export” to create a CAM.json including all the different elements as well as the configuration of the project (see in detail [Set up study](Set up study.md)).
+Asking participants to draw CAMs from scratch may be an ambitious task and participants may not even draw a CAM regarding your intended issue (like your intended topic). Here it might help to predefine concepts to help your participants to draw the intended CAM. Moreover, it may be that researchers would like to control what is being displayed or even possible to do (i.e., draw ambivalent concepts) while drawing CAMs. For example, it could be the case, that you fear that a large number of possible features would be too demanding (cognitively or from a time perspective) for your participants, you can easily disable certain features, like the ability to draw unidirectional relations or inhibiting connections. 
+
+To this end, a "researcher view" of the CAM board was implemented. There, it is possible to create, position and fix (i.e., impossibility to move a concept) elements. Once the structure is ready, click on “export” to create a CAM.json including all the different elements as well as the configuration of the project (see in detail [Set up study](Set up study.md)).
 
 
 ***
@@ -17,7 +19,7 @@ Within the administrative panel after you have logged in you can click on "C.A.M
 
 | Parameter   |      Meaning      |  Possible values |
 |----------|:-------------|:------:|
-| #ConNumNodes    | Number of nodes a participant needs to draw before <br> she / he is can save the CAM. | 1-50<sup>1</sup> |
+| #ConNumNodes    | Number of concepts a participant needs to draw before <br> she / he is can save the CAM. | 1-50<sup>1</sup> |
 | #MaxLengthWords | Maximum number of words allowed for each concept.   |  1-5<sup>2</sup> |
 | #MaxLengthChars | Maximum number of characters for each concept allowed. | 30-300 |
 | #hideArrows | If ON possible to draw arrows / directed connections. | ON / OFF |
@@ -197,10 +199,8 @@ Using the Java Script library Cytoscape all kinds of real-time pre- or post-proc
 Future features
 ----------------
 
-* currently we are implementing simultaneous collaboration in C.A.M.E.L., as such that more than one person can work on the identical CAM at the same time; sequential collaboration, whereby a CAM which is consecutively changed is already possible 
-* we are implementing a graph database (e.g. Neo4j, which is implemented in Java)
-* within a collaboration project 3D visualizations of CAMs are set up (using Unity)
 
+Multiple extensions of the C.A.M.E.L. software are currently tested: currently we are implementing **simultaneous collaboration** in C.A.M.E.L., as such that more than one person can work on the identical CAM at the same time. Tweaking the software it was already possible to run **sequential collaboration studies**, whereby a CAM is consecutively changed. A **graphical database** (e.g. using Neo4j) was recently implemented. Using Neo4j queries can be made directly on summarized CAM data, e.g., “How often was the concept "own car" associated with "flexibility"?”. Finally **3D visualizations** for large CAMs are set up (e.g. using Unity also virtual reality experiment would be possible).
 
 <br>
 If you are missing a specific feature for your study and do not know how to implement it, we are happy to hear from you: <cam.contact@drawyourminds.de>

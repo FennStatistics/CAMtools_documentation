@@ -73,7 +73,11 @@ Possible CAM study designs
 
 <p style="color:red;">!!! adjust pictures</p>
 
-CAMs can be used in a multitude of study designs, ranging from a one time elicitation to multiple times of measurement, from letting participants freely associate with no pre-defined concepts to having participants build a network with-, and ascribe affective value to predetermining concepts only[@livanec_whos_2022]. How the initial nodes are placed also has an influence on the resulting arrangement of nodes and graphs in subjects CAMs, which can be used to evoke different network topologies (Julius Metaanalyse?). From the vast amount of possible CAM study designs, the following are just an example to showcase the many different possibilities CAMs offer in research.
+CAMs can be used in a multitude of study designs, ranging from a one time elicitation to multiple times of measurement, from letting participants freely associate with no pre-defined concepts to having participants build a network with-, and ascribe affective value to predefined concepts only[@livanec_whos_2022]. How the initial nodes are placed also has an influence on the resulting arrangement of nodes and graphs in subjects CAMs, which can be used to evoke different network topologies.
+
+By independently adjusting, for example, whether participants can add, adjust or delete concepts, you are able to give participants a predefined set of concepts that cannot be altered and ask them to connect the concepts to best represent their own cognitive representation of these concepts. This would provide you with a standardized set of concepts which allows for easy interpretation and comparison of how different participants / groups decide to structure and connect them. On the other end of the spectrum, a completely open or explorative design is possible, too. If you are more interested in eliciting an unbiased cognitive-affective representation about a certain concept, you can provide participants with a limited amount of / one initial concept(s) (or even none at all!) and ask them to freely add concepts to the CAM as they see fit.
+
+From the vast amount of possible CAM study designs, the following are just an example to showcase the many different possibilities CAMs offer in research:
 
 <h3>Different (experimental) designs:</h3>
 

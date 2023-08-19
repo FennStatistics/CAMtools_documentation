@@ -51,7 +51,7 @@ Data obtained in CAM studies can be analysed quantitatively, in terms of network
 * ...
 
 
-**Research questions currently under investigation:**
+**Research questions currently under investigation** (*incomplete list*):
 
 * Have CAMs dded-value to surveys? 
     * As CAMs are an exploratory tool, this may allow us to go beyond predefined standardized surveys to identify possible interrelationships within belief systems that would otherwise not have been identified[@livanec_whos_2022]<sup>,</sup>[@mansell_measuring_2021]. This has been investigated in a study to identify key-psychological factors influencing the acceptance of yet fictitious technologies[@fennIdentifyingKeypsychologicalFactors2023].

@@ -1,13 +1,13 @@
 CAM-App
 =====
 
-There are two **possibilities to run the CAM-App**:
+There are **two possibilities to run the CAM-App**:
 
 * locally: 
     * download the CAM-App from the GitHub repository: <a href="https://github.com/Camel-app/DataAnalysis" target="_blank">https://github.com/Camel-app/DataAnalysisR</a> (use <code>.git</code> or download it manutally -> green button "<>Code" -> "Download ZIP")
     * if not already installed, download <a href="https://cran.r-project.org/" target="_blank">R</a> and <a href="https://posit.co/download/rstudio-desktop/" target="_blank">RStudio</a>
     * open the file <code>app.R</code>, install packages if needed, click on "Run App"
-* online (! disadvantage: App is slower): 
+* online (! disadvantage: App is way slower): 
     * open the link: <a href="https://fennapps.shinyapps.io/CAMtools_CAMapp/" target="_blank">https://fennapps.shinyapps.io/CAMtools_CAMapp/</a>
     
 <br>
@@ -58,8 +58,8 @@ Remark: By default all concepts deleted by the participants are removed from the
 | participantCAM   |  ID that is assigned by the researchers to the CAM <br> (usually ID is generated in previous study part). |
 | id     | Random character string (ID) that is assigned by the C.A.M.E.L. software to <br> the single connector. |
 | date   |  Date of creation. |
-| daughterID    | ID of the node to which the connection is pointing. |
-| motherID   |  ID of the node from which the connection originates. |
+| daughterID    | ID of the concept to which the connection is pointing. |
+| motherID   |  ID of the concept from which the connection originates. |
 | intensity   |  Thickness of line. |
 | agreement   |  <code>TRUE</code> if it a strengthening connection (solid line), <code>FALSE</code> if it is a <br> inhibitory connection (dashed line). |
 | isBidirectional   |  <code>TRUE</code> if connection is bidirectional. |
@@ -81,7 +81,7 @@ Cost_ambivalent
 Cost_positive
 ```
 
-It is a source of confusion, but it is of most importance to distinguish between the semantics and the valence of a word. It is highly probable that a participant who rated the drawn concept "Cost" positive has something different in mind than a participant who rated in negatively.
+It is a source of confusion, but it is of most importance to distinguish between the semantics and the valence of a word. It is highly probable that a participant who rated the drawn concept "Cost" positive has something different in mind than a participant who rated it negatively.
 
 
 ***
@@ -91,7 +91,10 @@ Implemented features overview
 
 In our experience it is necessary to guide the researcher (or assistent) through the analysis process, because the analysis of CAM data is relatively difficult and the individual modules build on each other logically. The following figure visualizing all the implemented features seperated for the (a) pre-processing and (b) analysis part: 
 
-<p style="color:red;">!!! add picture</p>
+
+
+<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/overview_CAMApp.jpg" alt="overview missing" style="height:400px; width: 800px;" class="centerImg">
+
 
 As visible in the picture the researcher needs always to upload the raw CAM data (and the protocol) and to draw all the CAMs. 
 
@@ -103,7 +106,7 @@ Import, draw CAMs part
 When starting the CAM-App in the first module "upload data" the researcher can import the raw CAM data (and the protocol). After uploading the files the researcher can click on one of the following buttons:
 
 * **Preprocessing Part:** using multiple modules it is possible to summarize the CAM data semi-automatically
-* **Analysis Part:** the summarized data can be subsequently analyzed and visualized using multiple implemented functions
+* **Analysis Part:** the (summarized) data can be subsequently analyzed and visualized using multiple implemented functions
 
 *See for details the single sections.*
 
@@ -197,7 +200,7 @@ After starting the CAM-App by clicking on "1) Upload your protocol" the research
 ```
 
 <br>
-**Internal the following R functions are applied**: if any summarize terms module functions had been applied the function "overwriteTextNodes()" overwrites the texts of the drawn nodes to superordinate terms:
+**Internal the following R functions are applied**: if any summarize terms module functions had been applied and a protocol and raw data is uploaded, the text of the drawn concepts is internally summarized by the function "overwriteTextNodes()", which overwrites the texts of the drawn concepts to superordinate terms:
 
 ```r
 overwriteTextNodes(protocolDat, nodesDat)
@@ -430,7 +433,7 @@ Compute several network indicators (e.g., mean valence, density etc.) on an over
 | Network Indicator   |      Meaning   | 
 |----------|:----------------|
 | <span style="font-size: 12px;">CAM_ID</span>      | Character string (ID) that is assigned once by the C.A.M.E.L. <br> software to each CAM. |
-| <span style="font-size: 12px;">participantCAM</span>     |  Character string that is either created by the CAMEL software or <br> transferred from another software (e.g., from questionnaire <br> applications). Therefore, this column is anonymized for publications <br> (e.g. replaced by a sequence number). |
+| <span style="font-size: 12px;">participantCAM</span>     |  Character string that is either created by the C.A.M.E.L. software or <br> transferred from another software (e.g., from questionnaire <br> applications). Therefore, this column is anonymized for publications <br> (e.g. replaced by a sequence number). |
 | <span style="font-size: 12px;">mean_valence_macro</span>       | The mean valence of all concepts. |
 | <span style="font-size: 12px;">mean_valence_normed_macro</span>     |  The normed mean valence of all concepts, whereby all concepts with <br> positive valences get +1, and all concepts with negative valence -1. |
 |  <span style="font-size: 12px;">density_macro</span>      | The density of a CAM refers to the ratio between the actual number <br> of edges and the maximum possible number of edges in the CAM. |

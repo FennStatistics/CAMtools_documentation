@@ -1,7 +1,7 @@
 Cognitive-Affective Map extended logic
 =====
 
-The application Cognitive-Affective Map extended logic, C.A.M.E.L. is a software package that supports CAM drawing. It can be applied if you aim to draw your single CAM on any topic. Yet, it is constructed to support large-scale online-studies to gather CAM data of many participants (several hundred participants would be no problem for C.A.M.E.L.). 
+The application Cognitive-Affective Map extended logic (C.A.M.E.L.) is a software package that enable participants to draw CAMs. It is constructed to support large-scale online-studies to gather CAM data of many participants (several hundred participants would be no problem for C.A.M.E.L.). 
 
 Asking participants to draw CAMs from scratch may be an ambitious task and participants may not even draw a CAM regarding your intended issue (like your intended topic). Here it might help to predefine concepts to help your participants to draw the intended CAM. Moreover, it may be that researchers would like to control what is being displayed or even possible to do (i.e., draw ambivalent concepts) while drawing CAMs. For example, it could be the case, that you fear that a large number of possible features would be too demanding (cognitively or from a time perspective) for your participants, you can easily disable certain features, like the ability to draw unidirectional relations or inhibiting connections. 
 
@@ -73,15 +73,15 @@ In the following all the parameters of the *constructer* of the CAM, concept and
 
 | Parameter   |      Meaning      |  Application |
 |----------|:--------|:---------|
-| idCAM    | Random character string (ID) that is assigned by <br> the C.A.M.E.L. software to the CAM. | Unique identifier. |
+| idCAM    | Random character string (ID) that is assigned <br> by the C.A.M.E.L. software to the CAM. | Unique identifier. |
 | creator   | Character string that is stored by the <br> researcher. | **Unique ID** to identify <br> participants between study <br> parts. |
 | projectCAM  | Name of current project. | <i>internal</i> <br> (information not needed) |
 | defocusCAM | Array which stores defocus events, <br> when <code>#fullScreen</code> is set to <code>TRUE</code> | Check if a participant left <br> fullscreen during the CAM <br> study part. |
-| date  | Date of CAM initialization. | Starting point of drawing the CAM. |
-| nodes | Array which stores all concepts. | Array includes visible and deleted <br> concepts. |
-| connectors | Array which stores all connectors. | Array includes visible and deleted <br> connectors. |
+| date  | Date of CAM initialization. | Starting point of drawing the <br> CAM. |
+| nodes | Array which stores all concepts. | Array includes visible and <br> deleted concepts. |
+| connectors | Array which stores all connectors. | Array includes visible and <br> deleted connectors. |
 | currentID | Get currrent ID of  (open dialog) element. | <i>internal</i> |
-| currentNode | Get focused concepts. | <i>internal</i> <br> <code>NULL</code> if no concept is clicked on. |
+| currentNode | Get focused concepts. | <i>internal</i> <br> <code>NULL</code> if no concept is clicked <br> on. |
 | hasSelectedNode | <code>TRUE</code> if participant focused a concept. | <i>internal</i> |
 | currentConnector | Get focused connectors. | <i>internal</i> <br> <code>NULL</code> if no connector is clicked on. |
 | hasSelectedConnector | <code>TRUE</code> if participant focused a connector. | <i>internal</i> |
@@ -189,7 +189,7 @@ The following features are implemented to increase data quality:
 > => If a participant violates any of the configuration a pop-up informs the participants what she / he has done wrong.
 
 
-Using the Java Script library Cytoscape all kinds of real-time pre- or post-processing analysis are possible in real-time and it is possible to implement adaptive study designs (see <a href="https://camtools-documentation.readthedocs.io/en/master/Set%20up%20study/#example-studies" target="_blank">example study section</a>).
+Using the Java Script library Cytoscape all kinds of additional real-time pre- or post-processing analysis are possible in real-time and it is possible to implement adaptive study designs (see <a href="https://camtools-documentation.readthedocs.io/en/master/Set%20up%20study/#example-studies" target="_blank">example study section</a>).
 
 
 

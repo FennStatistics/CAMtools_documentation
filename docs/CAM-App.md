@@ -89,14 +89,14 @@ Implemented features overview
 ----------------
 
 
-In our experience it is necessary to guide the researcher (or assistent) through the analysis process, because the analysis of CAM data is relatively difficult and the individual modules build on each other logically. The following figure visualizing all the implemented features seperated for the (a) pre-processing and (b) analysis part: 
+In our experience it is necessary to guide the researcher (or assistent) through the analysis process, because the analysis of CAM data is relatively difficult and the individual modules build on each other logically. The following figure visualizing all the implemented features seperated for the (a) pre-processing and (b) analysis part (click on figure to enlarge it in new tab):
+
+<a href="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/overview_CAMApp.JPG" target="_blank">
+<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/overview_CAMApp.JPG" alt="overview missing" style="height:400px; width: 900px;" class="centerImg">
+</a>
 
 
-
-<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/overview_CAMApp.jpg" alt="overview missing" style="height:400px; width: 800px;" class="centerImg">
-
-
-As visible in the picture the researcher needs always to upload the raw CAM data (and the protocol) and to draw all the CAMs. 
+As visible in the picture the researcher needs always to upload the raw CAM data (and the protocol) and to draw all the CAMs. Note: for better visibility, the "descriptive functions" of the individual modules are not shown in the figure.
 
 
 ***
@@ -136,7 +136,7 @@ create_ValenceFiles(datBlocks = blocks, datLinks = links)
 fix_ValenceData(dat_nodes, dat_connectors, dat_merged, verbose = FALSE)
 ```
 
-* create_CAMfiles(): takes raw CAM data as input, removes all the deleted concepts / connectors (<code>reDeleted</code>), not printing this process to the console (<code>verbose</code>)
+* create_CAMfiles(): takes raw CAM data from C.A.M.E.L. as input, removes all the deleted concepts / connectors (<code>reDeleted</code>), not printing this process to the console (<code>verbose</code>)
 * create_ValenceFiles(): takes raw CAM data from Valence software as input; Valences files are seperate <code>.csv</code> files for blocks (concepts) and links (connectors)
 * fix_ValenceData(): takes raw CAM data from Valence software as input and tries to automatically remove known problems within data sets of the Valence software, for example in Valence it is technically possible to draw multiple connections between concepts
 
@@ -200,24 +200,26 @@ After starting the CAM-App by clicking on "1) Upload your protocol" the research
 ```
 
 <br>
-**Internal the following R functions are applied**: if any summarize terms module functions had been applied and a protocol and raw data is uploaded, the text of the drawn concepts is internally summarized by the function "overwriteTextNodes()", which overwrites the texts of the drawn concepts to superordinate terms:
+**Internal the following R functions are applied**:
 
 ```r
 overwriteTextNodes(protocolDat, nodesDat)
 ```
+
+* overwriteTextNodes(): if any summarize terms module functions had been applied and a protocol and raw data is uploaded, the text of the drawn concepts is internally summarized, the function overwrites the texts of the drawn concepts to superordinate terms
 
 ***
 ### Draw CAMs
 ---
 
 **Core-functions module**:
-After a researcher clicked on the button "Preprocessing Part" or "Analysis Part", she / he is forwarded to the "draw CAM" module. Here the researcer can draw all CAMs to get an overview of their data.
+After a researcher clicked on the button "Preprocessing Part" or "Analysis Part", she / he is forwarded to the "draw CAM" module. Here the researcher can draw all CAMs to get an overview of their data.
 
 
 **Module options**: 
 
-* "> Draw R:" using the <a href="https://cran.r-project.org/web/packages/igraph/index.html" target="_blank">igraph</a> package the CAMs are visualized. It is possible to draw the conceptson the same positions as those of the participants ("Yes" that positions should be considered), else a so called force-directed graph drawing algorithm is applied. Furthermore, aesthetics like the relative size of the concepts (vertices) and of the edges (connectors) can be adjusted. 
-    * If the researcher wants to **delete single CAMs** this is possile by marking all the CAMs, which should be deleted, with the button "un/delete CAM". It is recommended to save these CAMs as PDFs to upload them for example on OSF.
+* "> Draw R:" using the <a href="https://cran.r-project.org/web/packages/igraph/index.html" target="_blank">igraph</a> package the CAMs are visualized. It is possible to draw the concepts at the same positions as those of the participants ("Yes" that positions should be considered), else a so called force-directed graph drawing algorithm is applied. Furthermore, aesthetics like the relative size of the concepts (vertices) and of the edges (connectors) can be adjusted. 
+    * If the researcher wants to **delete single CAMs** this is possible by marking all the CAMs, which should be deleted, with the button "un/delete CAM". It is recommended to save these CAMs as PDFs to upload them for example on OSF for transparency.
     * The **drawn CAMs could be ordered** according to the mean valence, number of concepts / connectors, density or assortativity (see <a href="https://camtools-documentation.readthedocs.io/en/master/CAM-App/#network-indicators" target="_blank">Network Indicators</a>). These statistics are shown next to the individual plotted CAM.
 * "> Draw JS:" *to be implemented*
 
@@ -257,7 +259,7 @@ Generating suggestions for summarizing concepts under a superordinate concept. B
 
 
 
-<a href="https://cran.r-project.org/web/packages/igraph/index.html" target="_blank">igraph</a> package
+<a href="https://cran.r-project.org/web/packages/stringdist/" target="_blank">stringdist</a> package
 
 
 **How to use it**: 

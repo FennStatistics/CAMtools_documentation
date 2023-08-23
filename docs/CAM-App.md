@@ -309,7 +309,7 @@ Please note that below all summarize functions a <b>dynamic table is displayed a
 ---
 
 **Central aim**:
-By using search terms you apply so called regular expressions, which is a concise language to describe patterns of text. Applying the stringr package, which is part of <a href="https://cran.r-project.org/web/packages/tidyverse/" target="_blank">tidyverse</a>, for example, using the expression “[[:digit:]]”, all drawn concepts including any digits can be identified. For possible regular expressions to use, please read the <a href="https://github.com/rstudio/cheatsheets/blob/main/strings.pdf" target="_blank">"cheatsheet" of the stringr package</a> and you can test combinations of regular expressions on the following webpage: <a href="https://regex101.com/" target="_blank">https://regex101.com/</a> 
+By using search terms you apply so called regular expressions, which is a concise language to describe patterns of text. Applying the stringr package, which is part of <a href="https://cran.r-project.org/web/packages/tidyverse/" target="_blank">tidyverse</a>, for example, using the expression “[[:digit:]]”, all drawn concepts including any digits can be identified. For possible regular expressions to use, please read the <a href="https://github.com/rstudio/cheatsheets/blob/main/strings.pdf" target="_blank">"cheatsheet" of the stringr package</a> and you can test combinations of regular expressions on the following webpage: <a href="https://regex101.com/" target="_blank">https://regex101.com/</a>. 
 
 
 **How to use it**: 
@@ -336,7 +336,7 @@ By using search for synonyms all synonyms for single-worded concepts are automat
 
 **How to use it**: 
 
-* Click on "> Search for synonyms", choose your language (*currently only English implemented*) and click on "search for synonyms"
+* Click on "> Search for synonyms", choose your language and click on "search for synonyms"
 
 
 <br>
@@ -348,8 +348,8 @@ SynonymList(vectorWords = tmp_text,
 SummarizedSynonymList(listSynonyms = raw_SynonymList[[1]])
 ```
 
-* SynonymList(): 
-* SummarizedSynonymList(): 
+* SynonymList(): checks if single words are in the choosen dictionary, create a list of all synonyms 
+* SummarizedSynonymList(): removes overlapping words (duplicates)
 
 ***
 ### Apply word2vec Model
@@ -383,7 +383,7 @@ blabla
 Reliability module
 ----------------
 
-Due to time constraints, it may be practical if the CAM data is summarized by several persons (e.g., student assistants). For such a case, we implemented a reliability module:
+To increase objectivity and due to time constraints, CAM data might be summarized by several independent raters. For such a case, we implemented a reliability module:
 
 
 
@@ -391,16 +391,57 @@ Due to time constraints, it may be practical if the CAM data is summarized by se
 ### Train raters for summarizing of concepts
 ---
 
-Helps to instruct raters and to draw subsets of concepts mentioned in data on which to train raters.
 
+**Central aim**:
+A random sub-word list (e.g. 10% of all unique drawn concepts) can be generated. This Excel file can be downloaded and sent to the raters together with the proposed instructions (see within CAM-App).
+
+**How to use it**: 
+
+* Click on top "reliability" -> "> Train Reliability", choose your settings to create the sub-word list and click on the "Download data" button top right.
+
+
+<br>
+**Internal the following R function is applied**:
+
+```r
+create_wordlist(dat_nodes = globals$dataCAMsummarized[[1]],
+    dat_merged = globals$dataCAMsummarized[[3]],
+    order = input$a_Wordlist_Order,
+    splitByValence = tmp_splitByValence,
+    comments = tmp_includeComments,
+    raterSubsetWords = wordsOut,
+    rater = TRUE)
+```
+* create_wordlist(): creates (and return) a word list containing seperated by all unique words information regarding their mean valence and degree (plus the respective standard deviations). The following settings are considered: <code>order</code> (alphabetic or frequency), <code>splitByValence</code> (split summarized words by the valence) and <code>comments</code> (include comments). The rater arguments create only a subset of the total word list and add additional variables for the raters.
 
 
 ***
 ### Compute inter-rater reliability
 ---
 
-Computes the inter-rater reliability for summarizing concepts. Establishes if raters tend to summarize the same concepts together under one superordinate concept, regardless of the exact name they give to the superordinate term.
+**Central aim**:
+After the raters summarized all concepts to superordinate words, reliability coefficients can be computed in this reliability submodule. Please note that the reliability coefficients only depend on the assumption that the same groups of words are summarized under one term each by different raters, but not that identical terms are used as superordinate categories by the raters. Three possible reliability coefficients can be computed: (a) Cohen's Kappa is pairwise computed between all raters by assuming a perfect match of overlapping groups of words or (b) Cohen's Kappa is pairwise computed by maximizing overlapping words, which have been summarized and finally (c) Fleiss’ Kappa and category-wise Kappa for different groups of overlapping words is computed. Additionally to these reliability statistics, summary statistics of the group of summarized words are given. 
 
+This information can be used to train raters, which could subsequently summarize the complete CAM dataset. 
+
+
+**How to use it**: 
+
+* Click on top "reliability" -> "> Get Reliability", and upload all your wordlists you have received by your raters (at least 2)
+
+
+<br>
+**Internal the following R function are applied**:
+
+```r
+computeCohensKappa(files = data(), 
+    numberRaters = length(data()))
+computeCohensKappaMaximized(files = data(), 
+    numberRaters = length(data()))
+```
+* computeCohensKappa(): Cohen's Kappa is pairwise computed between all raters by assuming a perfect match of overlapping groups of words
+    * Remark: when uploading rated wordlists at the bottom of the module you will see "Rating" variables containing, for example, "r0001r0002", which you mean that a rater has summarized the first and second concept under one superordinate term
+* computeCohensKappaMaximized(): Cohen's Kappa is pairwise computed by maximizing overlapping words, which have been summarized and finally
 
 
 
@@ -564,7 +605,8 @@ create_wordlist(dat_nodes = CAMfiles[[1]],
     raterSubsetWords = NULL,
     rater=FALSE)
 ```
-* create_wordlist(): 
+* create_wordlist(): creates (and return) a word list containing seperated by all unique words information regarding their mean valence and degree (plus the respective standard deviations). The following settings are considered: <code>order</code> (alphabetic or frequency), <code>splitByValence</code> (split summarized words by the valence) and <code>comments</code> (include comments).
+
 
 ***
 #### Create word cloud

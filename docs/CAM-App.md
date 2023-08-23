@@ -249,33 +249,58 @@ Using multiple modules it is possible to summarize the CAM data semi-automatical
 
 After drawing the CAMs if the researcher clicks on the button "Continue" (buttom left within "draw CAM" module), she / he is forwarded to the "Summarize term module" with the following "Module options" (sidebar panel on the left):
 
+<br>
+Technical remarks, could be skipped without the loss of information: **internally the following 3 R functions are applied in all summarize terms functions**:
+
+```r
+getlabels_appMatch(typeLabels = "positive",
+    getInput = optimalMatchSim(),
+    counter = ST_rv$counter, skipCond = ST_rv$skip,
+    dataSummarized = globals$dataCAMsummarized)
+getSuperordinateWord(label_superordinate = "supordinateWord_appMatch",
+    label_Pos = "matches_positive_appMatch",
+    label_Neg = "matches_negative_appMatch",
+    label_Neut = "matches_neutral_appMatch",
+    label_Ambi = "matches_ambivalent_appMatch")
+overwriteData_getProtocols(protocolCounter = ST_rv$protocolCounter_appMatch,
+    protocolDetailedOut = globals$detailedProtocolAM,
+    list_usedWords = globals$usedWords,
+    dataSummarized = globals$dataCAMsummarized,
+    searchArgument = input$maxStringDis,
+    searchType = "approximate",
+    label_superordinate = "supordinateWord_appMatch",
+    label_Pos = "matches_positive_appMatch",
+    label_Neg = "matches_negative_appMatch",
+    label_Neut = "matches_neutral_appMatch",
+    label_Ambi = "matches_ambivalent_appMatch")
+```
+
+The best way (in my opinion) to summarize the terms of the drawn concepts is to create bucket lists for all the summarize functions: bucket lists (using the R package <a href="https://cran.r-project.org/web/packages/sortable/" target="_blank">sortable</a>) are lists, which can contain in itself multiple other lists and allows drag-and-drop of terms between the different lists. For every concept to summarize in one iteration of the functions, the concepts are splitted according to their valence and the researcher can choose to remove single concepts / terms by moving the terms to the leftmost list using drag-and-drop. To fill in the bucket lists, get automatically the superordinate term and write a protocol / overwrite the summarized concepts the following three functions have been programmed:
+
+* getlabels_appMatch(): create labels for bucket lists; getlabels_Search() is the identical function adjusted for the "Searching Terms" submodule and getlabels_Synonyms() was adjusted for the "Search for Synonyms" and "Apply word2vec Model" submodule
+* getSuperordinateWord(): updates superordinate word, which is suggested below the bucket lists
+* overwriteData_getProtocols(): a) overwrite summarized words, b) updates JSON protocol, c)  get a detailed protocol and d) updates list of used words (which are displayed in a dynamic table at the bottom of the submodules, see below)
+
+
 ***
 ### Approximate Matching
 ---
 
 
 **Central aim**:
-Generating suggestions for summarizing concepts under a superordinate concept. By using approximate string matching, string distances between all unique concepts in the dataset can be computed (using optimal string alignment) to find words which have been written slightly differently. This may be useful to summarize some or all of these concepts.
-
-
-
-<a href="https://cran.r-project.org/web/packages/stringdist/" target="_blank">stringdist</a> package
+By using approximate string matching, string distances between all unique concepts in the dataset are computed (using optimal string alignment) to find words which have been written slightly differently. Internally the <a href="https://cran.r-project.org/web/packages/stringdist/" target="_blank">stringdist</a> package applies the optimal string alignment distance to compute the distances between two strings. For example, using this method the distance between “dreams” and “dreasm” (spelling error) would be d = 1, because the adjacent character “s” would be transposed. Such a procedure can be used to correct for spelling errors and find words, which are written in singular / plural.
 
 
 **How to use it**: 
 
-* blub
-
+* Click on "> Approximate matching", choose your maximum string distance and click on "start approximate string matching"
+    * it is recommended to increase step by step the maximum string distance and use this functionalitity several times
 
 <br>
-**Internal the following R function is applied**:
+Please note that below all summarize functions a <b>dynamic table is displayed after you summarized your first word</b>, depicting in the following format all words you have already summarized: "fear (fear // Fear)" -> you summarized the words "fear" and "Fear" to the superordinate word "fear". The search functionalities of the table if you looking for a specific word.
 
-```r
-
-```
-
-* XXX(): 
-
+<br>
+**Internally no additional specific R function is applied**.
 
 
 
@@ -284,26 +309,21 @@ Generating suggestions for summarizing concepts under a superordinate concept. B
 ---
 
 **Central aim**:
-Generating suggestions for summarizing concepts under a superordinate concept. Search concepts, using regular expressions in CAMs for specific terms that were mentioned, summarize some or all of these concepts.
-
-
-
-<a href="https://cran.r-project.org/web/packages/igraph/index.html" target="_blank">igraph</a> package
+By using search terms you apply so called regular expressions, which is a concise language to describe patterns of text. Applying the stringr package, which is part of <a href="https://cran.r-project.org/web/packages/tidyverse/" target="_blank">tidyverse</a>, for example, using the expression “[[:digit:]]”, all drawn concepts including any digits can be identified. For possible regular expressions to use, please read the <a href="https://github.com/rstudio/cheatsheets/blob/main/strings.pdf" target="_blank">"cheatsheet" of the stringr package</a> and you can test combinations of regular expressions on the following webpage: <a href="https://regex101.com/" target="_blank">https://regex101.com/</a> 
 
 
 **How to use it**: 
 
-* blub
+* Click on "> Searching terms", enter your regular expression and click on "search"
+    * it is recommended to gradually increase the level of abstraction (progressively combine subcategories into thematic categories or superordinate categories)
 
 
 <br>
-**Internal the following R function is applied**:
+**Internally no additional specific R function is applied**; however:
 
-```r
+* by using the tryCatch() function it is checked if the provided regular expression is valid and if not a pop-up is shown, which requests the researcher to check the syntax
 
-```
 
-* XXX(): 
 
 
 ***
@@ -311,58 +331,44 @@ Generating suggestions for summarizing concepts under a superordinate concept. S
 ---
 
 **Central aim**:
-Generating suggestions for summarizing concepts under a superordinate concept by automatically searching for synonyms in a dictionary.
-
-
-
-
-
-<a href="https://cran.r-project.org/web/packages/igraph/index.html" target="_blank">igraph</a> package
+By using search for synonyms all synonyms for single-worded concepts are automatically searched and internally the English synonym dictionary included in the <a href="https://cran.r-project.org/web/packages/qdap/" target="_blank">qdap</a> R package is applied. For example, the concepts “war” and “conflict” would be identified as synonyms.
 
 
 **How to use it**: 
 
-* blub
+* Click on "> Search for synonyms", choose your language (*currently only English implemented*) and click on "search for synonyms"
 
 
 <br>
-**Internal the following R function is applied**:
+**Internal the following R functions are applied**:
 
 ```r
-
+SynonymList(vectorWords = tmp_text, 
+    syn_dat = globals$dat_synonym$syn_English)
+SummarizedSynonymList(listSynonyms = raw_SynonymList[[1]])
 ```
 
-* XXX(): 
-
+* SynonymList(): 
+* SummarizedSynonymList(): 
 
 ***
 ### Apply word2vec Model
 ---
 
 **Central aim**:
-Generating suggestions for clustering and summarizing concepts according to the cosine similarity between (single-word) concepts. Cosine similarity is computed using pre-trained large language models from the Python library spaCy.
-
-
-
-
-
-<a href="https://cran.r-project.org/web/packages/igraph/index.html" target="_blank">igraph</a> package
+By applying a word2vec Model it is possible to compute the cosine similarity between drawn concepts pairwise to identify groups of drawn concepts with similar meaning. For example, cosine similarity between the words “responsibility” and “accountability” would be .70, whereby cosine similarity is ranging from -1 (opposite vectors) to 1 (proportional vectors). The word vectors are "included" in a pre-trained language model from the Python library spaCy and there are currently language models for 25 languages, see: <a href="https://spacy.io/models" target="_blank">https://spacy.io/models</a>
 
 
 **How to use it**: 
 
-* blub
+* Click on "> Apply word2vec model", and follow the three steps (1) download summarized words, (2) download and run Python script and (3) upload the computed pairwise similarities. A more detailed explenation how to apply the function can be found on our GitHub page: <a href="https://github.com/Camel-app/DataAnalysis/tree/main/Python_word2vec" target="_blank">https://github.com/Camel-app/DataAnalysis/tree/main/Python_word2vec</a>
 
 
 <br>
-**Internal the following R function is applied**:
+**Internally no additional specific R function is applied**; however:
 
-```r
-
-```
-
-* XXX(): 
-
+* after uploading the computed pairwise similarities (step 3), a distance matrix is computed (euclidean) and a hierarchical cluster analysis (Ward's method) is applied to detect group of similar words. 
+* Researchers are free to decide which amount of similarity is sufficient to indicate that it would be reasonable to summarize group / pair of words by specifying the cutting height of the dendrogram
 
 ***
 ### 5-step procedure to summarize CAM data
@@ -511,7 +517,7 @@ Compute several variants (in total 6 variants) of average valences over group of
 
 
 
-<p style="color:red;">!!! picture to describe n. indicators</p>
+<p style="color:red;">!!! picture to describe n. indicators -> article</p>
 
 
 <br>

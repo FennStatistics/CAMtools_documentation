@@ -381,7 +381,7 @@ By applying a word2vec Model it is possible to compute the cosine similarity bet
 ### 5-step procedure to summarize CAM data
 ---
 
-blub
+blub!!!
 
 
 
@@ -749,10 +749,10 @@ The co-occurrences of concepts within individual CAMs is computed by setting up 
 **Example**: Imagine a CAM dataset in which multiple concepts were summarized to the superordinate concepts “do something” and “accountability”. In total, the concept “do something” was drawn 18 times (after summarizing) and the concept “accountability” 13 times. Seven participants drew both concepts together in their respective CAMs. This results in a 2x2 table depicted in the table below. A significant phi coefficient ( = .27, p <. 05) indicates that both concepts were drawn together disproportionately often. This computation is repeated for all concepts pairwise and the pairwise phi coefficients are visualized within a heatmap.
 
 
-<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/CAM_legend.JPG" alt="CAM Legend missing" style="height:300px;" class="centerImg">
+<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/example_concept_co_occurrences.JPG" alt="Example table missing" style="height:300px;" class="centerImg">
 
-example_concept_co_occurrences.JPG
 
+The table is extended if also the valence of the concepts is considered (no 2x2 table, but 2\**d* x 2\**d*, whereby *d* are the different valences of the respective concepts). If valences are considered Cohens Kappa is computed, if not then the Phi coefficient is computed.
 
 **How to use it**: 
 
@@ -806,21 +806,22 @@ correlationTable(conList = duplicateDF,
 ---
 
 **Central aim**:
-Computing hierarchical clustering over the given valence over all overlapping words between CAMs to identify similar CAMs
-
+The mean valence over all summarized concepts is computed. These mean variables are z-transformed and a hierarchical cluster analysis (euclidean distance + Ward's method) for all summarized concepts which were drawn at least two times is applied. The resulting cluster solution can be interpreted by the average mean differences on the mean variables of the summarized concepts. Such analysis could help to indicate if identical named / summarized concepts of certain supporters / opponents (e.g., on belief in climate change) have different mean valence.
 
 **How to use it**: 
 
 * Click on top "clustering CAMs" -> "on concept level" -> "> Valence co-occurrences", click on "get valence co-occurrences"
 
 <br>
-**Internally no additional specific R function is applied**.
+**Internally no additional specific R function is applied**; however:
+
+* Researchers are free to decide how many clusters would be reasonable to differentiate between the average valences of the single concepts by specifying the cutting height of the dendrogram
 
 ***
 ### Slice CAMs
 ---
 
-blub
+blub!!!
 
 If you have a CAM structure, which can be separated (e.g. pre-defined opposing concepts) the CAMs can be automatically sliced according to two possible criteria: (a) delete a connection between two concepts, or (b) delete a concept. Automatically the CAM changed this way is checked according to multiple criteria (e.g. number of expected network components) to validate the slicing process.
 
@@ -833,7 +834,7 @@ Get summary statistics (e.g. within t-test) for the so sliced CAMs.
 ### Get Report
 ---
 
-blub
+blub!!!
 
 Get an report in APA 7 format with multiple descriptive statistics, which could be copied in an article or send to other interested stakeholders.
 

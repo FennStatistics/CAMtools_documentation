@@ -133,7 +133,7 @@ After starting the CAM-App by clicking on "2) Upload a raw CAM data set" the res
 
 
 <br>
-**Internal the following R functions are applied**:
+**Internally the following R functions are applied**:
 
 ```r
 create_CAMfiles(datCAM = raw_CAM, reDeleted = TRUE, verbose = FALSE)
@@ -207,7 +207,7 @@ After starting the CAM-App by clicking on "1) Upload your protocol" the research
 ```
 
 <br>
-**Internal the following R functions are applied**:
+**Internally the following R functions are applied**:
 
 ```r
 overwriteTextNodes(protocolDat, nodesDat)
@@ -233,7 +233,7 @@ After a researcher clicked on the button "Preprocessing Part" or "Analysis Part"
 
 
 <br>
-**Internal the following R function is applied**:
+**Internally the following R function is applied**:
 
 ```r
 draw_CAM(dat_merged = CAMfiles[[3]],
@@ -347,7 +347,7 @@ By using search for synonyms all synonyms for single-worded concepts are automat
 
 
 <br>
-**Internal the following R functions are applied**:
+**Internally the following R functions are applied**:
 
 ```r
 SynonymList(vectorWords = tmp_text, 
@@ -381,7 +381,7 @@ By applying a word2vec Model it is possible to compute the cosine similarity bet
 ### 5-step procedure to summarize CAM data
 ---
 
-blabla
+blub
 
 
 
@@ -405,10 +405,11 @@ A random sub-word list (e.g. 10% of all unique drawn concepts) can be generated.
 **How to use it**: 
 
 * Click on top "reliability" -> "> Train Reliability", choose your settings to create the sub-word list and click on the "Download data" button top right.
+    * the following settings can be considered: select the ordering of the word list, if words should be split by given valence and if comments should be visible for your raters
 
 
 <br>
-**Internal the following R function is applied**:
+**Internally the following R function is applied**:
 
 ```r
 create_wordlist(dat_nodes = globals$dataCAMsummarized[[1]],
@@ -438,7 +439,7 @@ This information can be used to train raters, which could subsequently summarize
 
 
 <br>
-**Internal the following R function are applied**:
+**Internally the following R function are applied**:
 
 ```r
 computeCohensKappa(files = data(), 
@@ -537,7 +538,7 @@ Compute 33 different network indicators (e.g., mean valence, density etc.) on an
 
 
 <br>
-**Internal the following R function is applied**:
+**Internally the following R function is applied**:
 
 ```r
 compute_indicatorsCAM(drawn_CAM = NULL,
@@ -569,7 +570,7 @@ Compute several variants (in total 6 variants) of average valences over group of
 
 
 
-This is helpful if you have specified two contradictory concepts in a study. In the **example CAM** below participants were surveyed regarding their motivation to use their “own car” or “public transport”. This is an interesting study design to analyze the perception of opposing poles or concepts. In such a case, it would not meaningful to compute the overall mean valence. Instead, the mean valence over the neighborhood of the respective concept of the first or second order (one or two steps away, i.e., concepts that are directly connected to the respective concept are one step away) indicates the negative assessment of “public transport” and the mixed assessment of “own car” in this CAM. It is also possible to temporarily remove connections (and / or concepts) in order to not distort the neighborhood statistics (e.g., mean valence two steps away from the concept “own car”). Click on the example CAM to enlarge it in new tab - could take few seconds: 
+**Example**: This is helpful if you have specified two contradictory concepts in a study. In the example CAM below participants were surveyed regarding their motivation to use their “own car” or “public transport”. This is an interesting study design to analyze the perception of opposing poles or concepts. In such a case, it would not meaningful to compute the overall mean valence. Instead, the mean valence over the neighborhood of the respective concept of the first or second order (one or two steps away, i.e., concepts that are directly connected to the respective concept are one step away) indicates the negative assessment of “public transport” and the mixed assessment of “own car” in this CAM. It is also possible to temporarily remove connections (and / or concepts) in order to not distort the neighborhood statistics (e.g., mean valence two steps away from the concept “own car”). Click on the example CAM to enlarge it in new tab - could take few seconds: 
 
 <a href="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/CAM_example_sendtner2021.jpg" target="_blank">
   <img alt="CAM Example missing"  style="height:300px;" class="centerImg" src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/CAM_example_sendtner2021.jpg" />
@@ -584,7 +585,7 @@ This is helpful if you have specified two contradictory concepts in a study. In 
 
 
 <br>
-**Internal the following R function is applied**:
+**Internally the following R function is applied**:
 
 ```r
 compute_neighborhoodIndicatorsCAM(drawn_CAM = NULL,
@@ -602,7 +603,7 @@ compute_neighborhoodIndicatorsCAM(drawn_CAM = NULL,
 ### Word outputs overall
 ---
 
-blabla
+The two following functions summarize concepts on an <u>overall</u> semantic level:
 
 
 
@@ -610,11 +611,20 @@ blabla
 #### Create wordlist
 ---
 
-Create a wordlist with summary statistics for every concept (mean / SD valence, mean / SD degree).
+
+**Central aim**:
+Create a wordlist with summary statistics for each concept (mean / SD valence, mean / SD degree). 
+
+
+**How to use it**: 
+
+* Click on top "word outputs" -> "by words overall" -> "> get wordlist", choose your seetings and click on "create wordlist"
+    * the following settings can be considered: select the ordering of the word list, if words should be split by given valence and if comments should be visible for your raters
+    
 
 
 <br>
-**Internal the following R function is applied**:
+**Internally the following R function is applied**:
 
 ```r
 create_wordlist(dat_nodes = CAMfiles[[1]],
@@ -633,8 +643,17 @@ create_wordlist(dat_nodes = CAMfiles[[1]],
 #### Create word cloud
 ---
 
-Create a word cloud of all your concepts in the dataset with colors according to the words mean valence.
 
+**Central aim**:
+Create a word cloud of all your concepts in the dataset, whereby the colors indicate the concept’s mean valence. 
+
+**How to use it**: 
+
+* Click on top "word outputs" -> "by words overall" -> "> get word cloud", choose your seetings and click on "create wordcloud"
+    * the following settings can be considered: select the minimum frequency concepts have been drawn to be plotted, the maximum number of words to be plotted and define if the summarized or non-summarized words should be plotted 
+
+<br>
+**Internally no additional specific R function is applied**.
 
 
 
@@ -643,55 +662,79 @@ Create a word cloud of all your concepts in the dataset with colors according to
 ### Word outputs single words
 ---
 
-blabla
+The two following functions summarize <u>single concepts</u> on a semantic level:
+
 
 
 ***
 #### Get graphics and summary statistics for concept by concept
 ---
 
-Create a pie chart, barplot and table (APA 7 format) for every summarized superordinate concept in your data set separately.
+**Central aim**:
+On a single concept level, a pie chart, barplot and table for every summarized superordinate concept can be created to reflect and discuss the summary process of the CAM data. 
+
+
+**How to use it**: 
+
+* Click on top "word outputs" -> "by single words" -> "> concept by concept", choose for which summarized concept do you want to get an overview, define your seetings and click on "get overview"
+    * the following settings can be considered: select the minimum frequency a single concept has been drawn in the CAMs to be plotted in the pie chart and barplot / table (at least for the pie chart it is recommended not to show too many different concepts)
+
+<br>
+**Internally no additional specific R function is applied**.
+
 
 
 ***
 #### Get summary statistics for all concepts
 ---
 
-Get a table containing all unique summarized concepts and their respective frequencies (separated by N=total, Npositive=positive, and so on) separated by CAMs.
+**Central aim**:
+For all single unique summarized concepts it is possible to create an table containing the respective frequencies of the drawn concepts separately for each CAM to easily recompute, for example, how often a certain concept with a specific valence (separated by N=total, Npositive=positive, and so on) was drawn within a CAM data set. 
 
 
+**How to use it**: 
+
+* Click on top "word outputs" -> "by single words" -> "> overview of concepts", click on "get complete overview"
+
+<br>
+**Internally no additional specific R function is applied**.
 
 
 
 ***
 ### Aggregate CAMs
 ---
+**Central aim**:
+By creating a so called “canonical adjacency matrix” CAMs according to different criteria (random CAMs, most positive / negative CAMs, CAMs with specific IDs) are aggregated, whereby the size of the concepts and the thickness of the connections is proportional to the frequency of the drawn concepts and the drawn pairwise connections respectively.
 
-By creating a so called “canonical adjacency matrix” CAMs according to different criteria (all CAMs, CAMs of a certain group) are aggregated, whereby the size of the concept and the thickness of the connection is proportional to the frequency of the drawn concepts and the pairwise connections respectively.
+
+**How to use it**: 
+
+* Click on top "aggregate CAMs" -> "> aggregate CAMs", click on "get complete overview", choose your seetings and click on "aggregate CAMs"
+    * the following settings can be considered: select if you want to split your summarized concepts by the valence and if you want to (a) aggregate random CAMs, (b) aggregate the most positive or negative CAMs or (c) choose specific CAMs you want to aggregate
 
 
 <br>
-**Internal the following R functions are applied**:
+**Internally the following R functions are applied**:
 
 ```r
 aggregate_CAMs(dat_merged = CAMfiles[[3]],
     dat_nodes = CAMfiles[[1]],
-    ids_CAMs = NULL)
+    ids_CAMs = selectedIDs)
 
 rename_identicalTerms(dat_nodes = CAMfiles[[1]],
     drawn_CAM = CAMdrawn)
 ```
 
-* aggregate_CAMs(): 
-* rename_identicalTerms(): 
+* aggregate_CAMs(): aggregate the CAMs with IDs provided by <code>ids_CAMs</code>
+* rename_identicalTerms(): function renames identical terms within individual CAMs; for example, in a single CAM the concept “cost” is written twice, these two concepts would be renamed to “cost_1”, “cost_2”, whereby the concepts are named in descending order of their degree.
 
 
 ***
-### Clustering CAMs
+### Clustering CAMs on concept level
 ---
 
-blabla
-
+CAMs can be clustered on concept level (terms written by participants):
 
 
 
@@ -699,11 +742,25 @@ blabla
 #### Concept co-occurrences
 ---
 
-Computing the concept-cooccurrences between all CAMs by setting up multiple contingency tables, followed by computing the phi coefficient, groups of concepts with similar concept-cooccurrences in CAMs are identified
+
+**Central aim**:
+The co-occurrences of concepts within individual CAMs is computed by setting up multiple contingency tables between single pairs of summarized concepts. 
+
+**Example**: Imagine a CAM dataset in which multiple concepts were summarized to the superordinate concepts “do something” and “accountability”. In total, the concept “do something” was drawn 18 times (after summarizing) and the concept “accountability” 13 times. Seven participants drew both concepts together in their respective CAMs. This results in a 2x2 table depicted in the table below. A significant phi coefficient ( = .27, p <. 05) indicates that both concepts were drawn together disproportionately often. This computation is repeated for all concepts pairwise and the pairwise phi coefficients are visualized within a heatmap.
+
+
+<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/CAM_legend.JPG" alt="CAM Legend missing" style="height:300px;" class="centerImg">
+
+example_concept_co_occurrences.JPG
+
+
+**How to use it**: 
+
+* Click on top "clustering CAMs" -> "on concept level" -> "> Concept co-occurrences", choose your seetings and click on "draw Heatmap"
 
 
 <br>
-**Internal the following R functions are applied**:
+**Internally the following R functions are applied**:
 
 ```r
 listConcepts(datCAM = CAMfiles[[1]], 
@@ -748,14 +805,22 @@ correlationTable(conList = duplicateDF,
 #### Valence co-occurrences
 ---
 
-
+**Central aim**:
 Computing hierarchical clustering over the given valence over all overlapping words between CAMs to identify similar CAMs
 
 
+**How to use it**: 
+
+* Click on top "clustering CAMs" -> "on concept level" -> "> Valence co-occurrences", click on "get valence co-occurrences"
+
+<br>
+**Internally no additional specific R function is applied**.
 
 ***
 ### Slice CAMs
 ---
+
+blub
 
 If you have a CAM structure, which can be separated (e.g. pre-defined opposing concepts) the CAMs can be automatically sliced according to two possible criteria: (a) delete a connection between two concepts, or (b) delete a concept. Automatically the CAM changed this way is checked according to multiple criteria (e.g. number of expected network components) to validate the slicing process.
 
@@ -767,6 +832,8 @@ Get summary statistics (e.g. within t-test) for the so sliced CAMs.
 ***
 ### Get Report
 ---
+
+blub
 
 Get an report in APA 7 format with multiple descriptive statistics, which could be copied in an article or send to other interested stakeholders.
 

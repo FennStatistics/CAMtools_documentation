@@ -1,3 +1,10 @@
+<style>
+.centerImg{
+    display: block;
+    margin: 0 auto;
+}
+</style>
+
 CAM-App
 =====
 
@@ -465,18 +472,14 @@ The level of the network indicators is indicated by the respective suffix:
 * "X_macro:" extracts features from the global network level
 
 
-
-As descriptives...
-Get a summary of network statistics you have calculated, get an APA-formatted table of statistics, get a correlation plot between different network indicators and search for significant correlations.
-
+Two types of network indicators with their respective descriptive statistics can be computed:
 
 ***
 #### Compute network indicators
 ---
 
-Compute several network indicators (e.g., mean valence, density etc.) on an overall CAM level (macro). Additionally, select one or several concepts and calculate network indicators on an individual concept level (micro).
-
-
+**Central aim**:
+Compute 33 different network indicators (e.g., mean valence, density etc.) on an overall CAM level (macro). Additionally, select one or several concepts and calculate network indicators on an individual concept level (micro):
 
 
 | Network Indicator   |      Meaning   | 
@@ -527,6 +530,13 @@ Compute several network indicators (e.g., mean valence, density etc.) on an over
 <sup>4</sup>The suffix "X" is replaced by the choosen concept for which you want to get micro indicators (see within CAM-App).
 
 <br>
+**How to use it**: 
+
+* Click on top "network indicators" -> "> get network indicators", indicate for which concepts do you want to get micro indicators and click on "Compute network indicators"
+     * after computing network indicators you can click on "> get network descriptives", you will get an APA table with multiple summary statistics, a correlation plot and you can search for significant correlations
+
+
+<br>
 **Internal the following R function is applied**:
 
 ```r
@@ -537,7 +547,7 @@ compute_indicatorsCAM(drawn_CAM = NULL,
     largestClique = FALSE)
 ```
 
-* compute_indicatorsCAM(): 
+* compute_indicatorsCAM(): network indicators are computed, by specifying <code>micro_degree</code>, <code>micro_valence</code> or <code>micro_centr_clo</code> you will get the respective micro statistics for the choosen concepts; setting <code>largestClique</code> to TRUE you will get a mezzo indicator containing all the names of the largest clique (where all concepts are connected with each other)
 
 
 
@@ -550,6 +560,7 @@ compute_indicatorsCAM(drawn_CAM = NULL,
 #### Compute neighborhood network indicators
 ---
 
+**Central aim**:
 Compute several variants (in total 6 variants) of average valences over group of concepts:
 
 - compute the mean valence over the neighborhood of order 1 / 2 with no adjustments
@@ -558,7 +569,18 @@ Compute several variants (in total 6 variants) of average valences over group of
 
 
 
-<p style="color:red;">!!! picture to describe n. indicators -> article</p>
+This is helpful if you have specified two contradictory concepts in a study. In the **example CAM** below participants were surveyed regarding their motivation to use their “own car” or “public transport”. This is an interesting study design to analyze the perception of opposing poles or concepts. In such a case, it would not meaningful to compute the overall mean valence. Instead, the mean valence over the neighborhood of the respective concept of the first or second order (one or two steps away, i.e., concepts that are directly connected to the respective concept are one step away) indicates the negative assessment of “public transport” and the mixed assessment of “own car” in this CAM. It is also possible to temporarily remove connections (and / or concepts) in order to not distort the neighborhood statistics (e.g., mean valence two steps away from the concept “own car”). Click on the example CAM to enlarge it in new tab - could take few seconds: 
+
+<a href="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/CAM_example_sendtner2021.jpg" target="_blank">
+  <img alt="CAM Example missing"  style="height:300px;" class="centerImg" src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/CAM_example_sendtner2021.jpg" />
+</a>
+
+<br>
+**How to use it**: 
+
+* Click on top "network indicators" -> "> get neighborhood indicators", indicate for which concepts do you want to get neighborhood indicators and click on "Compute neighborhood indicators"
+    * you can **temporarily remove** (a) connections (<u>specify only 2 concepts</u> between which you want to remove the connection) or (b) concepts (<u>specify only 1 concept</u> which you want to delete)
+    * after computing network indicators you can click on "> get network descriptives", you will get an APA table with multiple summary statistics and a correlation plot
 
 
 <br>
@@ -573,8 +595,7 @@ compute_neighborhoodIndicatorsCAM(drawn_CAM = NULL,
     removeNodeCAM = NULL)
 ```
 
-* compute_neighborhoodIndicatorsCAM(): 
-
+* compute_neighborhoodIndicatorsCAM(): network neighborhood indicators are computed, by specifying <code>removeConnectionCAM</code> or / and <code>removeNodeCAM</code> a connection respective a concept is temporarily removed (<code>sliceCAMbool</code> is set to TRUE if any elements are removed); changing the value of <code>weightSecondOrder</code> de/increases the weighting of the second order concepts; <code>consideredConcepts</code> is a vector containing all the concepts for which do you want to get neighborhood indicators
 
 
 ***

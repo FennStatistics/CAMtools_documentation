@@ -23,7 +23,7 @@ Additionally CAMs might contain directional arrows, which represent a directiona
 
 Using CAMs it is possible to identify, visually represent and analyze existing belief structures or any kind of declarative knowledge. Using our developed software [Cognitive-Affective Map *extended logic*](Cognitive-Affective Map extended logic.md) participants can draw within online (or offline) studies their own CAM and the resulting data can be preprocessed and analyzed by the developed [CAM-App](CAM-App.md).
 
-In the following example CAM, participants compared cars and public transport[@sendtner_kostbare_2021] (click on CAM to enlarge it in new tab - can take few seconds): 
+In the following example CAM, participants compared cars and public transport[@sendtner_kostbare_2021] (click on CAM to enlarge it in new tab - could take few seconds): 
 
 <a href="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/CAM_example_sendtner2021.jpg" target="_blank">
   <img alt="CAM Example missing"  style="height:300px;" class="centerImg" src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/CAM_example_sendtner2021.jpg" />

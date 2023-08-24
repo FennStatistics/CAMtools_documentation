@@ -710,7 +710,7 @@ By creating a so called “canonical adjacency matrix” CAMs according to diffe
 
 **How to use it**: 
 
-* Click on top "aggregate CAMs" -> "> aggregate CAMs", click on "get complete overview", choose your seetings and click on "aggregate CAMs"
+* Click on top "aggregate CAMs" -> "> aggregate CAMs", choose your seetings and click on "aggregate CAMs"
     * the following settings can be considered: select if you want to split your summarized concepts by the valence and if you want to (a) aggregate random CAMs, (b) aggregate the most positive or negative CAMs or (c) choose specific CAMs you want to aggregate
 
 
@@ -821,23 +821,65 @@ The mean valence over all summarized concepts is computed. These mean variables 
 ### Slice CAMs
 ---
 
-blub!!!
 
-If you have a CAM structure, which can be separated (e.g. pre-defined opposing concepts) the CAMs can be automatically sliced according to two possible criteria: (a) delete a connection between two concepts, or (b) delete a concept. Automatically the CAM changed this way is checked according to multiple criteria (e.g. number of expected network components) to validate the slicing process.
+**Central aim**:
+If you have a CAM structure, which can be separated (e.g. pre-defined opposing concepts), like in the example CAM in the "Compute neighborhood network indicators" section, the module could be applied. CAMs are automatically separated according to two possible criteria: (a) delete a connection between two concepts, and / or (b) delete a concept. The example CAM could be seperated by deleting the connection between the two opposing concepts “own car” and “public transport”. The so generated datasets could be uploaded again to the CAM-App if the resulting sub-CAMs (e.g. to investigate reasons to use the “own car”) should be summarized separately.
 
+
+**How to use it**: 
+
+* Click on top "slice CAMs" -> "> slice CAMs", choose your seetings and click on "Slice CAMs"
+    * the following settings can be considered: (a) delete a connection between two concepts (maximum one connection), and / or (b) delete a concept (maximum one concept)
+    
 <br>
-Get summary statistics (e.g. within t-test) for the so sliced CAMs.
+**Internally the following R functions are applied**:
 
+```r
+sliceCAM(singleCAM = drawnCAMs[[i]], 
+    singleCAMid = names(drawnCAMs)[i],
+    removeConnection = connectionToRemove,
+    removeNode = nodeToRemove,
+    plot = FALSE, 
+    verbose = FALSE)
+
+sliceAllCAMs_combined(CAMfilesList = globals$dataCAMsummarized,
+    drawnCAMs = drawnCAM(),
+    connectionToRemove = tmp_RemoveConnection_SC,
+    nodeToRemove = tmp_RemoveConcept_SC,
+    centralConceptsSubgraphs = input$CentralWords_SC,
+    plot = FALSE)
+
+sliceAllCAMs_seperated(slicedCAMs = slicedCAMs_combined,
+    centralConceptsSubgraphs = input$CentralWords_SC,
+    plot = FALSE)
+```
+
+* sliceCAM(): function slices single CAMs according to arguments in <code>removeConnection</code> (remove single connection) and / or <code>removeNode</code> (remove single concept).
+* sliceAllCAMs_combined(): function applies internally sliceCAM() to slice CAMs and checks if two network components (groups of concepts) and if every component includes one of the expexted central concepts (defined in <code>centralConceptsSubgraphs</code>)
+* sliceAllCAMs_seperated(): takes the output of the sliceAllCAMs_combined() function and returns a list containing the merged datasets for the expexted central concepts
+
+Remark: sliceAllCAMs_combined() and sliceAllCAMs_seperated() only returns the data for CAMs where the slicing process was successfull
 
 
 ***
 ### Get Report
 ---
 
-blub!!!
+**Central aim**:
+Applying the module a report in APA 7 format is created containing a description of the CAM dataset, statistics of the summary process (preprocessing part of the CAM-App) and (if desired) statistics of individual concepts. This report could be copied to a scientific publication or sent to interested collaborators. 
 
-Get an report in APA 7 format with multiple descriptive statistics, which could be copied in an article or send to other interested stakeholders.
 
+**How to use it**: 
+
+* Click on top "get Report" -> "> Get Report", choose your seetings and click on "get Report"
+    * the following setting can be considered: select the concepts for which you want to receive additional statistics (alphabetically sorted)
+    * you should provide the module the number of predefined concepts in your study, as such that the statistics of how many of the pre-defined concepts had been removed is correct
+    
+
+<br>
+**Internally no additional specific R function is applied**; however:
+
+* internally the compute_indicatorsCAM() function is applied 
 
 
 

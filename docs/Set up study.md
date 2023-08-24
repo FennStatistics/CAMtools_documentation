@@ -79,13 +79,25 @@ From the vast amount of possible CAM study designs, the following are just an ex
 
 CAMs can be used in multiple ways and during multiple stages of the research process, the following options can give an idea of the diverse opportunities CAMs can offer in research:
 
-* CAMs as a <b>one time elicitation</b> of the cognitive-affective representation a person has about a certain concept / topic<sup>e.g</sup> [@mansell_measuring_2021]
+
+**CAM as graphical representation:**
+
+*  CAMs as a <b>one time elicitation</b> of the cognitive-affective representation a person/a group has about a certain concept / topic<sup>e.g</sup> [@mansell_measuring_2021]
+
+
+**quantitative/network parameters and qualitative analyses of CAMs as measurements ("dependent variables") in empirical/experimental studies:**
+
 * CAMs as a <b>dependent variable in a pre-post intervention design</b>, where participants either draw two separate CAMs before and after an intervention or have the chance to adjust the first CAM at a later point in time<sup>e.g</sup> [@reuter_leisure_2021]
-* Using <b>CAMs themselves as an intervention</b>, where participants are shown a CAM that is not their own and the influence of this exposure to somebody elses representation is assessed<sup>e.g</sup> [@gros_camediaid_2021]
 * CAMs in a <b>mixed method design</b> to augment questionnaire data with rich information about cognitive-affective representations and the possibility of freely associating, away from prespecified answer options<sup>e.g</sup> [@fennIdentifyingKeypsychologicalFactors2023]
 
-- CAMs in an <b>adaptive design</b>, where participants receive an adaptive intervention based on an automated real time analysis of the CAM they have just drawn (e.g. specific intervention depending on mean valence of the CAM).
 
+**CAM as independent variable to influence/inform participants:**
+
+* Using <b>CAMs themselves as an intervention</b>, where participants are shown a CAM that is not their own and the influence of this exposure to somebody elses representation is assessed<sup>e.g</sup> [@gros_camediaid_2021]
+* CAMs in an <b>adaptive design</b>, where participants receive an adaptive intervention based on an automated real time analysis of the CAM they have just drawn (e.g. specific intervention depending on mean valence of the CAM).
+
+
+<br>
 <h3>Different network topologies:</h3>
 
 Analyzing network parameters of CAMs is a promising way of gaining quantitative insight into participants cognitive-affective representations of a concept. When setting up a CAM study, it is possible to predefine (or choose to not predefine) central concepts as a “starting CAM” which every participant will receive as a basis to build their own CAM around. Preliminary results show that the layout and connections (referred to as the **topology of a network** in telecommunication science) of this starting CAM has an influence on the type of layout participants are most inclined to draw when constructing their CAM. In telecommunication technology, different network designs have specific properties and different X-ities like evolvability, scalability and adaptability of a network in a future stage (~ the finished CAM of a participant) depend on the initial network design (~ the predefined CAM given to every participant as a starting point). Knowing this, the <b>design of the “starting CAM” should be consciously chosen</b> as it might have an influence on the network parameters of participants CAMs. Multiple <b>initial network topologies</b> are possible to specify with a staring CAM:

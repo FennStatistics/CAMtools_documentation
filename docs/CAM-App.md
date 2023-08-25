@@ -619,7 +619,7 @@ Create a wordlist with summary statistics for each concept (mean / SD valence, m
 **How to use it**: 
 
 * Click on top "word outputs" -> "by words overall" -> "> get wordlist", choose your seetings and click on "create wordlist"
-    * the following settings can be considered: select the ordering of the word list, if words should be split by given valence and if comments should be visible for your raters
+    * the following settings can be considered: select the ordering of the word list, if words should be split by given valence and if comments should be visible
     
 
 

@@ -1,9 +1,11 @@
 Cognitive-Affective Map extended logic
 =====
 
-The application Cognitive-Affective Map extended logic (C.A.M.E.L.) is a software package that supports CAM drawing. It can be applied if you aim to draw your single CAM on any topic. Yet, it is constructed to support large-scale online-studies to gather CAM data of many participants (several hundred participants would be no problem for C.A.M.E.L.) . 
+The application Cognitive-Affective Map extended logic (C.A.M.E.L.) is a software package that enable participants to draw CAMs. It is constructed to support large-scale online-studies to gather CAM data of many participants (several hundred participants would be no problem for C.A.M.E.L.). 
 
-Asking participants to draw CAMs from scratch may be an ambitious task and participants may not even draw a CAM regarding your intended issue (like your intended topic). Here, it might help to predefine concepts to help your participants to draw the intended CAM. Moreover, it is possible that researchers would like to control what is being displayed or which changes the participants are allowed to do (i.e., draw ambivalent concepts) while drawing CAMs. To this end, a "researcher view" of the CAM board was implemented. There, it is possible to create, position, and fix (i.e., impossibility to move a concept) elements. Once the structure is ready, click on “export” to create a CAM.json including all the different elements as well as the configuration of the project (see in detail [Set up study](Set up study.md)).
+Asking participants to draw CAMs from scratch may be an ambitious task and participants may not even draw a CAM regarding your intended issue (like your intended topic). Here it might help to predefine concepts to help your participants to draw the intended CAM. Moreover, it may be that researchers would like to control what is being displayed or even possible to do (i.e., draw ambivalent concepts) while drawing CAMs. For example, it could be the case, that you fear that a large number of possible features would be too demanding (cognitively or from a time perspective) for your participants, you can easily disable certain features, like the ability to draw unidirectional relations or inhibiting connections. 
+
+To this end, a "researcher view" of the CAM board was implemented. There, it is possible to create, position and fix (i.e., impossibility to move a concept) elements. Once the structure is ready, click on “export” to create a CAM.json including all the different elements as well as the configuration of the project (see in detail [Set up study](Set up study.md)).
 
 
 ***
@@ -17,7 +19,7 @@ Within the administrative panel, after you have logged in, you can click on the 
 
 | Parameter   |      Meaning      |  Possible values |
 |----------|:-------------|:------:|
-| #ConNumNodes    | Number of nodes a participant needs to draw before <br> she / he can save the CAM. | 1-50<sup>1</sup> |
+| #ConNumNodes    | Number of concepts a participant needs to draw before <br> she / he is can save the CAM. | 1-50<sup>1</sup> |
 | #MaxLengthWords | Maximum number of words allowed for each concept.   |  1-5<sup>2</sup> |
 | #MaxLengthChars | Maximum number of characters allowed for each concept. | 30-300 |
 | #hideArrows | If ON possible to draw arrows / directed connections. | ON / OFF |
@@ -71,15 +73,15 @@ In the following, all the parameters of the *constructer* of the CAM, concept an
 
 | Parameter   |      Meaning      |  Application |
 |----------|:--------|:---------|
-| idCAM    | Random character string that is assigned by <br> the C.A.M.E.L. software to the CAM. | Unique identifier. |
+| idCAM    | Random character string (ID) that is assigned <br> by the C.A.M.E.L. software to the CAM. | Unique identifier. |
 | creator   | Character string that is stored by the <br> researcher. | **Unique ID** to identify <br> participants between study <br> parts. |
 | projectCAM  | Name of current project. | <i>internal</i> <br> (information not needed) |
 | defocusCAM | Array which stores defocus events, <br> when <code>#fullScreen</code> is set to <code>TRUE</code> | Check if a participant left <br> fullscreen during the CAM <br> study part. |
-| date  | Date of CAM initialization. | Starting point of drawing the CAM. |
-| nodes | Array which stores all concepts. | Array includes visible and deleted <br> concepts. |
-| connectors | Array which stores all connectors. | Array includes visible and deleted <br> connectors. |
+| date  | Date of CAM initialization. | Starting point of drawing the <br> CAM. |
+| nodes | Array which stores all concepts. | Array includes visible and <br> deleted concepts. |
+| connectors | Array which stores all connectors. | Array includes visible and <br> deleted connectors. |
 | currentID | Get currrent ID of  (open dialog) element. | <i>internal</i> |
-| currentNode | Get focused concepts. | <i>internal</i> <br> <code>NULL</code> if no concept is clicked on. |
+| currentNode | Get focused concepts. | <i>internal</i> <br> <code>NULL</code> if no concept is clicked <br> on. |
 | hasSelectedNode | <code>TRUE</code> if participant focused a concept. | <i>internal</i> |
 | currentConnector | Get focused connectors. | <i>internal</i> <br> <code>NULL</code> if no connector is clicked on. |
 | hasSelectedConnector | <code>TRUE</code> if participant focused a connector. | <i>internal</i> |
@@ -115,8 +117,9 @@ In the following, all the parameters of the *constructer* of the CAM, concept an
 |----------|:--------|:---------|
 | id    | Random character string that is assigned by <br> the C.A.M.E.L. software for each drawn <br>concept. | Unique identifier. |
 | value    | Valence given by the participant ranging <br>from [-3,3]. | To compute the average valence <br> of a CAM. |
-| comment  | Comment given by the participant. | Supports interpretation of drawn <br> concept. |
-| position |  <code>{x:,y:}</code> coordinate of the concept. | To compute the distance between <br> concepts. |
+| text    | Text written by the participant. | Get meaning of drawn <br> concept. |
+| comment  | Comment given by the participant. | Support interpretation of drawn <br> concept. |
+| position |  <code>{x:,y:}</code> coordinate of the concept. | To compute the distance <br> between concepts. |
 | isActive |  <code>TRUE</code> statement if concept was not deleted. | All deleted concepts are not <br> visible and marked by a <code>FALSE</code> <br>statement. |
 | date  | Date of creation. | Trace the sequence of the <br>drawing process. |
 | kind    | Type of element. | <i>internal</i> |
@@ -186,7 +189,7 @@ The following features are implemented to increase data quality:
 > => If a participant violates any of the configuration a pop-up informs the participants what she / he has done wrong.
 
 
-Using the Java Script library Cytoscape, all kinds of real-time pre- or post-processing analysis are possible in real-time and it is possible to implement adaptive study designs (see <a href="https://camtools-documentation.readthedocs.io/en/master/Set%20up%20study/#example-studies" target="_blank">example study section</a>).
+Using the Java Script library Cytoscape all kinds of additional real-time pre- or post-processing analysis are possible in real-time and it is possible to implement adaptive study designs (see <a href="https://camtools-documentation.readthedocs.io/en/master/Set%20up%20study/#example-studies" target="_blank">example study section</a>).
 
 
 
@@ -196,9 +199,8 @@ Using the Java Script library Cytoscape, all kinds of real-time pre- or post-pro
 Future features
 ----------------
 
-* currently we are implementing simultaneous collaboration in C.A.M.E.L., as such that more than one person can work on the identical CAM at the same time; sequential collaboration, whereby a CAM which is consecutively changed is already possible 
-* we are implementing a graph database (e.g. Neo4j, which is implemented in Java)
 
+Multiple extensions of the C.A.M.E.L. software are currently tested: currently we are implementing **simultaneous collaboration** in C.A.M.E.L., as such that more than one person can work on the identical CAM at the same time. Tweaking the software it was already possible to run **sequential collaboration studies**, whereby a CAM is consecutively changed. A **graphical database** (e.g. using Neo4j) was recently implemented. Using Neo4j queries can be made directly on summarized CAM data, e.g., “How often was the concept "own car" associated with "flexibility"?”. Finally **3D visualizations** for large CAMs are set up (e.g. using Unity also virtual reality experiment would be possible).
 
 <br>
 If you are missing a specific feature for your study and do not know how to implement it, we are happy to hear from you: <cam.contact@drawyourminds.de>

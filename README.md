@@ -12,7 +12,7 @@ Welcome to the Cognitive-Affective Maps tools documentation!
 setting up CAM studies using our *Cognitive-Affective Map extended logic* software. The resulting data can be analyzed
 using our developed *CAM-App*.
 
-Thank you for checking out our tools! We’ve collected a few links below to get you started, but we’re happy to help with
+Thank you for checking out our tools! We have collected a few links below to get you started, but we’re happy to help with
 any additional questions or ideas you have. We’d love to hear from you! Feel free to contact us anytime.
 
 
@@ -36,20 +36,20 @@ any additional questions or ideas you have. We’d love to hear from you! Feel f
     <a href="https://camtools-documentation.readthedocs.io/en/master/Cognitive-Affective%20Map%20extended%20logic/"
         style="font-size: 22px;">Cognitive-Affective Map <i>extended logic</i>
     </a> <br>
-    The software we are using to collect CAMs data. Check out the <code>config</code> file.
+    The software we are using to collect CAM data. Check out the <code>config</code> file.
 </div>
 <div style="display: inline-block; width:48%;">
     <span class="material-icons">analytics</span>
     <a href="https://camtools-documentation.readthedocs.io/en/master/CAM-App/" style="font-size: 22px;">CAM-App</a>
     <br>
-    The software we are using to analyze CAM data. Summarize, aggregate and many things more possible.
+    The software we are using to analyze CAM data. Summarize, aggregate and make many things more possible.
 </div>
 <br>
 <div style="display: inline-block; margin-right: 3%; width:48%;">
     <span class="material-icons">help</span>
     <a href="https://camtools-documentation.readthedocs.io/en/master/Support/" style="font-size: 22px;">Support</a>
     <br>
-    Here's where you'll find help. Do join our slack community, say hello and seek help.
+    Here is where you'll find help. Do join our slack community, say hello and seek help.
 </div>
 <div style="display: inline-block; width:48%;">
     <span class="material-icons">menu_book</span>

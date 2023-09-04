@@ -12,7 +12,7 @@ To this end, a "researcher view" of the CAM board was implemented. There, it is 
 Define your config file
 ------------
 
-Within the administrative panel after you have logged in you can click on "C.A.M.E.L. (researcher view)" (button at the top). After you have drawn your default CAM, which should be presented to the participants (see details in [Set up study](Set up study.md)) you can click on the "gear symbol" (top left) to define the configuration of your CAM study. 
+Within the administrative panel, after you have logged in, you can click on the "C.A.M.E.L. (researcher view)" button at the top. After you have drawn your default CAM, which should be presented to the participants (see details in [Set up study](Set up study.md)), you can click on the "gear symbol" (top left) to define the configuration of your CAM study. 
 
 
 **Parameter you can change using the user interface:** 
@@ -21,21 +21,21 @@ Within the administrative panel after you have logged in you can click on "C.A.M
 |----------|:-------------|:------:|
 | #ConNumNodes    | Number of concepts a participant needs to draw before <br> she / he is can save the CAM. | 1-50<sup>1</sup> |
 | #MaxLengthWords | Maximum number of words allowed for each concept.   |  1-5<sup>2</sup> |
-| #MaxLengthChars | Maximum number of characters for each concept allowed. | 30-300 |
+| #MaxLengthChars | Maximum number of characters allowed for each concept. | 30-300 |
 | #hideArrows | If ON possible to draw arrows / directed connections. | ON / OFF |
 | #BidirectionalDefault | Only makes sense if #hideArrows is set to ON, <br> as default the drawn connection is bidirectional. | ON / OFF |
 | #showOnlyPosSlid | If ON possible to draw supporting connections. | ON / OFF |
 | #hideAmbivalent | If ON possible to draw ambivalent concepts. | ON / OFF |
-| #cameraFeature | If ON  an splotlight feature is included to move the drawing <br> screen. If participants move their mouse to the edges the <br> drawing screen is moved to the respective side. | ON / OFF |
+| #cameraFeature | If ON a splotlight feature is included to move the drawing <br> screen. If participants move their mouse to the edges the <br> drawing screen is moved to the respective side. | ON / OFF |
 | #fullScreen | If ON study is set to fullscreen mode and paradata is <br> collected (defocus, focus events). | ON / OFF |
 | #setLanguage | Set the language of the C.A.M.E.L. interface: | English, <br> German, <br> Spanish, <br> Chinese |
 
 
-<sup>1</sup>Maxmimum number is restricted, because the drawing space is limited. In the future 3D environments will be implemented.
+<sup>1</sup>Maxmimum number is restricted because the drawing space is limited. In the future, 3D environments will be implemented.
 
 <sup>2</sup>It is **highly recommened to set this value to 1-3** if you are aiming to summarize / aggregate the CAM data. Instruct participants to avoid writing sentences and to draw instead multiple concepts. 
 
-*Remark: It is no recommended to write directly into the config file, except you know what you are doing. Certain configurations are set to default values and should not be changed. By programming your CAM <a href="https://camtools-documentation.readthedocs.io/en/master/Set%20up%20study/#program-on-scratch" target="_blank">on scratch</a> you are able to set reminders to program even adaptive designs.*
+*Remark: It is not recommended to write directly into the config file. Certain configurations are set to default values and should not be changed. By programming your CAM <a href="https://camtools-documentation.readthedocs.io/en/master/Set%20up%20study/#program-on-scratch" target="_blank">on scratch</a> you are able to set reminders to program even adaptive designs.*
 
 ***
 Data-structure of CAMs
@@ -43,10 +43,10 @@ Data-structure of CAMs
 
 
 
-The CAM itself is a Java Script object, which is temporarily stored on the client-side. Every CAM, concept or connector is a Java Script class, whereby the *constructer* is initializing a single instance of that respective class. Within the arrays <code>nodes</code> and <code>connectors</code> all the drawn (or deleted) concepts (nodes) respective connectors (edges) are stored.
+The CAM itself is a Java Script object which is temporarily stored on the client-side. Every CAM, concept or connector is a Java Script class, whereby the *constructer* is initializing a single instance of that respective class. Within the arrays <code>nodes</code> and <code>connectors</code>, all the drawn (or deleted) concepts (nodes) respective connectors (edges) are stored.
 
 
-In the following all the parameters of the *constructer* of the CAM, concept and connector is explained: 
+In the following, all the parameters of the *constructer* of the CAM, concept and connector is explained: 
 
 
 **Cognitive-Affective Map** has the following data structure when initialized, whereby the single parameters are explained below:
@@ -133,7 +133,7 @@ In the following all the parameters of the *constructer* of the CAM, concept and
 
 <br>
 
-**Connectors** (edges) drawn in CAM have the following data structure, whereby the single parameters are explained below:
+**Connectors** (edges) drawn in CAMs have the following data structure, whereby the single parameters are explained below:
 
 ```js
     constructor(isDeletable = true) {
@@ -157,10 +157,10 @@ In the following all the parameters of the *constructer* of the CAM, concept and
 | Parameter   |      Meaning      |  Application |
 |----------|:--------|:---------|
 | id    | Random character string that is assigned by <br> the C.A.M.E.L. software for each drawn <br>connector. | Unique identifier. |
-| value    | Strength of connector given by the participant <br>ranging from [-3,3]. | Compute network indicators <br>of weigthed network and <br>check type of connection. |
+| value    | Strength of connector given by the participant <br>ranging from [-3,3]. | Compute network indicators <br>of weighted network and <br>check type of connection. |
 | source | Outgoing connection of a concept to a target. | <i>internal</i> <br> (indicate a directional relationship) |
 | target | Incoming connection of a concept from a source. | <i>internal</i> |
-| agreement | Shape of connecting line (solid = strengthening <br>connections, dashed = inhibitory connections). | Solid line have positive values [1,3], <br>dashed lines negative values [-3,-1] |
+| agreement | Shape of connecting line (solid = strengthening <br>connections, dashed = inhibitory connections). | Solid lines have positive values [1,3], <br>dashed lines have negative values [-3,-1] |
 | isActive |  <code>TRUE</code> statement if connector was not deleted. | All deleted connectors are not <br> visible and marked by a <code>FALSE</code> <br>statement. |
 | date  | Date of creation. | Trace the sequence of the <br>drawing process. |
 | kind    | Type of element. | <i>internal</i> |

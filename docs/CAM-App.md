@@ -381,7 +381,19 @@ By applying a word2vec Model it is possible to compute the cosine similarity bet
 ### 5-step procedure to summarize CAM data
 ---
 
-blub!!!
+
+1. Theoretically driven, possibly relevant super- and subordinate categories are identified on the basis of existing literature. Importantly, identical terms can thereby exhibit positive or negative valence depending on the structure of the argument, e.g. people appreciate or devalue “more free time” during Covid-19.
+2. Subsequently, all CAMs are drawn and individually examined. Possible additional superordinate and subordinate word categories are documented in the form of memos, which are recorded thoughts, ideas and hypotheses during the observation process. Additionally, by visual inspection of the CAMs with the lowest and highest mean valence it can be checked if people with strong attitudes use different lines of arguments.
+    * CAM-App modules: use <a href="https://camtools-documentation.readthedocs.io/en/master/CAM-App/#draw-cams" target="_blank">Draw CAMs</a> module
+3. Subcategories are formed iteratively, considering existing theories. In the initial coding step (3a), first categories are generated and their respective frequencies are documented. In the subsequent coding step (3b), related subcategories within the existing category system are combined, which cover similar thematic subjects. This process (3a, 3b) is repeated until all terms in the CAMs have been coded. 
+    * CAM-App modules, we recommend to apply the modules in the following sequence: to correct for spelling errors / inconsistencies apply <a href="https://camtools-documentation.readthedocs.io/en/master/CAM-App/#approximate-matching" target="_blank">Approximate Matching</a>; to automatically summarize your list of remaining unique concepts to superorindate words apply <a href="https://camtools-documentation.readthedocs.io/en/master/CAM-App/#search-for-synonyms" target="_blank">Search for Synonyms</a> (using synonym dictionary) or <a href="https://camtools-documentation.readthedocs.io/en/master/CAM-App/#apply-word2vec-model" target="_blank">Apply word2vec Model</a> (using pre-trained language models); and finally to summarize related subcategories apply the <a href="https://camtools-documentation.readthedocs.io/en/master/CAM-App/#searching-terms" target="_blank">Searching Terms</a> module
+4. All subcategories that have been formed are combined to form topics at a higher level of abstraction
+    * CAM-App modules: apply the <a href="https://camtools-documentation.readthedocs.io/en/master/CAM-App/#searching-terms" target="_blank">Searching Terms</a> module; check finally for "non-summarized" terms using the CAM-App
+5. The results are presented in the form of tables and graphics. 
+
+
+
+> We recommend to consider the following when summarizing concepts: to consider concepts’ valences and comments on the drawn concepts, it should be made explicit how negations and questions were handled (for example, whether "promotes the economy," "detrimental to the economy", and "economic consequences?" should belong to the same category "economy") and finally for a finer categorization, it should be made explicit whether concepts were categorized multiple times. The finer the categorization, the more the subjectivity of the researchers could influence the final categorization. To increase the reliability of categorization of multiple raters, an inter-rater agreement procedure is recommended. If needed, a categorization guideline should be created in advance.
 
 
 

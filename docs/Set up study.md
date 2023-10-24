@@ -25,7 +25,7 @@ If you want to set up a C.A.M.E.L. study using the interface you need to do the 
 4. Click on the button "Add experiment" at the lower center of the page, in the pop-up you can change the following:
     - Name: name of your CAM study
     - Paste your configured CAM here: the configuration file of your CAM study, including the pre-defined concepts / connectors and the configuration (see step 5.)
-    - Redirect link (not mandatory): link to redirect participants after they have drawn their CAM
+    - Redirect link (mandatory): link to redirect participants after they have drawn their CAM
 5. To configure your CAM, please close the pop-up and click on the button "C.A.M.E.L." at the top right (check out the [Cognitive-Affective Map *extended logic*](Cognitive-Affective Map extended logic.md) page for details); two steps are needed: 
     * first step: draw your default CAM: start with changing the central pre-defined concept. It is **highly recommended to set the pre-defined concepts to not deletable, changeable and movable**, using the black researcher buttons at the bottom of the concept dialog (pops up if you double click on a drawn concept)<sup>1</sup>
     * second step: after you have drawn your default CAM, click on the "gear symbol" (top left) to define the configuration of your CAM study (see details in <a href="https://camtools-documentation.readthedocs.io/en/master/Cognitive-Affective%20Map%20extended%20logic/#define-your-config-file" target="_blank"> Define your config file</a>)

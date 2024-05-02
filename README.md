@@ -5,7 +5,7 @@ Welcome to the Cognitive-Affective Maps tools documentation!
 [![Documentation Status](https://readthedocs.org/projects/example-mkdocs-basic/badge/?version=latest)](https://example-mkdocs-basic.readthedocs.io/en/latest/?badge=latest)
  -->
 
- > This is the documentation for our developed Cognitive-Affective Map (CAM) tools. Please visit the central website <a href="https://dashboard-vercel-8aen53m4y-fennstatistics.vercel.app/" target="_blank">https://drawyourminds.de/</a>, for further information or to set up your first CAM study.
+ > This is the documentation for our developed Cognitive-Affective Map (CAM) tools. Please visit the central website <a href="https://dashboard-vercel-8aen53m4y-fennstatistics.vercel.app/" target="_blank">https://dashboard-vercel-8aen53m4y-fennstatistics.vercel.app/</a>, for further information or to set up your first CAM study.
 
 
 # Table of Contents

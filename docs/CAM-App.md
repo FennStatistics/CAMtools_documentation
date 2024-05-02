@@ -40,6 +40,8 @@ After uploading your raw CAM data (see next section) you can click on the module
 |----------|:----------------|
 | CAM    | Character string (ID) that is assigned by the C.A.M.E.L. software to <br> the CAM. |
 | participantCAM   |  ID that is assigned by the researchers to the CAM <br> (usually ID is generated in previous study part). |
+| dateCAMcreated   |  Date when CAM was created. |
+| dateConceptCreated   |  Date when concept was created. |
 | id    | Random character string (ID) that is assigned by the C.A.M.E.L. software to <br> the single node. |
 | text   |  Text written by the participant. |
 | value    | Valence given by the participant ranging from [-3,3]. |
@@ -63,6 +65,8 @@ Remark: By default all concepts deleted by the participants are removed from the
 |----------|:----------------|
 | CAM    | Character string (ID) that is assigned by the C.A.M.E.L. software to <br> the CAM. |
 | participantCAM   |  ID that is assigned by the researchers to the CAM <br> (usually ID is generated in previous study part). |
+| dateCAMcreated   |  Date when CAM was created. |
+| dateConnectorCreated   |  Date when connector was created. |
 | id     | Random character string (ID) that is assigned by the C.A.M.E.L. software to <br> the single connector. |
 | date   |  Date of creation. |
 | daughterID    | ID of the concept to which the connection is pointing. |
@@ -74,6 +78,31 @@ Remark: By default all concepts deleted by the participants are removed from the
 | isActive   |  <code>TRUE</code> if connector was not deleted by participant. |
 
 Remark: By default all connectors deleted by the participants are removed from the connectors data set (isActive is a constant only containing <code>TRUE</code>).
+
+
+***
+### Get duration over which a CAM was drawn
+---
+
+You could apply the following R Code to get the duration over which a CAM was drawn:
+
+```r
+vec_duration <- c()
+for(c in unique(CAMfiles[[1]]$CAM)){
+  print(c)
+
+  tmp_diffConcepts <- CAMfiles[[1]][CAMfiles[[1]]$CAM == c,"dateConceptCreated"] -
+    CAMfiles[[1]][CAMfiles[[1]]$CAM == c,"dateCAMcreated"]
+  tmp_diffConnectors <- CAMfiles[[2]][CAMfiles[[2]]$CAM == c,"dateConnectorCreated"] -
+    CAMfiles[[2]][CAMfiles[[2]]$CAM == c,"dateCAMcreated"]
+
+  print(max(c(tmp_diffConcepts, tmp_diffConnectors)))
+
+  vec_duration[[c]] <- max(c(tmp_diffConcepts, tmp_diffConnectors))
+}
+```
+
+Remark: The variables "dateConceptCreated" and "dateConnectorCreated" could be used to check the drawing process of a CAM (e.g., if all concepters where drawn before connectors were added).
 
 
 ***

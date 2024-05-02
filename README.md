@@ -18,32 +18,20 @@ Welcome to the Cognitive-Affective Maps tools documentation!
 
 # Cognitive-Affective Map extended logic
 
-The Cognitive-Affective Map extended logic is a powerful tool for analyzing and visualizing the relationships between cognitive and affective concepts. It provides a framework for representing complex mental models and understanding the dynamics of thoughts and emotions.
-The CAM-App is a user-friendly interface that allows researchers and participants to create, edit, and explore Cognitive-Affective Maps. It provides various features such as drag-and-drop functionality, customizable node and edge properties, and interactive visualization options.
-The Administrative panel is a centralized hub for managing CAM studies. It allows administrators to create and manage user accounts, assign roles and permissions, and track study progress. It also provides tools for data analysis and export.
-For additional resources and support, please refer to the following:
-We hope you find these resources helpful in using the Cognitive-Affective Map tools effectively. If you have any questions or need further assistance, please don't hesitate to reach out to our support team.
+Data collection - Cognitive-Affective Map Extended Logic (C.A.M.E.L.): C.A.M.E.L. is an open-source software to draw Cognitive-Affective Maps. It aims to offer people an easy and intuitive interface on which they could draw their own mind map within online studies. There is a participant view and a researcher view to set up studies. Currently it is possible to change 11 parameters of the C.A.M.E.L. software (e.g. force to full screen, or change language to Chinese).
+
+
 
 
 # CAM-App
-The Cognitive-Affective Map extended logic is a powerful tool for analyzing and visualizing the relationships between cognitive and affective concepts. It provides a framework for representing complex mental models and understanding the dynamics of thoughts and emotions.
-The CAM-App is a user-friendly interface that allows researchers and participants to create, edit, and explore Cognitive-Affective Maps. It provides various features such as drag-and-drop functionality, customizable node and edge properties, and interactive visualization options.
-The Administrative panel is a centralized hub for managing CAM studies. It allows administrators to create and manage user accounts, assign roles and permissions, and track study progress. It also provides tools for data analysis and export.
-For additional resources and support, please refer to the following:
-We hope you find these resources helpful in using the Cognitive-Affective Map tools effectively. If you have any questions or need further assistance, please don't hesitate to reach out to our support team.
 
+Data analysis - CAM-App: Using multiple modules you can summarize your CAM data semi-automatically (e.g. sophisticated language models are implemented) and the so summarized can subsequently be analyzed using multiple implemented functions, e.g. aggregating CAMs or compute over 30 network indicators. 
 
 # Administrative panel
-The Cognitive-Affective Map extended logic is a powerful tool for analyzing and visualizing the relationships between cognitive and affective concepts. It provides a framework for representing complex mental models and understanding the dynamics of thoughts and emotions.
-The CAM-App is a user-friendly interface that allows researchers and participants to create, edit, and explore Cognitive-Affective Maps. It provides various features such as drag-and-drop functionality, customizable node and edge properties, and interactive visualization options.
-The Administrative panel is a centralized hub for managing CAM studies. It allows administrators to create and manage user accounts, assign roles and permissions, and track study progress. It also provides tools for data analysis and export.
-For additional resources and support, please refer to the following:
-We hope you find these resources helpful in using the Cognitive-Affective Map tools effectively. If you have any questions or need further assistance, please don't hesitate to reach out to our support team.
+
+Set up studies – dashboard: We set up an administrative panel to set up and configure CAM studies easily and guarantee highest privacy standards (hosted on university BW-cloud).
 
 
 # Additional Resources
-The Cognitive-Affective Map extended logic is a powerful tool for analyzing and visualizing the relationships between cognitive and affective concepts. It provides a framework for representing complex mental models and understanding the dynamics of thoughts and emotions.
-The CAM-App is a user-friendly interface that allows researchers and participants to create, edit, and explore Cognitive-Affective Maps. It provides various features such as drag-and-drop functionality, customizable node and edge properties, and interactive visualization options.
-The Administrative panel is a centralized hub for managing CAM studies. It allows administrators to create and manage user accounts, assign roles and permissions, and track study progress. It also provides tools for data analysis and export.
-For additional resources and support, please refer to the following:
-We hope you find these resources helpful in using the Cognitive-Affective Map tools effectively. If you have any questions or need further assistance, please don't hesitate to reach out to our support team.
+
+Please read the following link: <https://camtools-documentation.readthedocs.io/en/master/Additional%20Resources/>

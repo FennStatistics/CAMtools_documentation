@@ -34,4 +34,4 @@ Set up studies – dashboard: We set up an administrative panel to set up and co
 
 # Additional Resources
 
-Please read the following link: <https://camtools-documentation.readthedocs.io/en/master/Additional%20Resources/>
+Please read the following link: <a href="https://camtools-documentation.readthedocs.io/en/master/Additional%20Resources/" target="_blank">https://camtools-documentation.readthedocs.io/en/master/Additional%20Resources/</a>

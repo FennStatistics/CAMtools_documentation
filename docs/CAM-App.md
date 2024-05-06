@@ -603,7 +603,7 @@ compute_indicatorsCAM(drawn_CAM = NULL,
 ---
 
 **Central aim**:
-Compute several variants (in total 6 variants) of average valences over group of concepts:
+Compute several variants (in total 6 variants) of average valences over group of concepts, whereby "X" is a placeholder for your choosen concept:
 
 - mean_1_X, mean_2_X: compute the mean valence over the neighborhood of order 1 / 2 with no adjustments
 - mean_1_dashed_X, mean_2_dashed_X: compute the mean valence over the neighborhood of order 1 / 2 with adjustment for dashed lines if connected to positive concepts (see picture, explanation below)
@@ -644,9 +644,9 @@ compute_neighborhoodIndicatorsCAM(drawn_CAM = NULL,
 **Adjusting for dashed lines**:
 
 
-blub
+In specific designs, participants associate a positive concept with predefined concepts, highlighted in blue within the image, using solid and dashed lines. Here, a participant linked "flexibility" (German: Flexibilität) with "certain timetable" (German: bestimmter Fahrplan) using a dashed line, implying a negative evaluation within this particular context. To address this, the valence of the concept is temporarily inverted (multiplied by -1).
 
-<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/example_concept_co_occurrences.JPG" alt="Example table missing" style="height:300px;" class="centerImg">
+<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/neighborhood_CAM_1568.jpg" alt="Example neighborhood CAM missing" style="height:300px;" class="centerImg">
 
 
 ***

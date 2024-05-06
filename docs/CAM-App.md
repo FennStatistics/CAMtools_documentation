@@ -605,10 +605,10 @@ compute_indicatorsCAM(drawn_CAM = NULL,
 **Central aim**:
 Compute several variants (in total 6 variants) of average valences over group of concepts:
 
-- compute the mean valence over the neighborhood of order 1 / 2 with no adjustments
-- compute the mean valence over the neighborhood of order 1 / 2 with adjustment for dashed lines if connected to positive concepts (see picture, explanation below)
-- compute the mean valence over the neighborhood of order 1 / 2 with weighting of neighborhood of second order (currently .5), because we assume that's concepts further away have less relevance for the concept under consideration
-
+- mean_1_X, mean_2_X: compute the mean valence over the neighborhood of order 1 / 2 with no adjustments
+- mean_1_dashed_X, mean_2_dashed_X: compute the mean valence over the neighborhood of order 1 / 2 with adjustment for dashed lines if connected to positive concepts (see picture, explanation below)
+- mean_2_weighted_X: compute the mean valence over the neighborhood of order 2 with weighting of neighborhood of second order (default .5), because we assume that's concepts further away have less relevance for the concept under consideration
+- mean_2_weighted_dashed_X: compute the mean valence over the neighborhood of order 2 with weighting of neighborhood of second order (default .5) while adjusting for dashed lines (see picture, explanation below), because we assume that's concepts further away have less relevance for the concept under consideration
 
 
 **Example**: This is helpful if you have specified two contradictory concepts in a study. In the example CAM below participants were surveyed regarding their motivation to use their “own car” or “public transport”. This is an interesting study design to analyze the perception of opposing poles or concepts. In such a case, it would not meaningful to compute the overall mean valence. Instead, the mean valence over the neighborhood of the respective concept of the first or second order (one or two steps away, i.e., concepts that are directly connected to the respective concept are one step away) indicates the negative assessment of “public transport” and the mixed assessment of “own car” in this CAM. It is also possible to temporarily remove connections (and / or concepts) in order to not distort the neighborhood statistics (e.g., mean valence two steps away from the concept “own car”). Click on the example CAM to enlarge it in new tab - could take few seconds: 
@@ -638,6 +638,15 @@ compute_neighborhoodIndicatorsCAM(drawn_CAM = NULL,
 ```
 
 * compute_neighborhoodIndicatorsCAM(): network neighborhood indicators are computed, by specifying <code>removeConnectionCAM</code> or / and <code>removeNodeCAM</code> a connection respective a concept is temporarily removed (<code>sliceCAMbool</code> is set to TRUE if any elements are removed); changing the value of <code>weightSecondOrder</code> de/increases the weighting of the second order concepts; <code>consideredConcepts</code> is a vector containing all the concepts for which do you want to get neighborhood indicators
+
+
+<br>
+**Adjusting for dashed lines**:
+
+
+blub
+
+<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/example_concept_co_occurrences.JPG" alt="Example table missing" style="height:300px;" class="centerImg">
 
 
 ***

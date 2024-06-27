@@ -53,16 +53,15 @@ Data obtained in CAM studies can be analyzed quantitatively, in terms of network
 
 **Research questions currently under investigation** (*incomplete list*):
 
-* Have CAMs added-value to surveys? 
-    * As CAMs are an exploratory tool, this may allow us to go beyond predefined standardized surveys to identify possible interrelationships within belief systems that would otherwise not have been identified[@livanec_whos_2022]<sup>,</sup>[@mansell_measuring_2021]. This has been investigated in a study to identify key-psychological factors influencing the acceptance of yet fictitious technologies[@fennIdentifyingKeypsychologicalFactors2023].
-* Can CAMs be applied to understand how terms like „life“, „sustainability“ are understood?
-    * CAMs are applied to understand how researchers from different disciplines or laypersons understand certain terms. This will be investigated in multiple studies regarding the concept of „sustainability“; see <a href="https://www.livmats.uni-freiburg.de/en/people/phd-and-postdoc-students/michael-gorki" target="_blank">Michael Gorki (livMatS)</a>
+* Do CAMs add value to surveys?
+    * CAMs, being an exploratory tool, allow us to go beyond predefined standardized surveys to identify possible interrelationships within belief systems that would otherwise go unnoticed[@livanec_whos_2022]<sup>,</sup>[@mansell_measuring_2021]. This has been investigated in a study identifying key psychological factors influencing the acceptance of hypothetical technologies[@fennIdentifyingKeypsychologicalFactors2023].
+* Can CAMs help understand concepts like "Life" and "Sustainability"?
+    * CAMs are used to explore how researchers from different disciplines or laypersons understand certain terms. This will be examined in multiple studies focused on the concept of "sustainability"; see <a href="https://www.livmats.uni-freiburg.de/en/people/phd-and-postdoc-students/michael-gorki" target="_blank">Michael Gorki (livMatS)</a>
 * How reliable are CAMs?
-    * Using longitudinal designs in a PhD Project, the reliability of CAMs will be investigated; see <a href="https://www.livmats.uni-freiburg.de/en/people/phd-and-postdoc-students/wilhelm-gros" target="_blank">Wilhelm Gros (livMatS)</a>
+    * The reliability of CAMs is being investigated through longitudinal designs in a PhD project; see <a href="https://www.livmats.uni-freiburg.de/en/people/phd-and-postdoc-students/wilhelm-gros" target="_blank">Wilhelm Gros (livMatS)</a>
+* What drives the perception of soft robots compared to rigid robots? How can the complex construct of trust be operationalized?
+    * Using intervention designs and exploratory studies in a post-doc project, the perceptions of soft robots and the concept of trust are being investigated across multiple studies; see <a href="https://www.livmats.uni-freiburg.de/de/people/postdoctoral-researchers/dr-louisa-julie-estadieus" target="_blank">Dr. Louisa Estadieu (livMatS)</a>
 * ...
-    
-    
-
 
 
 

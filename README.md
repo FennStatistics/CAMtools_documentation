@@ -5,22 +5,19 @@ Welcome to the Cognitive-Affective Maps tools documentation!
 [![Documentation Status](https://readthedocs.org/projects/example-mkdocs-basic/badge/?version=latest)](https://example-mkdocs-basic.readthedocs.io/en/latest/?badge=latest)
  -->
 
- > This is the documentation for our developed Cognitive-Affective Map (CAM) tools. Please visit the central website <a href="https://dashboard-vercel-8aen53m4y-fennstatistics.vercel.app/" target="_blank">https://dashboard-vercel-8aen53m4y-fennstatistics.vercel.app/</a>, for further information or to set up your first CAM study.
+ > This is the documentation for our developed Cognitive-Affective Map (CAM) tools. Please visit the central website <a href="https://drawyourminds.de/" target="_blank">https://drawyourminds.de/</a>, for further information or to set up your first CAM study.
 
 
-# Table of Contents
+# Table of Contents of Developed Tools
 
 - [Cognitive-Affective Map extended logic](#cognitive-affective-map-extended-logic)
 - [CAM-App](#cam-app)
 - [Administrative panel](#administrative-panel)
-- [Additional Resources](#additional-resources)
 
 
 # Cognitive-Affective Map extended logic
 
-Data collection - Cognitive-Affective Map Extended Logic (C.A.M.E.L.): C.A.M.E.L. is an open-source software to draw Cognitive-Affective Maps. It aims to offer people an easy and intuitive interface on which they could draw their own mind map within online studies. There is a participant view and a researcher view to set up studies. Currently it is possible to change 11 parameters of the C.A.M.E.L. software (e.g. force to full screen, or change language to Chinese).
-
-
+Data collection - Cognitive-Affective Map Extended Logic (C.A.M.E.L.): C.A.M.E.L. is an open-source software to draw Cognitive-Affective Maps. It aims to offer people an easy and intuitive interface on which they could draw their own mind map within online studies. There is a participant view and a researcher view to set up studies. Currently it is possible to change over 10 parameters of the C.A.M.E.L. software (e.g. force to full screen, or change language to Chinese).
 
 
 # CAM-App
@@ -29,9 +26,4 @@ Data analysis - CAM-App: Using multiple modules you can summarize your CAM data 
 
 # Administrative panel
 
-Set up studies – dashboard: We set up an administrative panel to set up and configure CAM studies easily and guarantee highest privacy standards (hosted on university BW-cloud).
-
-
-# Additional Resources
-
-Please read the following link: <a href="https://camtools-documentation.readthedocs.io/en/master/Additional%20Resources/" target="_blank">https://camtools-documentation.readthedocs.io/en/master/Additional%20Resources/</a>
+Set up studies – dashboard: We set up an administrative panel to set up and configure CAM studies easily without the need of coding and guarantee highest privacy standards. Simply register an account at our webpage <a href="https://drawyourminds.de/" target="_blank">https://drawyourminds.de/</a>.

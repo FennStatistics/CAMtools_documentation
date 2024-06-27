@@ -40,19 +40,20 @@ If you want to set up a CAM study using the administrative panel you need to do 
 
 Use the black researcher buttons at the bottom of the concept or connector dialog page to set defined concepts or connectors to not deletable, movable (concept cannot be moved) or changeable (content of concept cannot be changed):
 
-<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/researcher_functionalities_concepts_new.jpg" alt="researcher functionalities picture missing" style="height:300px;" class="centerImg">
+<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/researcher_functionalities_concepts_new.jpg" alt="new researcher functionalities picture missing" style="height:350px;" class="centerImg">
+
 
 <sup>2</sup>**generated configuration file:**
 
 After you have drawn your default CAM and configured your C.A.M.E.L. study, you can copy the text by using the button "Copy text" (red rectangle), or if this is not working copy the text manually from the textbox (blue arrow):
 
-<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/generated_configfile.jpg" alt="generated config file picture missing" style="height:300px;" class="centerImg">
+<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/generated_configfile.jpg" alt="generated config file picture missing" style="height:350px;" class="centerImg">
 
 <sup>3</sup>**Add CAM study (within administrative panel):**
 
 Copy the generated configuration file to the administrative panel within the cental textbox (yellow arrow). It is important to not change this file. The title of your study can be added under Name (red arrow) and if you want to redirect your particpants to a further study you can provide the redirect link (green arrow):
 
-<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/adminPanel_addExperiment_new.jpg" alt="admin panel add experiment picture missing" style="height:300px;" class="centerImg">
+<img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/adminPanel_addExperiment_new.jpg" alt="new admin panel add experiment picture missing" style="height:350px;" class="centerImg">
 
 
 

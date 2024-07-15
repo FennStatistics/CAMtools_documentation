@@ -17,8 +17,8 @@ You're very welcome to join, to register please do the following steps:
       target="_blank">https://element.io/</a>)
     </li>
   <li>Create an account</li>
-    <li> Click on the invite link: <a href="https://matrix.to/#/#cognitive-affective-maps-tools:ael-matrix-dev.uni-freiburg.de"
-      target="_blank">https://matrix.to/#/#cognitive-affective-maps-tools:ael-matrix-dev.uni-freiburg.de</a>
+    <li> Click on the invite link: <a href="https://matrix.to/#/#cognitive-affective-maps:matrix.uni-freiburg.de"
+      target="_blank">https://matrix.to/#/#cognitive-affective-maps:matrix.uni-freiburg.de</a>
     </li>
 </ol>  
 </div>

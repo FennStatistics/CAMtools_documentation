@@ -22,8 +22,8 @@ The data collection tool is an open-source software to draw CAMs. It aims to off
 
 # Data Analysis Tool
 
-Using multiple modules you can summarize your CAM data omputer-assisted (e.g. sophisticated language models are implemented) and the so summarized can subsequently be analyzed using multiple implemented functions, e.g. aggregating CAMs or compute over 30 network indicators. 
+Using multiple modules you can summarize your CAM data omputer-assisted (e.g. sophisticated language models are implemented) and the so summarized data can subsequently be analyzed using multiple implemented functions, e.g. aggregating CAMs or compute over 30 network indicators. 
 
 # Administrative Panel
 
-The administrative panel allows you to set up and configure CAM studies easily without the need of coding and guarantee highest privacy standards. Simply register an account at our webpage <a href="https://drawyourminds.de/" target="_blank">https://drawyourminds.de/</a>.
+The administrative panel allows you to set up and configure CAM studies easily without the need of coding and guarantee the highest privacy standards. Simply register an account at our webpage <a href="https://drawyourminds.de/" target="_blank">https://drawyourminds.de/</a>.

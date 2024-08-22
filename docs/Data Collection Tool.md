@@ -1,9 +1,9 @@
 Data Collection Tool
 =====
 
-The Data Collection Tool enable participants to draw CAMs. It is constructed to support large-scale online-studies to gather CAM data of many participants (several hundred participants would be no problem). 
+The Data Collection Tool enables participants to draw CAMs. It is constructed to support large-scale online-studies to gather CAM data of many participants (several hundred participants would be no problem). 
 
-Asking participants to draw CAMs from scratch may be an ambitious task and participants may not even draw a CAM regarding your intended issue (like your intended topic). Here it might help to predefine concepts to help your participants to draw the intended CAM. Moreover, it may be that researchers would like to control what is being displayed or even possible to do (i.e., draw ambivalent concepts) while drawing CAMs. For example, it could be the case, that you fear that a large number of possible features would be too demanding (cognitively or from a time perspective) for your participants, you can easily disable certain features, like the ability to draw unidirectional relations or inhibiting connections. 
+Asking participants to draw CAMs from scratch may be an ambitious task and participants may not even draw a CAM regarding your intended issue (like your intended topic). Here it might help to predefine concepts to help your participants to draw the intended CAM. Moreover, it may be that researchers would like to control what is being displayed or even possible to do (i.e., draw ambivalent concepts) while drawing CAMs. For example, it be the case that you fear that a large number of possible features would be too demanding (cognitively or from a time perspective) for your participants, you can easily disable certain features, like the ability to draw unidirectional relations or inhibiting connections. 
 
 To this end, a "researcher view" of the CAM board was implemented. There, it is possible to create, position and fix (i.e., impossibility to move a concept) elements. Once the structure is ready, click on “export” to create a CAM.json including all the different elements as well as the configuration of the project (see in detail [Set up study](Set up study.md)).
 
@@ -33,7 +33,7 @@ Within the administrative panel, after you have logged in, you can click on the 
 
 <sup>1</sup>Maxmimum number is restricted because the drawing space is limited. In the future, 3D environments will be implemented.
 
-<sup>2</sup>It is **highly recommened to set this value to 1-3** if you are aiming to summarize / aggregate the CAM data. Instruct participants to avoid writing sentences and to draw instead multiple concepts. 
+<sup>2</sup>It is **highly recommended to set this value to 1-3** if you are aiming to summarize / aggregate the CAM data. Instruct participants to avoid writing sentences and to draw instead multiple concepts. 
 
 *Remark: It is not recommended to write directly into the config file. Certain configurations are set to default values and should not be changed. By programming your CAM <a href="https://camtools-documentation.readthedocs.io/en/master/Set%20up%20study/#program-on-scratch" target="_blank">on scratch</a> you are able to set reminders to program even adaptive designs.*
 
@@ -43,10 +43,10 @@ Data-structure of CAMs
 
 
 
-The CAM itself is a Java Script object which is temporarily stored on the client-side. Every CAM, concept or connector is a Java Script class, whereby the *constructer* is initializing a single instance of that respective class. Within the arrays <code>nodes</code> and <code>connectors</code>, all the drawn (or deleted) concepts (nodes) respective connectors (edges) are stored.
+The CAM itself is a Java Script object which is temporarily stored on the client-side. Every CAM, concept or connector is a Java Script class, whereby the *constructor* is initializing a single instance of that respective class. Within the arrays <code>nodes</code> and <code>connectors</code>, all the drawn (or deleted) concepts (nodes) respective connectors (edges) are stored.
 
 
-In the following, all the parameters of the *constructer* of the CAM, concept and connector is explained: 
+In the following, all the parameters of the *constructor* of the CAM, concept and connector is explained: 
 
 
 **Cognitive-Affective Map** has the following data structure when initialized, whereby the single parameters are explained below (in the browser console call "CAM"):
@@ -186,7 +186,7 @@ The following features are implemented to increase data quality:
 * the predefined connectors cannot be deleted if <code>isDeletable</code> is set to FALSE
 
 
-> => If a participant violates any of the configuration a pop-up informs the participants what she / he has done wrong.
+> => If a participant violates any of the configurations a pop-up informs the participants what she / he has done wrong.
 
 
 Using the Java Script library Cytoscape all kinds of additional real-time pre- or post-processing analysis are possible in real-time and it is possible to implement adaptive study designs (see <a href="https://camtools-documentation.readthedocs.io/en/master/Set%20up%20study/#example-studies" target="_blank">example study section</a>).

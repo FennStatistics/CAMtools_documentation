@@ -36,18 +36,18 @@ In the following example CAM, participants compared cars and public transport[@s
 What are the advantages of using Cognitive-Affective Maps?
 ----------------
 
-CAMs have a strong theoretical foundation and have been discussed within philosophy (mainly in the context of explanatory coherence) since the end of the 1990s [@thagard_ethical_1998]<sup>,</sup>[@thagard_coherence_2000]. The process of drawing a CAM is understood as a **constraint satisfaction problem** and multiple mathematical models, like the hot cognition (HOTCO) model[@thagard_hot_2006], were proposed. Since 2020[@rhea_valence_2020], CAM tools for large online studies are under development in the Cognition, Action and Sustainability Unit (in German *Allgemeine Psychologie*) at the University of Freiburg, Department of Psychology. For more information regarding the most recent research, see the homepage of the departement in Freiburg, <a href="https://www.psychologie.uni-freiburg.de/abteilungen/Allgemeine.Psychologie/research/cam-research" target="_blank">https://www.psychologie.uni-freiburg.de/abteilungen/Allgemeine.Psychologie/research/cam-research</a>.
+CAMs have a strong theoretical foundation and have been discussed within philosophy (mainly in the context of explanatory coherence) since the end of the 1990s [@thagard_ethical_1998]<sup>,</sup>[@thagard_coherence_2000]. The process of drawing a CAM is understood as a **constraint satisfaction problem** and multiple mathematical models, like the hot cognition (HOTCO) model[@thagard_hot_2006], were proposed. Since 2020[@rhea_valence_2020], CAM tools for large online studies are under development in the Cognition, Action and Sustainability Unit (in German *Allgemeine Psychologie*) at the University of Freiburg, Department of Psychology. For more information regarding the most recent research, see the homepage of the department in Freiburg, <a href="https://www.psychologie.uni-freiburg.de/abteilungen/Allgemeine.Psychologie/research/cam-research" target="_blank">https://www.psychologie.uni-freiburg.de/abteilungen/Allgemeine.Psychologie/research/cam-research</a>.
 
 Data obtained in CAM studies can be analyzed quantitatively, in terms of network parameters and affective connotation, as well as qualitatively. CAMs as a research method foster research in multiple fields of application, which are linked to multiple interesting research question: 
 
 **Research questions already investigated** (*incomplete list*):
 
-* In two emperical studies it was explored how people (in different countries) are perceiving the COVID-19 pandemic[@mansell_novel_2021]<sup>,</sup>[@reuter_leisure_2021].
+* In two empirical studies it was explored how people (in different countries) are perceiving the COVID-19 pandemic[@mansell_novel_2021]<sup>,</sup>[@reuter_leisure_2021].
 * The HOTCO model has been applied in the context of agent-based modelling[@wolf_changing_2015]<sup>,</sup>[@schroder_modeling_2017].
 * CAMs have been applied to study political belief systems[@homer-dixon_complex_2013]<sup>,</sup>[@homer-dixon_conceptual_2014]<sup>,</sup>[@milkoreit_manjana_mindmade_2013].
 * The potentiality of CAMs for conflict mediation was investigated[@gros_camediaid_2021].
 * The additional value of CAMs to survey studies has been investigated[@fennIdentifyingKeypsychologicalFactors2023].
-* CAMs have been applied the check if an cost intervention has an impact on the perception of environmentally friendly mobility vs. car[@sendtner_kostbare_2021].
+* CAMs have been applied to check if a cost intervention has an impact on the perception of environmentally friendly mobility vs. car[@sendtner_kostbare_2021].
 * ...
 
 

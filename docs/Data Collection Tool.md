@@ -1,7 +1,7 @@
-Cognitive-Affective Map extended logic
+Data Collection Tool
 =====
 
-The application Cognitive-Affective Map extended logic (C.A.M.E.L.) is a software package that enable participants to draw CAMs. It is constructed to support large-scale online-studies to gather CAM data of many participants (several hundred participants would be no problem for C.A.M.E.L.). 
+The Data Collection Tool enable participants to draw CAMs. It is constructed to support large-scale online-studies to gather CAM data of many participants (several hundred participants would be no problem). 
 
 Asking participants to draw CAMs from scratch may be an ambitious task and participants may not even draw a CAM regarding your intended issue (like your intended topic). Here it might help to predefine concepts to help your participants to draw the intended CAM. Moreover, it may be that researchers would like to control what is being displayed or even possible to do (i.e., draw ambivalent concepts) while drawing CAMs. For example, it could be the case, that you fear that a large number of possible features would be too demanding (cognitively or from a time perspective) for your participants, you can easily disable certain features, like the ability to draw unidirectional relations or inhibiting connections. 
 
@@ -12,7 +12,7 @@ To this end, a "researcher view" of the CAM board was implemented. There, it is 
 Define your config file
 ------------
 
-Within the administrative panel, after you have logged in, you can click on the "C.A.M.E.L. (researcher view)" button at the top. After you have drawn your default CAM, which should be presented to the participants (see details in [Set up study](Set up study.md)), you can click on the "gear symbol" (top left) to define the configuration of your CAM study. 
+Within the administrative panel, after you have logged in, you can click on the "Data Collection (researcher view)" button at the top. After you have drawn your default CAM, which should be presented to the participants (see details in [Set up study](Set up study.md)), you can click on the "gear symbol" (top left) to define the configuration of your CAM study. 
 
 
 **Parameter you can change using the user interface:** 
@@ -28,7 +28,7 @@ Within the administrative panel, after you have logged in, you can click on the 
 | #hideAmbivalent | If ON possible to draw ambivalent concepts. | ON / OFF |
 | #cameraFeature | If ON a splotlight feature is included to move the drawing <br> screen. If participants move their mouse to the edges the <br> drawing screen is moved to the respective side. | ON / OFF |
 | #fullScreen | If ON study is set to fullscreen mode and paradata is <br> collected (defocus, focus events). | ON / OFF |
-| #setLanguage | Set the language of the C.A.M.E.L. interface: | English, <br> German, <br> Spanish, <br> Chinese |
+| #setLanguage | Set the language of the interface of the data collection <br> tool: | English, <br> German, <br> Spanish, <br> Chinese |
 
 
 <sup>1</sup>Maxmimum number is restricted because the drawing space is limited. In the future, 3D environments will be implemented.
@@ -49,7 +49,7 @@ The CAM itself is a Java Script object which is temporarily stored on the client
 In the following, all the parameters of the *constructer* of the CAM, concept and connector is explained: 
 
 
-**Cognitive-Affective Map** has the following data structure when initialized, whereby the single parameters are explained below:
+**Cognitive-Affective Map** has the following data structure when initialized, whereby the single parameters are explained below (in the browser console call "CAM"):
 
 
 ```js
@@ -73,7 +73,7 @@ In the following, all the parameters of the *constructer* of the CAM, concept an
 
 | Parameter   |      Meaning      |  Application |
 |----------|:--------|:---------|
-| idCAM    | Random character string (ID) that is assigned <br> by the C.A.M.E.L. software to the CAM. | Unique identifier. |
+| idCAM    | Random character string (ID) that is assigned <br> by the data collection tool to the CAM. | Unique identifier. |
 | creator   | Character string that is stored by the <br> researcher. | **Unique ID** to identify <br> participants between study <br> parts. |
 | projectCAM  | Name of current project. | <i>internal</i> <br> (information not needed) |
 | defocusCAM | Array which stores defocus events, <br> when <code>#fullScreen</code> is set to <code>TRUE</code> | Check if a participant left <br> fullscreen during the CAM <br> study part. |
@@ -90,7 +90,7 @@ In the following, all the parameters of the *constructer* of the CAM, concept an
 
 <br>
 
-**Concepts** (nodes) drawn in CAM have the following data structure, whereby the single parameters are explained below:
+**Concepts** (nodes) drawn in CAM have the following data structure, whereby the single parameters are explained below (in the browser console call "CAM.nodes"):
 
 
 ```js
@@ -115,7 +115,7 @@ In the following, all the parameters of the *constructer* of the CAM, concept an
 
 | Parameter   |      Meaning      |  Application |
 |----------|:--------|:---------|
-| id    | Random character string that is assigned by <br> the C.A.M.E.L. software for each drawn <br>concept. | Unique identifier. |
+| id    | Random character string that is assigned by <br> the data collection tool for each drawn <br>concept. | Unique identifier. |
 | value    | Valence given by the participant ranging <br>from [-3,3]. | To compute the average valence <br> of a CAM. |
 | text    | Text written by the participant. | Get meaning of drawn <br> concept. |
 | comment  | Comment given by the participant. | Support interpretation of drawn <br> concept. |
@@ -133,7 +133,7 @@ In the following, all the parameters of the *constructer* of the CAM, concept an
 
 <br>
 
-**Connectors** (edges) drawn in CAMs have the following data structure, whereby the single parameters are explained below:
+**Connectors** (edges) drawn in CAMs have the following data structure, whereby the single parameters are explained below (in the browser console call "CAM.connectors"):
 
 ```js
     constructor(isDeletable = true) {
@@ -156,7 +156,7 @@ In the following, all the parameters of the *constructer* of the CAM, concept an
 
 | Parameter   |      Meaning      |  Application |
 |----------|:--------|:---------|
-| id    | Random character string that is assigned by <br> the C.A.M.E.L. software for each drawn <br>connector. | Unique identifier. |
+| id    | Random character string that is assigned by <br> the data collection tool for each drawn <br>connector. | Unique identifier. |
 | value    | Strength of connector given by the participant <br>ranging from [-3,3]. | Compute network indicators <br>of weighted network and <br>check type of connection. |
 | source | Outgoing connection of a concept to a target. | <i>internal</i> <br> (indicate a directional relationship) |
 | target | Incoming connection of a concept from a source. | <i>internal</i> |
@@ -200,7 +200,7 @@ Future features
 ----------------
 
 
-Multiple extensions of the C.A.M.E.L. software are currently tested: currently we are implementing **simultaneous collaboration** in C.A.M.E.L., as such that more than one person can work on the identical CAM at the same time. Tweaking the software it was already possible to run **sequential collaboration studies**, whereby a CAM is consecutively changed. A **graphical database** (e.g. using Neo4j) was recently implemented. Using Neo4j queries can be made directly on summarized CAM data, e.g., “How often was the concept "own car" associated with "flexibility"?”. Finally **3D visualizations** for large CAMs are set up (e.g. using Unity also virtual reality experiment would be possible).
+Multiple extensions of the data collection tool are currently tested: currently we are implementing **simultaneous collaboration**, as such that more than one person can work on the identical CAM at the same time. Tweaking the software it was already possible to run **sequential collaboration studies**, whereby a CAM is consecutively changed. A **graphical database** (e.g. using Neo4j) was recently implemented. Using Neo4j queries can be made directly on summarized CAM data, e.g., “How often was the concept "own car" associated with "flexibility"?”. Finally **3D visualizations** for large CAMs are set up (e.g. using Unity also virtual reality experiment would be possible).
 
 <br>
 If you are missing a specific feature for your study and do not know how to implement it, we are happy to hear from you: <cam.contact@drawyourminds.de>

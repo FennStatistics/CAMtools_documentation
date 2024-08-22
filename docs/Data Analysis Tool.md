@@ -11,7 +11,7 @@ Data Analysis Tool
 There are **two possibilities to run the Data Analysis Tool**:
 
 * locally: 
-    * download the Data Analysis Tool from the GitHub repository: <a href="https://github.com/Camel-app/DataAnalysis" target="_blank">https://github.com/Camel-app/DataAnalysisR</a> (use <code>.git</code> or download it manutally -> green button "<>Code" -> "Download ZIP")
+    * download the Data Analysis Tool from the GitHub repository: <a href="https://github.com/Camel-app/DataAnalysis" target="_blank">https://github.com/Camel-app/DataAnalysisR</a> (use <code>.git</code> or download it manually -> green button "<>Code" -> "Download ZIP")
     * if not already installed, download <a href="https://cran.r-project.org/" target="_blank">R</a> and <a href="https://posit.co/download/rstudio-desktop/" target="_blank">RStudio</a>
     * open the file <code>app.R</code>, install packages if needed, click on "Run App"
 * online (! disadvantage: App is way slower): 
@@ -29,27 +29,26 @@ If you want **to change or extend single functions**, please check out the readm
 Data-structure of uploaded CAMs
 ----------------
 
-After uploading your raw CAM data (see next section) you can click on the module specific option "> Descriptive" to get an overview over your uploaded data in the form of dynamic tables. Here you can see, that a CAM data set consists of a nodes (also called "concepts") and connectors data set (for details of the data structure within the C.A.M.E.L. software see <a href="https://camtools-documentation.readthedocs.io/en/master/Data%20Collection%20Tool/#data-structure-of-cams" target="_blank">"Data-structure of CAMs"</a>
+After uploading your raw CAM data (see next section) you can click on the module specific option "> Descriptive" to get an overview over your uploaded data in the form of dynamic tables. Here you can see that a CAM data set consists of nodes (also called "concepts") and connectors data set (for details of the data structure within the Data Collection Tool see <a href="https://camtools-documentation.readthedocs.io/en/master/Data%20Collection%20Tool/#data-structure-of-cams" target="_blank">"Data-structure of CAMs"</a>
 ): 
-
 
 
 **Nodes data set** contains all concepts drawn in the CAM and the following variables are considered in the Data Analysis Tool:
 
 | Parameter   |      Meaning   | 
 |----------|:----------------|
-| CAM    | Character string (ID) that is assigned by the C.A.M.E.L. software to <br> the CAM. |
-| participantCAM   |  ID that is assigned by the researchers to the CAM <br> (usually ID is generated in previous study part). |
+| CAM    | Character string (ID) that is assigned by the Data Collection Tool to <br> the CAM. |
+| participantCAM   |  ID that is assigned by the researchers to the CAM <br> (usually ID is generated in the previous study part). |
 | dateCAMcreated   |  Date when CAM was created. |
 | dateConceptCreated   |  Date when concept was created. |
-| id    | Random character string (ID) that is assigned by the C.A.M.E.L. software to <br> the single node. |
+| id    | Random character string (ID) that is assigned by the Data Collection <br> Tool to the single node. |
 | text   |  Text written by the participant. |
 | value    | Valence given by the participant ranging from [-3,3]. |
 | comment   |  Comment given by the participant. |
 | date   |  Date of creation. |
 | x_pos   |  x-coordinate of the drawn concept. |
 | y_pos   |  y-coordinate of the drawn concept. |
-| predefinedConcept   |  If any of the following 3 variables are <code>TRUE</code>, the concept is predefined by <br> the researcher. |
+| predefinedConcept   |  If any of the following 3 variables are <code>TRUE</code>, the concept is predefined <br> by the researcher. |
 | isDraggable   | If concept is moveable (set by researcher). |
 | isDeletable   | If concept is deletable (set by researcher). |
 | isTextChangeable   |  If text of concept is changeable (set by researcher). |
@@ -63,11 +62,11 @@ Remark: By default all concepts deleted by the participants are removed from the
 
 | Parameter   |      Meaning   | 
 |----------|:----------------|
-| CAM    | Character string (ID) that is assigned by the C.A.M.E.L. software to <br> the CAM. |
+| CAM    | Character string (ID) that is assigned by the Data Collection Tool to <br> the CAM. |
 | participantCAM   |  ID that is assigned by the researchers to the CAM <br> (usually ID is generated in previous study part). |
 | dateCAMcreated   |  Date when CAM was created. |
 | dateConnectorCreated   |  Date when connector was created. |
-| id     | Random character string (ID) that is assigned by the C.A.M.E.L. software to <br> the single connector. |
+| id     | Random character string (ID) that is assigned by the Data Collection <br> Tool to the single connector. |
 | date   |  Date of creation. |
 | daughterID    | ID of the concept to which the connection is pointing. |
 | motherID   |  ID of the concept from which the connection originates. |
@@ -172,7 +171,7 @@ create_ValenceFiles(datBlocks = blocks, datLinks = links)
 fix_ValenceData(dat_nodes, dat_connectors, dat_merged, verbose = FALSE)
 ```
 
-* create_CAMfiles(): takes raw CAM data from C.A.M.E.L. as input, removes all the deleted concepts / connectors (<code>reDeleted</code>), not printing this process to the console (<code>verbose</code>)
+* create_CAMfiles(): takes raw CAM data from Data Collection Tool as input, removes all the deleted concepts / connectors (<code>reDeleted</code>), not printing this process to the console (<code>verbose</code>)
 * create_ValenceFiles(): takes raw CAM data from Valence software as input; Valences files are seperate <code>.csv</code> files for blocks (concepts) and links (connectors)
 * fix_ValenceData(): takes raw CAM data from Valence software as input and tries to automatically remove known problems within data sets of the Valence software, for example in Valence it is technically possible to draw multiple connections between concepts
 
@@ -183,7 +182,7 @@ fix_ValenceData(dat_nodes, dat_connectors, dat_merged, verbose = FALSE)
 
 After starting the Data Analysis Tool by clicking on "1) Upload your protocol" the researcher can upload a protocol generated by the Data Analysis Tool. Each time a researcher engages with the Data Analysis Tool, an automatic protocol is generated in the background, documenting all data pre-processing and analysis steps. By uploading the protocol and then the raw CAM data, all previously performed summary steps are reiterated and a researcher could continue pre-processing the CAM data. The protocol makes the summary process of the CAM data fully transparent for other researchers.
 
-**Example of protocol**: The protocol is internally JavaScript Object Notation (JSON) file and in the example it could be seen that the data was collected using the C.A.M.E.L. software, no CAMs had been deleted and only the summary function "Searching terms" (see below) has been used, whereby the researcher searched for the word "cost" and found three terms (see also <a href="https://camtools-documentation.readthedocs.io/en/master/Data%20Analysis%20Tool/#suffix-notation" target="_blank">Suffix notation</a>). 
+**Example of protocol**: The protocol is internally JavaScript Object Notation (JSON) file and in the example it could be seen that the data was collected using the Data Collection Tool, no CAMs had been deleted and only the summary function "Searching terms" (see below) has been used, whereby the researcher searched for the word "cost" and found three terms (see also <a href="https://camtools-documentation.readthedocs.io/en/master/Data%20Analysis%20Tool/#suffix-notation" target="_blank">Suffix notation</a>). 
 
 ```json
 {
@@ -523,11 +522,10 @@ Two types of network indicators with their respective descriptive statistics can
 **Central aim**:
 Compute 33 different network indicators (e.g., mean valence, density etc.) on an overall CAM level (macro). Additionally, select one or several concepts and calculate network indicators on an individual concept level (micro):
 
-
 | Network Indicator   |      Meaning   | 
 |----------|:----------------|
-| <span style="font-size: 12px;">CAM_ID</span>      | Character string (ID) that is assigned once by the C.A.M.E.L. <br> software to each CAM. |
-| <span style="font-size: 12px;">participantCAM</span>     |  Character string that is either created by the C.A.M.E.L. software or <br> transferred from another software (e.g., from questionnaire <br> applications). Therefore, this column is anonymized for publications <br> (e.g. replaced by a sequence number). |
+| <span style="font-size: 12px;">CAM_ID</span>      | Character string (ID) that is assigned once by the Data Collection <br> Tool to each CAM. |
+| <span style="font-size: 12px;">participantCAM</span>     |  Character string that is either created by the Data Collection Tool <br> or transferred from another software (e.g., from questionnaire <br> applications). Therefore, this column is anonymized for publications <br> (e.g. replaced by a sequence number). |
 | <span style="font-size: 12px;">mean_valence_macro</span>       | The mean valence of all concepts. |
 | <span style="font-size: 12px;">mean_valence_normed_macro</span>     |  The normed mean valence of all concepts, whereby all concepts with <br> positive valences get +1, and all concepts with negative valence -1. |
 |  <span style="font-size: 12px;">density_macro</span>      | The density of a CAM refers to the ratio between the actual number <br> of edges and the maximum possible number of edges in the CAM. |

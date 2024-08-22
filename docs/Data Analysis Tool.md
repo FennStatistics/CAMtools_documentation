@@ -11,7 +11,7 @@ Data Analysis Tool
 There are **two possibilities to run the Data Analysis Tool**:
 
 * locally: 
-    * download the Data Analysis Tool from the GitHub repository: <a href="https://github.com/Camel-app/DataAnalysis" target="_blank">https://github.com/Camel-app/DataAnalysisR</a> (use <code>.git</code> or download it manually -> green button "<>Code" -> "Download ZIP")
+    * download the Data Analysis Tool from the GitHub repository: <a href="https://github.com/CAM-E-L/DataAnalysis" target="_blank">https://github.com/CAM-E-L/DataAnalysis</a> (use <code>.git</code> or download it manually -> green button "<>Code" -> "Download ZIP")
     * if not already installed, download <a href="https://cran.r-project.org/" target="_blank">R</a> and <a href="https://posit.co/download/rstudio-desktop/" target="_blank">RStudio</a>
     * open the file <code>app.R</code>, install packages if needed, click on "Run App"
 * online (! disadvantage: App is way slower): 
@@ -21,7 +21,7 @@ There are **two possibilities to run the Data Analysis Tool**:
 
 Within the CAM app you are **guided and within every implemented module** (see below) you have module specific information ("> Information" button in the sidebar panel). The single modules / functionalities are explained in more detail below with specific examples. 
 <br>
-If you want **to change or extend single functions**, please check out the readme file of the folder "additional scripts" in the GitHub repository: <a href="https://github.com/Camel-app/DataAnalysis/tree/main/additional%20scripts" target="_blank">https://github.com/Camel-app/DataAnalysis/tree/main/additional%20scripts</a>
+If you want **to change or extend single functions**, please check out the readme file of the folder "additional scripts" in the GitHub repository: <a href="https://github.com/CAM-E-L/DataAnalysis/tree/main/additional%20scripts" target="_blank">https://github.com/CAM-E-L/DataAnalysis/tree/main/additional%20scripts</a>
 
 
 
@@ -396,7 +396,7 @@ By applying a word2vec Model it is possible to compute the cosine similarity bet
 
 **How to use it**: 
 
-* Click on "> Apply word2vec model", and follow the three steps (1) download summarized words, (2) download and run Python script and (3) upload the computed pairwise similarities. A more detailed explanation how to apply the function can be found on our GitHub page: <a href="https://github.com/Camel-app/DataAnalysis/tree/main/Python_word2vec" target="_blank">https://github.com/Camel-app/DataAnalysis/tree/main/Python_word2vec</a>
+* Click on "> Apply word2vec model", and follow the three steps (1) download summarized words, (2) download and run Python script and (3) upload the computed pairwise similarities. A more detailed explanation how to apply the function can be found on our GitHub page: <a href="https://github.com/CAM-E-L/DataAnalysis/tree/main/Python_word2vec" target="_blank">https://github.com/CAM-E-L/DataAnalysis/tree/main/Python_word2vec</a>
 
 
 <br>

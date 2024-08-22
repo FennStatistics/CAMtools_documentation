@@ -62,7 +62,7 @@ Copy the generated configuration file to the administrative panel/ webpage withi
 Instructions
 ------------
 
-If you want to explain your participants how to draw a CAM you could use our text instructions, which can be downloaded from GitHub (currently in German and English): <a href="https://github.com/Camel-app/DataCollection/tree/main/CAM%20instructions" target="_blank">https://github.com/Camel-app/DataCollection/tree/main/CAM%20instructions</a>
+If you want to explain your participants how to draw a CAM you could use our text instructions, which can be downloaded from GitHub (currently in German and English): <a href="https://github.com/CAM-E-L/DataCollection/tree/main/CAM%20instructions" target="_blank">https://github.com/CAM-E-L/DataCollection/tree/main/CAM%20instructions</a>
 
 > Please read the readme file on the GitHub page for detailed explanations of the instructions.
 
@@ -217,7 +217,7 @@ If you are using a <a href="https://www.jatos.org/" target="_blank">JATOS</a> se
 * set the global variable "usingJATOS" to true and "usingSupabase" to false.
 
 
-Feel free to  <a href="https://github.com/Camel-app/DataCollection" target="_blank">download the Data Collection Tool</a> and adjust it according to your needs (MIT licence: use software without any liability or warranty).
+Feel free to  <a href="https://github.com/CAM-E-L/DataCollection" target="_blank">download the Data Collection Tool</a> and adjust it according to your needs (MIT licence: use software without any liability or warranty).
 
 
 References

@@ -26,7 +26,7 @@ If you want to set up a CAM study using the administrative panel you need to do 
     - Provide a name for the CAM study: name of your CAM study
     - Paste JSON File Content: paste the JSON file of your CAM study, including the pre-defined concepts / connectors and the configuration (see step 5.)
     - Provide a redirect link for your participants (mandatory): link to redirect participants after they have drawn their CAM
-5. To configure your CAM, please close the pop-up and click on the button "C.A.M.E.L." at the top left (check out the [Cognitive-Affective Map *extended logic*](Cognitive-Affective Map extended logic.md) page for details); two steps are needed: 
+5. To configure your CAM, please close the pop-up and click on the button "C.A.M.E.L." at the top left (check out the [Data Collection Tool](Data Collection Tool.md) page for details); two steps are needed: 
     * first step: draw your default CAM: start with changing the central pre-defined concept. It is **highly recommended to set the pre-defined concepts to not deletable, changeable and movable**, using the black researcher buttons at the bottom of the concept dialog (pops up if you double click on a drawn concept)<sup>1</sup>. Further you can drawn connections and set them to not deletable.
     * second step: after you have drawn your default CAM, click on the "gear symbol" (top left) to define the configuration of your CAM study (see details in <a href="https://camtools-documentation.readthedocs.io/en/master/Cognitive-Affective%20Map%20extended%20logic/#define-your-config-file" target="_blank"> Define your config file</a>)
 
@@ -106,7 +106,7 @@ Analyzing network parameters of CAMs is a promising way of gaining quantitative 
 
 
 * <b>Single concept in the middle</b>: this design likely evokes a network which is equivalent to a physical <i>star topology</i>, where all concepts are connected to a central concept. This often results in high local and global density.
-* <b>Two contradictory concepts</b>: specifying two contradictory concepts as a starting point is an interesting way of analyzing the perception of opposite poles or concepts. The two sub-networks of the resulting CAMs can be analyzed and compared separately in a future analyzing step (see module “slice CAMs” within [CAM-App](CAM-App.md)).
+* <b>Two contradictory concepts</b>: specifying two contradictory concepts as a starting point is an interesting way of analyzing the perception of opposite poles or concepts. The two sub-networks of the resulting CAMs can be analyzed and compared separately in a future analyzing step (see module “slice CAMs” within [Data Analysis Tool](Data Analysis Tool.md)).
 * <b>Tree Topology</b>: an initial hierarchical arrangement of concepts supposably nudges participants towards “adding leaves to a predefined tree” in a hierarchical manner, differentiating and diversifying the initial network hierarchically. In contrast to star networks, tree networks typically have low overall and local density.
 * <b>No predefined concepts</b>: letting participants start off with clean slate typically results in a partially connected <i>mesh topologies</i>.
 
@@ -132,7 +132,7 @@ Example studies
 Program "on scratch"
 ---------------
 
-Before reading this section, please read the documentation of the [Cognitive-Affective Map *extended logic*](Cognitive-Affective Map extended logic.md) data collection tool.
+Before reading this section, please read the documentation of the [Data Collection Tool](Data Collection Tool.md) data collection tool.
 
 **Pre-defined elements:**
 

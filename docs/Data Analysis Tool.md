@@ -5,10 +5,10 @@
 }
 </style>
 
-CAM-App
+Data Analysis Tool
 =====
 
-There are **two possibilities to run the CAM-App**:
+There are **two possibilities to run the Data Analysis Tool**:
 
 * locally: 
     * download the CAM-App from the GitHub repository: <a href="https://github.com/Camel-app/DataAnalysis" target="_blank">https://github.com/Camel-app/DataAnalysisR</a> (use <code>.git</code> or download it manutally -> green button "<>Code" -> "Download ZIP")

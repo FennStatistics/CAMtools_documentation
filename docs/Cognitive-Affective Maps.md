@@ -21,7 +21,7 @@ Additionally, CAMs might contain directional arrows which represent a directiona
  For more information see the homepage of Paul Thagard who introduced CAMs.
 
 
-Using CAMs, it is possible to identify, visually represent, and analyze existing belief structures or any kind of declarative knowledge. With our developed software [Data Collection Tool](Data Collection Tool.md), participants can draw within online (or offline) studies their own CAM and the resulting data can be preprocessed and analyzed by the developed [Data Analysis Tool](Data Analysis Tool.md).
+Using CAMs, it is possible to identify, visually represent, and analyze existing belief structures or any kind of declarative knowledge. With our developed [Data Collection Tool](Data Collection Tool.md), participants can draw within online (or offline) studies their own CAM and the resulting data can be preprocessed and analyzed by the [Data Analysis Tool](Data Analysis Tool.md).
 
 In the following example CAM, participants compared cars and public transport[@sendtner_kostbare_2021] (click on CAM to enlarge it in new tab - could take few seconds): 
 
@@ -36,7 +36,7 @@ In the following example CAM, participants compared cars and public transport[@s
 What are the advantages of using Cognitive-Affective Maps?
 ----------------
 
-CAMs have a strong theoretical foundation and have been discussed within philosophy (mainly in the context of explanatory coherence) since the end of the 1990s [@thagard_ethical_1998]<sup>,</sup>[@thagard_coherence_2000]. The process of drawing a CAM is understood as a **constraint satisfaction problem** and multiple mathematical models, like the hot cognition (HOTCO) model[@thagard_hot_2006], were proposed. Since 2020[@rhea_valence_2020], CAM tools for large online studies are under development in the Cognition, Action and Sustainability Unit (Allgemeine Psychologie) at the University of Freiburg, Department of Psychology. For more information regarding the most recent research, see the homepage of the departement in Freiburg, <a href="https://www.psychologie.uni-freiburg.de/abteilungen/Allgemeine.Psychologie/research/cam-research" target="_blank">https://www.psychologie.uni-freiburg.de/abteilungen/Allgemeine.Psychologie/research/cam-research</a>.
+CAMs have a strong theoretical foundation and have been discussed within philosophy (mainly in the context of explanatory coherence) since the end of the 1990s [@thagard_ethical_1998]<sup>,</sup>[@thagard_coherence_2000]. The process of drawing a CAM is understood as a **constraint satisfaction problem** and multiple mathematical models, like the hot cognition (HOTCO) model[@thagard_hot_2006], were proposed. Since 2020[@rhea_valence_2020], CAM tools for large online studies are under development in the Cognition, Action and Sustainability Unit (in German *Allgemeine Psychologie*) at the University of Freiburg, Department of Psychology. For more information regarding the most recent research, see the homepage of the departement in Freiburg, <a href="https://www.psychologie.uni-freiburg.de/abteilungen/Allgemeine.Psychologie/research/cam-research" target="_blank">https://www.psychologie.uni-freiburg.de/abteilungen/Allgemeine.Psychologie/research/cam-research</a>.
 
 Data obtained in CAM studies can be analyzed quantitatively, in terms of network parameters and affective connotation, as well as qualitatively. CAMs as a research method foster research in multiple fields of application, which are linked to multiple interesting research question: 
 

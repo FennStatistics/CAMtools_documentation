@@ -19,13 +19,13 @@ Within the administrative panel, after you have logged in, you can click on the 
 
 | Parameter   |      Meaning      |  Possible values |
 |----------|:-------------|:------:|
-| #ConNumNodes    | Number of concepts a participant needs to draw before <br> she / he is can save the CAM. | 1-50<sup>1</sup> |
-| #MaxLengthWords | Maximum number of words allowed for each concept.   |  1-5<sup>2</sup> |
+| #MinNumNodes    | Number of concepts a participant needs to draw before <br> she / he is can save the CAM. | 1-50<sup>1</sup> |
+| #MaxNumWords | Maximum number of words allowed for each concept.   |  1-5<sup>2</sup> |
 | #MaxLengthChars | Maximum number of characters allowed for each concept. | 30-300 |
-| #hideArrows | If ON possible to draw arrows / directed connections. | ON / OFF |
-| #BidirectionalDefault | Only makes sense if #hideArrows is set to ON, <br> as default the drawn connection is bidirectional. | ON / OFF |
-| #showOnlyPosSlid | If ON possible to draw supporting connections. | ON / OFF |
-| #hideAmbivalent | If ON possible to draw ambivalent concepts. | ON / OFF |
+| #enableArrows | If ON possible to draw arrows / directed connections. | ON / OFF |
+| #BidirectionalDefault | Only makes sense if #enableArrows is set to ON, <br> as default the drawn connection is bidirectional. | ON / OFF |
+| #OnlyStraightCon | If ON possible to draw supporting connections. | ON / OFF |
+| #enableAmbivalent | If ON possible to draw ambivalent concepts. | ON / OFF |
 | #cameraFeature | If ON a splotlight feature is included to move the drawing <br> screen. If participants move their mouse to the edges the <br> drawing screen is moved to the respective side. | ON / OFF |
 | #fullScreen | If ON study is set to fullscreen mode and paradata is <br> collected (defocus, focus events). | ON / OFF |
 | #setLanguage | Set the language of the interface of the data collection <br> tool: | English, <br> German, <br> Spanish, <br> Chinese |
@@ -180,7 +180,7 @@ Implemented features
 
 The following features are implemented to increase data quality: 
 
-* a participant cannot save the CAM if any of the configurations regarding <code>#ConNumNodes</code>, <code>#MaxLengthWords</code> and <code>#MaxLengthChars</code> is violated
+* a participant cannot save the CAM if any of the configurations regarding <code>#MinNumNodes</code>, <code>#MaxNumWords</code> and <code>#MaxLengthChars</code> is violated
 * by applying the breadth-first search algorithm it is prevented that participants can save CAMs with disconnected components (cluster of concepts)
 * the predefined concepts cannot be moved if <code>isDraggable</code> is set to FALSE, cannot be deleted if <code>isDeletable</code> is set to FALSE and text cannot be changed if <code>isTextChangeable</code> is set to FALSE
 * the predefined connectors cannot be deleted if <code>isDeletable</code> is set to FALSE

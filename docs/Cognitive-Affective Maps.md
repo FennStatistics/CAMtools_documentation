@@ -59,6 +59,7 @@ Data obtained in CAM studies can be analyzed quantitatively, in terms of network
     * CAMs are used to explore how researchers from different disciplines or laypersons understand certain terms. This will be examined in multiple studies focused on the concept of "sustainability"; see <a href="https://www.livmats.uni-freiburg.de/en/people/phd-and-postdoc-students/michael-gorki" target="_blank">Michael Gorki (livMatS)</a>
 * How reliable are CAMs?
     * The reliability of CAMs is being investigated through longitudinal designs in a PhD project; see <a href="https://www.livmats.uni-freiburg.de/en/people/phd-and-postdoc-students/wilhelm-gros" target="_blank">Wilhelm Gros (livMatS)</a>
+        + Recent findings indicate promising reliability, with <b>quantitative test-retest correlations reaching up to 0.78</b> and an average of 52% of concepts being semantically similar across time points. These results suggest that CAMs provide a stable and reproducible method for capturing cognitive-affective structures[@grosCognitiveaffectiveMapsCAMs2024a].
 * What drives the perception of soft robots compared to rigid robots? How can the complex construct of trust be operationalized?
     * Using intervention designs and exploratory studies in a post-doc project, the perceptions of soft robots and the concept of trust are being investigated across multiple studies; see <a href="https://www.livmats.uni-freiburg.de/de/people/postdoctoral-researchers/dr-louisa-julie-estadieus" target="_blank">Dr. Louisa Estadieu (livMatS)</a>
 * ...

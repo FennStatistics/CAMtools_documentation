@@ -15,15 +15,21 @@ Welcome to the online documentation of our software package "Cognitive-Affective
 - [Administrative Panel](#administrative-panel)
 
 
-# Data Collection Tool
+## Data Collection Tool
 
 The data collection tool is an open-source software to draw CAMs. It aims to offer people an easy and intuitive interface on which they could draw their own mind map within online studies. There is a participant view and a researcher view to set up studies. Currently it is possible to change over 10 parameters of the tool (e.g. force to full screen, or change language to Chinese).
 
 
-# Data Analysis Tool
+## Data Analysis Tool
 
 Using multiple modules you can summarize your CAM data omputer-assisted (e.g. sophisticated language models are implemented) and the so summarized data can subsequently be analyzed using multiple implemented functions, e.g. aggregating CAMs or compute over 30 network indicators. 
 
-# Administrative Panel
+## Administrative Panel
 
 The administrative panel allows you to set up and configure CAM studies easily without the need of coding and guarantee the highest privacy standards. Simply register an account at our webpage <a href="https://drawyourminds.de/" target="_blank">https://drawyourminds.de/</a>.
+
+
+
+# Developed Cognitive-Affective Map tools
+
+Our developed software package "Cognitive-Affective Maps <i>extended logic</i>" can be found on GitHub: <a href="https://github.com/CAM-E-L" target="_blank">https://github.com/CAM-E-L</a>

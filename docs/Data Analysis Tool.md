@@ -15,7 +15,7 @@ There are **two possibilities to run the Data Analysis Tool**:
     * if not already installed, download <a href="https://cran.r-project.org/" target="_blank">R</a> and <a href="https://posit.co/download/rstudio-desktop/" target="_blank">RStudio</a>
     * open the file <code>app.R</code>, install packages if needed, click on "Run App"
 * online (! disadvantage: App is way slower): 
-    * open the link: <a href="https://fennapps.shinyapps.io/CAMtools_CAMapp/" target="_blank">https://fennapps.shinyapps.io/CAMtools_CAMapp/</a>
+    * open the link: <a href="https://fennapps.shinyapps.io/DataAnalysis/" target="_blank">https://fennapps.shinyapps.io/DataAnalysis/</a>
     
 <br>
 

@@ -8,7 +8,7 @@
 Set up study
 ============
 
-You first apply (if you do not already have) for an account, log in with your credentials and create an experiment using our webpage. It is highly recommended to read the complete "General procedure" and "Possible CAM study designs" parts before starting collecting data. It is also possible to set up your study "on scratch" and use your own server (see final section).
+You first apply (if you do not already have) for an account, log in with your credentials and create an experiment using our webpage. It is highly recommended to read the complete "General procedure" and "Possible CAM study designs" parts before starting collecting data. It is also possible to set up your study "from scratch" and use your own server (see final section).
 
 
 General procedure
@@ -126,7 +126,7 @@ Example studies
 - complete study regarding relatively unknown topic "Stratospheric Aerosol Injection"; here included instructions CAM, scenario text, preview CAM, Data Collection Tool, technical feedbackquestions after drawing: <a href="https://studien.psychologie.uni-freiburg.de/publix/qDU7aBJyuQz?PROLIFIC_PID=testerID" target="_blank"> complete study "Stratospheric Aerosol Injection"</a>
 - complete study regarding well known topic "Covid-19 pandemic"; here included instructions CAM, preview CAM, Data Collection Tool (reminder, initial pop-up included), technical feedbackquestions and one adaptive question after drawing: <a href="https://studien.psychologie.uni-freiburg.de/publix/JiWZUbeXjfo?PROLIFIC_PID=testerID" target="_blank"> complete study "Covid-19 pandemic"</a>
 - adaptive study design: <a href="https://studien.psychologie.uni-freiburg.de/publix/gv3Q8UvdRLu" target="_blank"> adaptive study design </a>
-    - simply draw 2 concepts with pos. / neg. valence and connect them and click on disk symbol to save. By adaptive designs any query you can imagine (like query for the most central concept, certain neighbourhoods of given concepts, the re-presentation of the drawn CAM etc.) are possible. We also have no data limitation here as it can use functions of JATOS internally (so-called "multi-component study"), which is a server hosted in the Psychology departement within the University of Freiburg.
+    - simply draw 2 concepts with pos. / neg. valence and connect them and click on disk symbol to save. By adaptive designs any query you can imagine (like query for the most central concept, certain neighbourhoods of given concepts, the re-presentation of the drawn CAM etc.) are possible. We also have no data limitation here as it can use functions of JATOS internally (so-called "multi-component study"), which is a server hosted in the Psychology department within the University of Freiburg.
 
 
 Program "on scratch"

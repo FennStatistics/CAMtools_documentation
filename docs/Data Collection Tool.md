@@ -3,7 +3,7 @@ Data Collection Tool
 
 The Data Collection Tool enables participants to draw CAMs. It is constructed to support large-scale online-studies to gather CAM data of many participants (several hundred participants would be no problem). 
 
-Asking participants to draw CAMs from scratch may be an ambitious task and participants may not even draw a CAM regarding your intended issue (like your intended topic). Here it might help to predefine concepts to help your participants to draw the intended CAM. Moreover, it may be that researchers would like to control what is being displayed or even possible to do (i.e., draw ambivalent concepts) while drawing CAMs. For example, it be the case that you fear that a large number of possible features would be too demanding (cognitively or from a time perspective) for your participants, you can easily disable certain features, like the ability to draw unidirectional relations or inhibiting connections. 
+Asking participants to draw CAMs from scratch may be an ambitious task and participants may not even draw a CAM regarding your intended issue (like your intended topic). Here it might help to predefine concepts to help your participants to draw the intended CAM. Moreover, it may be that researchers would like to control what is being displayed or even possible to do (i.e., draw ambivalent concepts) while drawing CAMs. For example, it may be the case that you fear that a large number of possible features would be too demanding (cognitively or from a time perspective) for your participants, you can easily disable certain features, like the ability to draw unidirectional relations or inhibiting connections. 
 
 To this end, a "researcher view" of the CAM board was implemented. There, it is possible to create, position and fix (i.e., impossibility to move a concept) elements. Once the structure is ready, click on “export” to create a CAM.json including all the different elements as well as the configuration of the project (see in detail [Set up study](Set up study.md)).
 
@@ -31,7 +31,7 @@ Within the administrative panel, after you have logged in, you can click on the 
 | #setLanguage | Set the language of the interface of the data collection <br> tool: | English, <br> German, <br> Spanish, <br> Chinese |
 
 
-<sup>1</sup>Maxmimum number is restricted because the drawing space is limited. In the future, 3D environments will be implemented.
+<sup>1</sup>Maximum number is restricted because the drawing space is limited. In the future, 3D environments will be implemented.
 
 <sup>2</sup>It is **highly recommended to set this value to 1-3** if you are aiming to summarize / aggregate the CAM data. Instruct participants to avoid writing sentences and to draw instead multiple concepts. 
 
@@ -80,7 +80,7 @@ In the following, all the parameters of the *constructor* of the CAM, concept an
 | date  | Date of CAM initialization. | Starting point of drawing the <br> CAM. |
 | nodes | Array which stores all concepts. | Array includes visible and <br> deleted concepts. |
 | connectors | Array which stores all connectors. | Array includes visible and <br> deleted connectors. |
-| currentID | Get currrent ID of  (open dialog) element. | <i>internal</i> |
+| currentID | Get current ID of  (open dialog) element. | <i>internal</i> |
 | currentNode | Get focused concepts. | <i>internal</i> <br> <code>NULL</code> if no concept is clicked <br> on. |
 | hasSelectedNode | <code>TRUE</code> if participant focused a concept. | <i>internal</i> |
 | currentConnector | Get focused connectors. | <i>internal</i> <br> <code>NULL</code> if no connector is clicked on. |
@@ -167,7 +167,7 @@ In the following, all the parameters of the *constructor* of the CAM, concept an
 | isSelected    | If current connector is selected. | <i>internal</i> |
 | intensity    | Thickness of line. | <i>internal</i> <br> defined by global variable <br>"IncreaseSliderIntensity" |
 | isDeletable | If concept is deletable. | Defined by researcher in <br>advance. |
-| isOver | If mouse if hovering over connection. | <i>internal</i> to highlight connection |
+| isOver | If mouse is hovering over connection. | <i>internal</i> to highlight connection |
 | isBidirectional | <code>TRUE</code> if connection is bidirectional. | To differentiate between uni- and <br>bidirectional connections. |
 | eventLog | Every interaction with the connector is <br>recorded. | Create animated videos of <br>drawing process. |
 
@@ -200,7 +200,7 @@ Future features
 ----------------
 
 
-Multiple extensions of the data collection tool are currently tested: currently we are implementing **simultaneous collaboration**, as such that more than one person can work on the identical CAM at the same time. Tweaking the software it was already possible to run **sequential collaboration studies**, whereby a CAM is consecutively changed. A **graphical database** (e.g. using Neo4j) was recently implemented. Using Neo4j queries can be made directly on summarized CAM data, e.g., “How often was the concept "own car" associated with "flexibility"?”. Finally **3D visualizations** for large CAMs are set up (e.g. using Unity also virtual reality experiment would be possible).
+Multiple extensions of the data collection tool are currently tested: currently we are implementing **simultaneous collaboration**, such that more than one person can work on the identical CAM at the same time. Tweaking the software it was already possible to run **sequential collaboration studies**, whereby a CAM is consecutively changed. A **graphical database** (e.g. using Neo4j) was recently implemented. Using Neo4j queries can be made directly on summarized CAM data, e.g., “How often was the concept "own car" associated with "flexibility"?”. Finally **3D visualizations** for large CAMs are set up (e.g. using Unity also virtual reality experiment would be possible).
 
 <br>
 If you are missing a specific feature for your study and do not know how to implement it, we are happy to hear from you: <cam.contact@drawyourminds.de>

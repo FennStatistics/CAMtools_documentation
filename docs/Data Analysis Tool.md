@@ -124,7 +124,7 @@ Implemented features overview
 ----------------
 
 
-In our experience it is necessary to guide the researcher (or assistent) through the analysis process, because the analysis of CAM data is relatively difficult and the individual modules build on each other logically. The following figure visualizing all the implemented features separated for the (a) pre-processing and (b) analysis part (click on figure to enlarge it in new tab):
+In our experience it is necessary to guide the researcher (or assistant) through the analysis process, because the analysis of CAM data is relatively difficult and the individual modules build on each other logically. The following figure visualizing all the implemented features separated for the (a) pre-processing and (b) analysis part (click on figure to enlarge it in new tab):
 
 <a href="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/overview_CAMApp.JPG" target="_blank">
 <img src="https://raw.githubusercontent.com/FennStatistics/CAMtools_documentation/master/docs/media/overview_CAMApp.JPG" alt="overview missing" style="height:400px; width: 900px;" class="centerImg">
@@ -332,7 +332,7 @@ By using approximate string matching, string distances between all unique concep
     * it is recommended to increase step by step the maximum string distance and use this functionality several times
 
 <br>
-Please note that below all summarize functions a <b>dynamic table is displayed after you summarized your first word</b>, depicting in the following format all words you have already summarized: "fear (fear // Fear)" -> you summarized the words "fear" and "Fear" to the superordinate word "fear". The search functionalities of the table if you are looking for a specific word.
+Please note that below all summarize functions a <b>dynamic table is displayed after you summarized your first word</b>, depicting in the following format all words you have already summarized: "fear (fear // Fear)" -> you summarized the words "fear" and "Fear" to the superordinate word "fear". The search functionalities of the table can be used if you are looking for a specific word.
 
 <br>
 **Internally no additional specific R function is applied**.
@@ -479,7 +479,7 @@ This information can be used to train raters, which could subsequently summarize
 
 
 <br>
-**Internally the following R function are applied**:
+**Internally the following R functions are applied**:
 
 ```r
 computeCohensKappa(files = data(), 
@@ -488,7 +488,7 @@ computeCohensKappaMaximized(files = data(),
     numberRaters = length(data()))
 ```
 * computeCohensKappa(): Cohen's Kappa is pairwise computed between all raters by assuming a perfect match of overlapping groups of words
-    * Remark: when uploading rated wordlists at the bottom of the module you will see "Rating" variables containing, for example, "r0001r0002", which you mean that a rater has summarized the first and second concept under one superordinate term
+    * Remark: when uploading rated wordlists at the bottom of the module you will see "Rating" variables containing, for example, "r0001r0002", which means that a rater has summarized the first and second concept under one superordinate term
 * computeCohensKappaMaximized(): Cohen's Kappa is pairwise computed by maximizing overlapping words, which have been summarized and finally
 
 
@@ -605,8 +605,8 @@ Compute several variants (in total 6 variants) of average valences over group of
 
 - mean_1_X, mean_2_X: compute the mean valence over the neighborhood of order 1 / 2 with no adjustments
 - mean_1_dashed_X, mean_2_dashed_X: compute the mean valence over the neighborhood of order 1 / 2 with adjustment for dashed lines if connected to positive concepts (see picture, explanation below)
-- mean_2_weighted_X: compute the mean valence over the neighborhood of order 2 with weighting of neighborhood of second order (default .5), because we assume that's concepts further away have less relevance for the concept under consideration
-- mean_2_weighted_dashed_X: compute the mean valence over the neighborhood of order 2 with weighting of neighborhood of second order (default .5) while adjusting for dashed lines (see picture, explanation below), because we assume that's concepts further away have less relevance for the concept under consideration
+- mean_2_weighted_X: compute the mean valence over the neighborhood of order 2 with weighting of neighborhood of second order (default .5), because we assume that concepts further away have less relevance for the concept under consideration
+- mean_2_weighted_dashed_X: compute the mean valence over the neighborhood of order 2 with weighting of neighborhood of second order (default .5) while adjusting for dashed lines (see picture, explanation below), because we assume that concepts further away have less relevance for the concept under consideration
 
 
 **Example**: This is helpful if you have specified two contradictory concepts in a study. In the example CAM below participants were surveyed regarding their motivation to use their “own car” or “public transport”. This is an interesting study design to analyze the perception of opposing poles or concepts. In such a case, it would not be meaningful to compute the overall mean valence. Instead, the mean valence over the neighborhood of the respective concept of the first or second order (one or two steps away, i.e., concepts that are directly connected to the respective concept are one step away) indicates the negative assessment of “public transport” and the mixed assessment of “own car” in this CAM. It is also possible to temporarily remove connections (and / or concepts) in order to not distort the neighborhood statistics (e.g., mean valence two steps away from the concept “own car”). Click on the example CAM to enlarge it in new tab - could take few seconds: 
